@@ -6,6 +6,6 @@ controle de tarefas no github
 
 ## Ícones
 :package: nova funcionalidade
-:up:atualização
+:up: atualização
 :beatle: correção de bug
-:checkered_flaf:release
+:checkered_flag: release
