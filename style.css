@@ -17,6 +17,10 @@
     --font-action: "Muli", serif;
 }
 
+html{
+    scroll-behavior: smooth; /*suavisa a rolagem do scroll*/
+}
+
 /*
 *
 * Styler do header principal
@@ -29,7 +33,7 @@
     width: 2rem;
     height: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 110;
     right: 2rem;
     top: 2rem;
     display: flex;
@@ -205,6 +209,7 @@
     right: -20rem;
     background-color: rgb(248, 242, 242);
     transition:  all 0.5s;
+    z-index: 100;
 }
 
 .show-menu .sidebar{
@@ -606,4 +611,52 @@
     font-size: 1rem;
     padding: 1rem;
     grid-column: 2;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #eee;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.5rem;
+}
+.social-list ul{
+    display: flex;
+}
+
+.link-top{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #cc2b5e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #00000009;
 }
