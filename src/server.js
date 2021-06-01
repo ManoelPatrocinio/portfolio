@@ -1,6 +1,7 @@
 const express    = require('express');
 const nodemailer = require("nodemailer");
 const app        = express();
+require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
 
@@ -15,18 +16,18 @@ app.get('/', (req,res) =>{
 app.post('/', (req,res)=>{
     console.log(req.body)
     const transport = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 587,
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
         auth:{
-            user: "johnmoura4744@gmail.com",
-            pass: "senhamestra$"
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
         },
        
     })
 
     const mailContent ={
         from: req.body.email,
-        to: 'johnmoura4447@gmail.com',
+        to: process.env.EMAIL_USER,
         subject: `Contato Inicial | ${req.body.name}`,
         text: req.body.mensagem
     }
