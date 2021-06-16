@@ -9,3 +9,4 @@ controle de tarefas no github
 :up: atualização
 :beetle: correção de bug
 :checkered_flag: release
+
