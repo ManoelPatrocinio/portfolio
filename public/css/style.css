@@ -485,10 +485,11 @@ header {
 }
 
 .conhecimento-text {
-    font-family: var(--font-secundary);
-    margin-top : 1rem;
+    font-family: Montserrat;
+    margin-top: 1rem;
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .conhecimentos-img-wrapper {
@@ -588,7 +589,7 @@ header {
     position   : absolute;
     bottom     : 0;
     padding    : 2rem;
-    text-shadow: 0.3rem 0.2rem 0.3 rgba(0, 0, 0, .6);
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .4);
     opacity    : 0;
     visibility : hidden;
     transition : all .3s;
@@ -605,7 +606,7 @@ header {
     font-family: var(--font-primary);
     font-size  : 2rem;
     font-weight: 500;
-    color      : #eee;
+    color      : #ff4081;
     line-height: 2rem;
     padding-bottom: 1rem;
 }
@@ -613,7 +614,7 @@ header {
 .card-info h3 {
     font-family  : var(--font-action);
     font-weight  : bolder;
-    color        : #ff4081;
+    color        : #eee;
     margin-bottom: 1.5rem;
     
 }
@@ -666,9 +667,9 @@ header {
     }
 
     .card .card-info {
-        opacity   : 1;
+      
         visibility: visible;
-        
+        text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);
 
     }
 
