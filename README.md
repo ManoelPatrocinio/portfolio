@@ -1,8 +1,12 @@
 # Projeto Portfólio
-Mini pojeto com página única,para inplementação de conhecimentos em HTML5, CSS3 e Js
+Projeto de página única,para implementação de conhecimentos em HTML5, CSS3 e Js
 
-## Tarefas
-controle de tarefas no github
+## Tecnologias usadas
+  HTML5 
+  CSS3
+  NODE
+  NODE MAILER
+
 
 ## Ícones
 :package: nova funcionalidade
