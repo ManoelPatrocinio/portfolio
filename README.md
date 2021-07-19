@@ -14,3 +14,4 @@ Projeto de página única,para implementação de conhecimentos em HTML5, CSS3 e
 :beetle: correção de bug
 :checkered_flag: release
 
+[Lets go to Quora](https://www.quora.com)
