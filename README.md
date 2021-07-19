@@ -9,9 +9,9 @@
 
 ## Melhorias
   Foram aplicadas melhoras como:
-  * Otimização do tempo de carregamento.
-  * implementação de envia de envio de E-mail com nodeMailer.
-  * Implemento dos conceitos de UX design.
+  * Otimização do tempo de carregamento da página.
+  * Implementação de envio de E-mail com nodeMailer.
+  * Implementação dos conceitos de UX design.
   
 
 ## Tecnologias usadas
