@@ -1,5 +1,16 @@
-# Projeto Portfólio
-Projeto de página única,para implementação de conhecimentos em HTML5, CSS3 e Js
+# Portfólio
+Projeto de uma Single-page, desenvolvida com base na playlist do [João Carlos Lima e Silva].(https://youtube.com/playlist?list=PLM_90--7SomWgfPYCXnpuoY2L-Z_Z-AiV),para aplimorar os conhecimentos em HTML5, CSS3 e Js.
+
+<h4 align="center"> 
+	🚧  React Select 🚀 Em construção...  🚧
+</h4>
+
+## Melhorias
+  Foram aplicadas melhoras como:
+  Otimização do tempo de carregamento.
+  implementação de envia de envio de E-mail com nodeMailer.
+  Implemento dos conceitos de UX design.
+  
 
 ## Tecnologias usadas
   HTML5 
@@ -14,4 +25,4 @@ Projeto de página única,para implementação de conhecimentos em HTML5, CSS3 e
 :beetle: correção de bug
 :checkered_flag: release
 
-[Lets go to Quora](https://www.quora.com)
+[Confira meu Portfólio](https://portifoliomanoel.herokuapp.com/#)
