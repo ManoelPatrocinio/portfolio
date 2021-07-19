@@ -62,11 +62,9 @@ $ yarn dev
 # O servidor inciará na porta:8000 - acesse <http://localhost:3333>
 
 
+```
+
 ### Autor
----
-
-
-
 
 Feito com ❤️ por Manoel Patrocinio 👋🏽 Entre em contato!
 
