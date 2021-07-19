@@ -2,6 +2,8 @@
 	🚧  Projeto em construção...  🚧
 </h4>
 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/ManoelPatrocinio/portifolio/blob/main/LICENSE) 
+
 # Portfólio
  Single-page, desenvolvida com base na playlist do [João Carlos Lima e Silva](https://youtube.com/playlist?list=PLM_90--7SomWgfPYCXnpuoY2L-Z_Z-AiV),para aplimorar os conhecimentos em HTML5, CSS3 e Js.
 
@@ -58,3 +60,15 @@ $ yarn add dotenv
 $ yarn dev
 
 # O servidor inciará na porta:8000 - acesse <http://localhost:3333>
+
+
+### Autor
+---
+
+
+
+
+Feito com ❤️ por Manoel Patrocinio 👋🏽 Entre em contato!
+
+[![Twitter Badge](https://img.shields.io/badge/-@patrocinioiii-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://www.instagram.com/patrocinioiii/)](https://www.instagram.com/patrocinioiii/) [![Linkedin Badge](https://img.shields.io/badge/-Manoel-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/manoel-patrocinio-1b342b203/)](https://linkedin.com/in/manoel-patrocinio-1b342b203) 
+[![Gmail Badge](https://img.shields.io/badge/-manoelpatrocinio99@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:manoelpatrocinio99@gmail.com)](mailto:manoelpatrocinio99@gmail.com)
