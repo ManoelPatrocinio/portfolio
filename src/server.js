@@ -1,9 +1,9 @@
 const express    = require('express');
 const nodemailer = require("nodemailer");
 const app        = express();
-require('dotenv').config();
+require("dotenv").config();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.HOST_PORT; ;
 
 // Middleware
 app.use(express.static('public'));
@@ -28,10 +28,10 @@ app.post('/', (req,res)=>{
     const mailContent ={
         from: req.body.email,
         to: process.env.EMAIL_USER,
-        subject: `Contato Inicial | ${req.body.name}`,
+        subject: `Contato Inicial | ${req.body.email}`,
         text: req.body.mensagem
     }
-
+    console.log(mailContent);
     transport.sendMail(mailContent,(error,info)=>{
         if (error) {
             console.log(error);
