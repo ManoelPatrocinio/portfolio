@@ -14,6 +14,7 @@
   * Otimização do tempo de carregamento da página.
   * Implementação de envio de E-mail com nodeMailer.
   * Implementação dos conceitos de UX design.
+  * Depoy no Heroku
   
 
 ## Tecnologias usadas
