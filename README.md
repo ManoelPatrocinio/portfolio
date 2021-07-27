@@ -59,7 +59,7 @@ $ yarn add dotenv
 
 # Execute a aplicação em modo de desenvolvimento
 $ yarn dev
-
+$ yarn start
 # O servidor inciará na porta:8000 - acesse <http://localhost:8000>
 
 
