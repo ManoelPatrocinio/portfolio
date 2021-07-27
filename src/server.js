@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const app        = express();
 require("dotenv").config();
 
-const PORT = process.env.HOST_PORT; ;
+const PORT = process.env.HOST_PORT; 
 
 // Middleware
 app.use(express.static('public'));

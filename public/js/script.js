@@ -21,8 +21,6 @@ document.querySelector("#nome").addEventListener("blur", (e) => {
   }
 });
 
-
-
 document.querySelector("#email").addEventListener("blur", () => {
   validacaoEmail();
 });
@@ -69,10 +67,3 @@ function validacaoEmail() {
   return status;
 }
 
-function checkChar(e) {
-  var char = String.fromCharCode(e.keyCode);
-  var pattern = "[a-zA-Z0-9]";
-  if (char.match(pattern)) {
-    return true;
-  }
-}
