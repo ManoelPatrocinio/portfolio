@@ -624,7 +624,7 @@ header {
   cursor: pointer;
 }
 
-.card-info button {
+.card-info button, a {
   width: 8rem;
   height: 2.5rem;
 }
@@ -856,134 +856,6 @@ header {
 
 }
 
-/*
-*
-* Styler da sessão orcamento
-*
-*/
-
-.sessao-orcamento {
-  width: 100%;
-  height: 100%;
-  background: url("../Imagens/bg-orcamento.jpg");
-  object-fit: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.orcamento-wrapper {
-  position: absolute;
-  width: 60%;
-  height: 80%;
-  background-color: #ffffff99;
-  border-radius: 10px;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-  position: relative;
-  margin: 3rem 0;
-}
-
-.sessao-orcamento h1 {
-  position: absolute;
-  top: -2.5rem;
-  left: 2rem;
-  background: #cc2b5e;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #753a88, #cc2b5e);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 0 3rem;
-  color: #fff;
-  font-family: var(--font-primary);
-  font-size: 3rem;
-  font-weight: lighter;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}
-
-.sessao-orcamento form {
-  position: relative;
-  margin: 4rem;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  /* 1º coluna do tamanho do maior elemento,e a segunda do restante da tela*/
-  column-gap: 2rem;
-  /*espaçameto entre colunas*/
-  row-gap: 2rem;
-  /*espaçameto entre linhas*/
-}
-
-.sessao-orcamento label {
-  font-family: var(--font-secundary);
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.sessao-orcamento input[type="number"] {
-  font-family: var(--font-secundary);
-  width: 4rem;
-  font-size: 2rem;
-  outline: none;
-  border-radius: 10px;
-  border: none;
-  padding: 0.3px;
-}
-
-.btn-orcamento {
-  text-transform: uppercase;
-  font-size: 1rem;
-  padding: 1rem;
-  grid-column: 2;
-}
-
-/*
-*
-* Styler da sessão orcamento-mobile
-*
-*/
-@media (max-width: 600px) {
-  .sessao-orcamento {
-    width: 100%;
-    height: 100%;
-  }
-
-  .orcamento-wrapper {
-    width: 98%;
-    height: 100%;
-    box-sizing: border-box;
-  }
-
-  .sessao-orcamento h1 {
-    position: absolute;
-    top: -2.5rem;
-    left: 2rem;
-    padding: 0 2rem;
-    font-size: 2.5rem;
-    font-weight: lighter;
-    margin-top: 6%;
-  }
-
-  .sessao-orcamento form {
-    margin: 4rem 2rem 2rem 2rem;
-    display: grid;
-  }
-
-  .sessao-orcamento label {
-    font-size: 1.4rem;
-  }
-
-  .sessao-orcamento input[type="number"] {
-    width: 6rem;
-    font-size: 2rem;
-    outline: none;
-    border-radius: 10px;
-  }
-
-  .btn-orcamento {
-    margin-top: 2rem;
-  }
-}
 
 /*
 *
@@ -1011,6 +883,7 @@ header {
   color: #eee;
   font-size: 1.2rem;
   font-weight: 600;
+  margin-bottom: 2%;
 
 }
 
@@ -1018,7 +891,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 2%;
+  margin: 2% 0;
 }
 
 .social-list a {
@@ -1143,6 +1016,8 @@ header {
   position: relative;
   width: 30%;
   margin: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #MySelf img {
