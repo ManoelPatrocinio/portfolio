@@ -67,3 +67,6 @@ function validacaoEmail() {
   return status;
 }
 
+// efeito de escrito na pagina
+
+

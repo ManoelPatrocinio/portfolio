@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16x16.png" />
@@ -42,7 +43,7 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home        </a></li>
-                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#conhecimentos_progressBar" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"><a href="#projetos" class="menu-link">Projetos    </a></li>
                     <li class="menu-item"><a href="#contato" class="menu-link">Contato     </a></li>
                 </ul>
@@ -56,125 +57,137 @@
     
             </div>  
         </aside> 
-        
-        <section class="sessao-conhecimentos" id="conhecimentos">
+        <section id="conhecimentos_progressBar">
+          <div class="conhecimento-header-mobile">
+            <img id="conhecimentoMobileImg" src="./Imagens/Coding_SVG.svg"></img>
+            <p>Always learning</p>
+          </div>
 
-            <div class="sessao-header">
-              <h1>Conhecimentos</h1>
-            </div>
+          <div class="conhecimento-body">
 
-            <div class="conhecimentos">
-
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fab fa-html5"></i>
-                  <h3>HTML5 CSS3 </h3>
+              <div class="containerProgres">
+                
+                <span>Html 5</span>
+                <div class="container_progress_bar" style="width: 90%;" id="html">
+                  <div class="progress-bar"><small>90%</small></div>
+                  
                 </div>
-                <div class="conhecimento-text">
-                  <p>Construção e estilização de páginas web, aplicando as novas funcionalidades do CSS3 como efeitos e transições para um designer elegante e inclusivo. </p>
+                
+                <span>Css 3</span>
+                <div class="container_progress_bar" style="width: 80%;" id="css">
+                  <div class="progress-bar" ><small>80%</small></div>
+                  
                 </div>
+                
+                <span>Bootstrap</span>
+                <div class="container_progress_bar" style="width: 80%;" id="bootstrap">
+                  <div class="progress-bar"><small>80%</small></div>
+                </div>
+                
+                <span>Javascript</span>
+                <div class="container_progress_bar" style="width: 70%;" id="bootstrap">
+                  <div class="progress-bar"><small>70%</small></div>
+                </div>
+                
               </div>
 
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  </i><i class="fab fa-node"></i>
-                  <h3>NodeJS</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p> Desenvolvimento e manutenção de sistemas e aplicações, com a integração ao express e banco de dados variados.  </p>
-                </div>
-              </div>
+              <div id="descricaoEstudos">
 
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fas fa-database"></i>
-                  <h3>MySQL</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p>Construção e manipulação de dados, aplicando as normas de estruturação que mais se adequam ao projeto proposto. </p>
-                </div>
-              </div>
+                <div class="conhecimento-header-mobile" > <p id="inProgress">In Progress  </p> </div>
 
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fab fa-bootstrap"></i>
-                  <h3>BootStrap</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p>Para a otimização e padronização na construção do projeto, aproveitando e customizando os melhores componentes. </p>
-                </div>
-              </div>
+                <div class="cardsContainer">
+                    <div class="cardIcon">
+                      <img src="https://img.icons8.com/color/60/000000/react-native.png" alt="react"/>
+                      <small>React</small>
+                    </div>
 
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fab fa-js"></i>
-                  <h3>Javascript</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p>Criação de páginas dinâmicas com animações atraentes para uma melhor experiência do usuário</p>
-                </div>
-              </div>
+                    <div class="cardIcon">
+                      <img src="https://img.icons8.com/color/60/000000/react-native.png" alt="react native"/>
+                      <small>Native</small>
+                    </div>  
 
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fab fa-github"></i>
-                  <h3>Git e GitHub</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p>Para o controle de versão e facilitação do trabalho em equipe.</p>
-                </div>
-              </div>
+                    <div class="cardIcon">
+                      <img src="./Imagens/nodejsIcon.png" style="width: 78px; " alt="node js"/>
+                    </div>
 
-              <div class="conhecimentos-img-wrapper">
-                <img src="Imagens/fox.png" alt="imagem conhecimento">
-              </div>
+                    <div class="cardIcon">
+                      <img src="./Imagens/mongodb.svg" style="width: 70px;" alt="MongoDB">
+                    </div>
+                </div>    
 
-            </div>
+              </div>
+          </div>
         </section>
-          
-          
+
        <section class="sessao-projetos" id="projetos">
               <div class="sessao-header">
                 <h1>Projetos</h1>
               </div>
-
-              <div class="projetos">
-                <div class="card">
-                  <div class="card-img-wrapper">
-                    <img src="Imagens/petfood.jpg" alt="petfood, pet, rações,petshop" />
-                  </div>
-                  <div class="card-info">
-                    <h2>Petfood</h2>
-                    <h3>React, NodeJS e MongoDB</h3>
-                    <p>Marketplace para petshops com integração a API do Pagar.me para efetivação da compra.</p>
-                    <a href="https://petshop-fontend.herokuapp.com/"  target="_blank"><button  class="btn">Saiba Mais</button></a>                  </div>
+              <!-- start caroulsel -->
+              <!-- Flickity HTML init -->
+              <div class="gallery js-flickity"
+              data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell">
+                  <div class="card"> 
+                    <div class="card-img-wrapper">
+                      <img src="Imagens/petfood.jpg" alt="petfood, pet, rações,petshop" />
+                    </div>
+                    <div class="card-info">
+                      <h2>Petfood</h2>
+                      <h3>React, NodeJS e MongoDB</h3>
+                      <p>Marketplace para petshops com integração a API do Pagar.me para efetivação da compra.</p>
+                      <a href="https://petshop-fontend.herokuapp.com/"  target="_blank"><button  class="btn">Saiba Mais</button></a>                  
+                    </div>
+                  </div>  
                 </div>
-                <div class="card">
-                  <div class="card-img-wrapper">
-                    <img src="Imagens/grupoInvestiment.jpg" alt="imagem do projeto ToDo" />
+                <div class="gallery-cell">
+                  <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="Imagens/grupoInvestiment.jpg" alt="imagem do projeto ToDo" />
+                    </div>
+                    <div class="card-info">
+                      <h2>Grupo de Investimentos</h2>
+                      <h3>Laravel</h3>
+                      <p>Desenvolvido utilizando Laravel, HTML5, CSS3 e MySQL. Simulando um site de gerenciamento de grupos de investimentos.</p>
+                      <a href="https://github.com/ManoelPatrocinio/lara-investimento" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="gallery-cell">
+                  <div class="card">
+                    <div class="card-img-wrapper">
+                      <!-- <img src="Imagens/organic2.jpg" alt="imagem do projeto Casa Bela" /> -->
+                      <img src="https://c.pxhere.com/images/f7/55/256f6e314a8167470672d0304fa5-1446823.jpg!d" srcset="https://c.pxhere.com/images/f7/55/256f6e314a8167470672d0304fa5-1446823.jpg!d" alt="call, customer, support, man, silhouette, head, face, headset, consultant, help, business, line, contact, operator, phone, callback, sales, secretary, corporate, sign, internet, service, handsfree, assistant, feedback, sky, illustration, computer wallpaper, font, art, Free Images In PxHere">
+                    </div>
+                    <div class="card-info">
+                      <h2>Chat Suport</h2>
+                      <h3> NodeJs,Typescript e WebSocket</h3>
+                      <p>Chat de suporte para atendimento ao cliente,com troca de mensagens em tempo real </p>
+                      <a href="https://github.com/ManoelPatrocinio/NLW-5-ChatAPI" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
                   </div>
-                  <div class="card-info">
-                    <h2>Grupo de Investimentos</h2>
-                    <h3>Laravel</h3>
-                    <p>Desenvolvido utilizando Laravel, HTML5, CSS3 e MySQL. Simulando um site de gerenciamento de grupos de investimentos.</p>
-                    <a href="https://github.com/ManoelPatrocinio/lara-investimento" target="_blank"><button class="btn">Saiba Mais</button></a>
+                </div>
+
+                <div class="gallery-cell">
+                  <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="./Imagens/cloud-icon.jpg"  alt="upload image">
+                    </div>
+                    <div class="card-info">
+                      <h2>Image Upload</h2>
+                      <h3> React,NodeJS e MongoDB</h3>
+                      <p>Aplicação para upload de imagens e compartilhamento do link dessas imagens </p>
+                      <a href="https://github.com/ManoelPatrocinio/ImgUpload" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
                   </div>
                 </div>
                 
-                <div class="card">
-                  <div class="card-img-wrapper">
-                    <!-- <img src="Imagens/organic2.jpg" alt="imagem do projeto Casa Bela" /> -->
-                    <img src="https://c.pxhere.com/images/f7/55/256f6e314a8167470672d0304fa5-1446823.jpg!d" srcset="https://c.pxhere.com/images/f7/55/256f6e314a8167470672d0304fa5-1446823.jpg!d" alt="call, customer, support, man, silhouette, head, face, headset, consultant, help, business, line, contact, operator, phone, callback, sales, secretary, corporate, sign, internet, service, handsfree, assistant, feedback, sky, illustration, computer wallpaper, font, art, Free Images In PxHere">
-                  </div>
-                  <div class="card-info">
-                    <h2>Chat Suport</h2>
-                    <h3> NodeJs,Typescript e WebSocket</h3>
-                    <p>Chat de suporte para atendimento ao cliente,com troca de mensagens em tempo real </p>
-                    <a href="https://github.com/ManoelPatrocinio/NLW-5-ChatAPI" target="_blank"><button class="btn">Saiba Mais</button></a>
-                  </div>
-                </div>
+              
               </div>
-  
+
+              <!-- end caroulsel -->
+             
         </section>
 
         <section class="sessao-contato" id="contato">
@@ -216,7 +229,7 @@
                 <ul>
                   <li> Olá, estou no 6º semestre do curso tecnólogo de ADS, ofertado pelo IFBA-Campus Irecê.</li>
                   <li> Venho adquirindo interesse e conheçimento em Web Developer & Front End Designer, através tanto das disciplinas 
-                    do curso quanto por projeto extracurriculares. Click nos links abaixo e conheça mais sobre mim</li>
+                    do curso quanto por, eventos e projeto extracurriculares.</li>
                   <li id="li_socialList">
                     <div class="social-list" id="modal-social-list">
                       <ul>
@@ -236,6 +249,7 @@
         </div>
 
         <footer id="lastFooter">
+          <!-- <a href='https://br.freepik.com/vetores/logotipo'>Logotipo vetor criado por rawpixel.com - br.freepik.com</a> -->
           <div class="footer-content">
 
             <div class="social-list">
@@ -258,7 +272,7 @@
         </a> 
 
     </div>
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
   <script src="js/script.js"></script>
   <script src="js/app.js"></script>
