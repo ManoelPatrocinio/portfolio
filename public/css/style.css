@@ -330,6 +330,9 @@ header {
   border-radius: 50%;
   transition: background-color 0.7s;
 }
+.social-media a{
+  width: 2rem;
+}
 
 .social-media i:hover {
   background-color: #a044ff;
@@ -403,7 +406,7 @@ header {
 #conhecimentos_progressBar{
   /* display: none; */
   width: 100vw;
-  height: 80vh;
+  height: auto;
   background: #17181b;
   color: #fff;
 }
@@ -593,7 +596,7 @@ header {
 @media (max-width: 600px){
   #conhecimentos_progressBar{
     display: block;
-    height: auto;
+    height: auto !important;
   }
   .containerProgres{
     width: 90%;
@@ -761,7 +764,7 @@ header {
 }
 
 .card-info button, a {
-  width: 3rem;
+  width: 5rem;
   height: 2.5rem;
 }
 
