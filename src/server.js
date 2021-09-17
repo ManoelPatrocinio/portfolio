@@ -14,7 +14,6 @@ app.get('/', (req,res) =>{
 })
 
 app.post('/', (req,res)=>{
-    console.log(req.body)
     const transport = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
         port: process.env.SMTP_PORT,
@@ -27,15 +26,15 @@ app.post('/', (req,res)=>{
 
     const mailContent ={
         from: req.body.email,
-        to: process.env.EMAIL_USER,
+        to: "johnmoura4744@gmail.com",
         subject: `Contato Inicial | ${req.body.email}`,
         text: req.body.mensagem
     }
-    console.log(mailContent);
+    console.log("dados do  content",mailContent);
     transport.sendMail(mailContent,(error,info)=>{
         if (error) {
             console.log(error);
-            res.send('erro');
+            res.send('Erro no envio do email');
         }else{
             console.log('Email enviado');
             res.send('success')
@@ -43,6 +42,6 @@ app.post('/', (req,res)=>{
     })
 })
 
-app.listen(process.env.PORT || 5000, ()=>{
-    console.log("server running")
-})
+app.listen(process.env.PORT , () => {
+  console.log("server running");
+});

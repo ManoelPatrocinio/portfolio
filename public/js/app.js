@@ -17,7 +17,7 @@ formContato.addEventListener('submit', (e)=>{
     xhr.open('POST', '/');
     xhr.setRequestHeader('content-type', 'application/json');
     xhr.onload = function(){
-        console.log(xhr.responseText);
+        console.log("resposta do app",xhr.responseText);
         if(xhr.responseText == 'success'){
             alert('E-mail Enviado !!');
             document.querySelector(".form-contato").reset();
