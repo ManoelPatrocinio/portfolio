@@ -1,5 +1,3 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
@@ -113,11 +111,10 @@ body {
   opacity: 1;
 }
 
-
 header {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   /*100% da altura exibida no dispositivo */
   overflow: hidden;
   /* evita que os elementos utrapazem o div &(rolagem lateral)*/
@@ -330,7 +327,7 @@ header {
   border-radius: 50%;
   transition: background-color 0.7s;
 }
-.social-media a{
+.social-media a {
   width: 2rem;
 }
 
@@ -381,7 +378,6 @@ header {
 *
 */
 
-
 .sessao-header {
   display: flex;
   align-items: center;
@@ -396,14 +392,12 @@ header {
   margin-bottom: 1.5rem;
 }
 
-
-
 /*
 *
 * Styler do conhecimento com progress bar
 *
 */
-#conhecimentos_progressBar{
+#conhecimentos_progressBar {
   /* display: none; */
   width: 100vw;
   height: auto;
@@ -411,38 +405,36 @@ header {
   color: #fff;
 }
 
-.conhecimento-header-mobile{
+.conhecimento-header-mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
-.conhecimento-body{
+.conhecimento-body {
   display: flex;
   width: 100vw;
   height: 100%;
-
 }
-#conhecimentoMobileImg{
+#conhecimentoMobileImg {
   width: 100px;
   height: auto;
   margin: 0 auto;
 }
 
-#conhecimentos_progressBar p{
+#conhecimentos_progressBar p {
   color: #fff;
-  font-family: 'Baloo Da 2',sans-serif;
+  font-family: "Baloo Da 2", sans-serif;
   font-size: 1.2rem;
 }
-.containerProgres{
+.containerProgres {
   width: 45%;
   height: 100%;
   margin: 3% 0 0 8%;
 }
 
-.containerProgres span{
-  font-family: 'Baloo Da 2',sans-serif;
+.containerProgres span {
+  font-family: "Baloo Da 2", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
@@ -458,7 +450,7 @@ header {
   /* justify-content: flex-end; */
   align-items: center;
 }
-.container_progress_bar small{
+.container_progress_bar small {
   color: #fff;
   z-index: 50;
   position: absolute;
@@ -466,28 +458,28 @@ header {
   top: 12%;
   font-weight: bolder;
 }
-.container_progress_bar .progress-bar{
- position: absolute;
- height: 100%;
- border-radius: 0 24px 24px 0;
- background-color: #a044ff;
- animation: progress-animation 4s forwards;
+.container_progress_bar .progress-bar {
+  position: absolute;
+  height: 100%;
+  border-radius: 0 24px 24px 0;
+  background-color: #a044ff;
+  animation: progress-animation 4s forwards;
 }
 
-#descricaoEstudos{
+#descricaoEstudos {
   width: 55%;
   height: 100%;
   margin: 3% 0 0 0;
 }
 
-.cardsContainer{
+.cardsContainer {
   display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    max-width: 55%;
-    height: 44%;
-    margin: 0 auto;
-    padding: 10px;
-    grid-gap: 34px;
+  grid-template-columns: repeat(2, 2fr);
+  max-width: 55%;
+  height: 44%;
+  margin: 0 auto;
+  padding: 10px;
+  grid-gap: 34px;
 }
 
 .cardIcon:nth-child(1) {
@@ -507,7 +499,7 @@ header {
   animation-delay: 4s;
 }
 
-.cardIcon{
+.cardIcon {
   font-size: 3rem;
   text-align: center;
   display: flex;
@@ -516,7 +508,7 @@ header {
   align-items: center;
 }
 
-.cardIcon small{
+.cardIcon small {
   font-size: 1rem;
   color: #80deea;
 }
@@ -529,82 +521,77 @@ header {
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  animation: typewriter 8s steps(10) 1s infinite,
-  blinkTextCursor 1000ms steps(10) infinite normal;
+  animation: typewriter 5s steps(30, end) infinite,
+    blinkTextCursor 1s step-start infinite;
 }
 @keyframes typewriter {
-  0% {
-        width: 0px;
+  from {
+    width: 0px;
   }
-  10% {
-        width: 0px;
+  50% {
+    width: 50%;
   }
-  25% {
-        width: 160px;
-  }
-  75% {
-        width: 160px;
-  }
-  90% {
-        width: 0px;
-  }
-  100% {
-        width: 0px;
+  to {
+    width: 100%;
   }
 }
 @keyframes blinkTextCursor {
-  from {
-        border-right-color: rgba(255, 255, 255, 0.75);
-  }
+  from,
   to {
-        border-right-color: transparent;
+    border-color: transparent;
+  }
+  50% {
+    border-right-color: transparent;
   }
 }
 
-@keyframes progress-animation{
-  0% { width: 0%; } 
-  100% { width: 100%}
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
-@keyframes pulse{
+@keyframes pulse {
   0% {
     transform: scale(1);
-  } 
-  50%{
+  }
+  50% {
     transform: scale(1.1);
   }
-  100% { 
+  100% {
     transform: scale(1);
   }
 }
 
-@keyframes chatTranslate{
+@keyframes chatTranslate {
   0% {
     transform: translateY(0);
-  } 
-  50%{
+  }
+  50% {
     transform: translateY(5px);
   }
-  100% { 
+  100% {
     transform: translateY(0);
   }
 }
-
 
 /*  layout mobile conhecimento */
 
-@media (max-width: 600px){
-  #conhecimentos_progressBar{
+@media (max-width: 600px) {
+  #conhecimentos_progressBar {
     display: block;
     height: auto !important;
   }
-  .containerProgres{
+  .containerProgres {
     width: 90%;
   }
-  #conhecimentos{
+  #conhecimentos {
     display: none;
   }
-  .conhecimento-body{
+  .conhecimento-body {
     flex-direction: column;
   }
 
@@ -619,14 +606,11 @@ header {
     grid-template-columns: repeat(4, 1fr);
     max-width: 30%;
     height: 44%;
-    margin: 0 ;
+    margin: 0;
     padding: 10px;
     grid-gap: 21px;
   }
 }
-
-
-
 
 /*
 *
@@ -640,7 +624,7 @@ header {
   background-color: #262728;
   /* overflow: hidden; */
 }
-.gallery{
+.gallery {
   height: 70vh;
 }
 
@@ -648,16 +632,16 @@ header {
   width: 23%;
   height: 25rem;
   margin-right: 10px;
-  background: #8C8;
+  background: #8c8;
   counter-increment: gallery-cell;
   border-radius: 0.5rem;
 }
 
 .gallery-cell.is-selected {
-  background: #ED2;
+  background: #ed2;
 }
 
-.flickity-viewport{
+.flickity-viewport {
   height: 66vh !important;
 }
 
@@ -675,14 +659,14 @@ header {
   margin: 0 8px;
   background: #cb3bce;
   border-radius: 50%;
-  opacity: .25;
+  opacity: 0.25;
   cursor: pointer;
 }
 .card {
   position: relative;
   height: 25rem;
   margin-bottom: 1.5%;
-  box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
   background-color: transparent;
 }
 
@@ -691,7 +675,6 @@ header {
   height: 100%;
   background-color: #262626;
   border-radius: 0.5rem;
-  
 }
 
 .card-img-wrapper img {
@@ -763,12 +746,11 @@ header {
   cursor: pointer;
 }
 
-.card-info button, a {
+.card-info button,
+a {
   width: 5rem;
   height: 2.5rem;
 }
-
-
 
 /*
 *
@@ -777,10 +759,7 @@ header {
 */
 
 @media (max-width: 600px) {
-
-
   .card {
-   
     height: 25rem;
     margin-bottom: 1.5rem;
   }
@@ -798,10 +777,10 @@ header {
   .gallery {
     background: #262728;
     width: 100vw;
-      height: auto;
-      margin: 5% 0 10% 0;
+    height: auto;
+    margin: 5% 0 10% 0;
   }
-  
+
   .gallery-cell {
     width: 66%;
     height: 95%;
@@ -810,11 +789,11 @@ header {
     counter-increment: gallery-cell;
     border-radius: 0.5rem;
   }
-  
-  .flickity-viewport{
+
+  .flickity-viewport {
     height: 66vh !important;
   }
-  
+
   .flickity-button {
     position: absolute;
     background: transparent;
@@ -828,7 +807,7 @@ header {
     margin: 0 8px;
     background: #cb3bce;
     border-radius: 50%;
-    opacity: .25;
+    opacity: 0.25;
     cursor: pointer;
   }
 }
@@ -849,7 +828,7 @@ header {
 }
 
 .contato-wrapper {
-  width: 70%;
+  width: 80%;
   height: 100%;
   display: flex;
   margin: 3% auto;
@@ -859,15 +838,53 @@ header {
 .contato-left {
   width: 35%;
   background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-    url(../Imagens/contato.jpg);
+    url(../Imagens/myself.jpg);
   background-size: cover;
 }
 
-.contato-right {
-  width: 65%;
-  background-color: #282828;
+.contato {
+  width: 100%;
   padding: 1rem 2rem 2rem 2rem;
   color: #fff;
+}
+
+.contato-right p {
+  font-size: 1.2rem;
+  font-family: var(--font-primary);
+  text-align: center;
+}
+#card_contato_email {
+  margin: 6% 0% 0% 0%;
+  color: #eee;
+}
+
+#cards_social_midias,
+#cards_social_midias ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cc2b2b;
+}
+#cards_social_midias ul li {
+  background-color: #333;
+  padding: 1% 3%;
+  border-radius: 5px;
+  margin: 1% 2%;
+}
+#cards_social_midias ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 1px rgb(46, 44, 44);
+  border-bottom: 2px solid #6a3093;
+}
+#cards_social_midias i {
+  color: #db14df;
+  font-size: 1.5rem;
+}
+#cards_social_midias a {
+  color: #eee;
+  font-size: 1.2rem;
+  font-family: "Baloo Da 2";
 }
 
 .sessao-contato h1 {
@@ -878,115 +895,6 @@ header {
   font-size: 3rem;
   font-weight: lighter;
 }
-
-.sessao-contato form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.input-group {
-  position: relative;
-}
-
-.field {
-  background: transparent;
-  border: none;
-  width: 20rem;
-  font-size: 1.3rem;
-  font-family: var(--font-secundary);
-  color: #fff;
-  border-bottom: 2px solid #eee;
-  height: 3rem;
-  outline: none;
-  margin: 1rem 0 2rem 0;
-}
-
-.input-group textarea {
-  padding-top: 1rem;
-  max-width: 25rem;
-  max-height: 3rem;
-}
-
-.field-label {
-  color: #fff;
-  position: absolute;
-  left: 0;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  font-family: var(--font-secundary);
-  text-transform: uppercase;
-  transition: all 0.3s;
-}
-
-/* quando o field receber foco, o label depois dele*/
-
-.field:focus ~ label {
-  top: 0;
-  font-size: 0.7rem;
-}
-
-.field:focus {
-  border-bottom: 1px solid grey;
-}
-
-.btn-submit {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  width: 50%;
-  height: 2rem;
-  margin-top: 0.3rem;
-}
-
-.campoInvalid {
-  color: #cc2b2b;
-  border-bottom: 1px solid #cc2b2b;
-}
-.campoValid {
-  color: #2bcc5b;
-  border-bottom: 1px solid#0cec4b;
-}
-/*
-*
-* Styler da sessão contato-mobile
-*
-*/
-
-@media (max-width: 600px) {
-  .sessao-contato {
-    width: 100%;
-    height: 100%;
-  }
-
-  .contato-wrapper {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-
-  .contato-left {
-    display: none;
-  }
-
-  .contato-right {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    border-radius: 5px;
-    padding: 0 0 1rem 0;
-  }
-  .field {
-    background-color: #282828;
-    outline: none;
-  }
-  .sessao-contato form {
-
-      padding: 0 10%;
-  }
-
-}
-
 
 /*
 *
@@ -1000,8 +908,68 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
+.contato {
+  width: 100%;
+  padding: 1rem 2rem 2rem 2rem;
+  color: #fff;
+}
+.contato h1 {
+  width: 100%;
+  text-align: center;
+  margin: 1% 0 5% 0;
+  color: #cc2b5e;
+}
+.contato p {
+  font-size: 1.5rem !important;
+  font-family: var(--font-primary);
+  text-align: center;
+}
+#card_contato_email {
+  margin: 6% 0% 0% 0%;
+  color: #eee;
+  font-size: 1.2rem;
+}
+
+#cards_social_midias,
+#cards_social_midias ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cc2b2b;
+}
+#cards_social_midias ul li {
+  background-color: #333;
+  padding: 1% 3%;
+  border-radius: 5px;
+  margin: 1% 2%;
+}
+#cards_social_midias ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 1px rgb(46, 44, 44);
+  border-bottom: 2px solid #6a3093;
+}
+#cards_social_midias i {
+  color: #db14df;
+  font-size: 1.5rem;
+}
+#cards_social_midias a {
+  color: #eee;
+  font-size: 1.2rem;
+  font-family: "Baloo Da 2";
+}
+
+.sessao-contato h1 {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-primary);
+  color: #db14df;
+  font-size: 3rem;
+  font-weight: lighter;
+}
 .footer-content {
   width: 100%;
   display: block;
@@ -1015,7 +983,6 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 2%;
-
 }
 
 .social-list {
@@ -1062,6 +1029,28 @@ header {
 */
 
 @media (max-width: 600px) {
+  #cards_social_midias ul {
+    flex-direction: column;
+  }
+  #card_contato_email {
+    margin: 6% 0% 0% 0%;
+    color: #eee;
+    font-size: 1.2rem !important;
+    width: 100%;
+  }
+  #cards_social_midias ul li {
+    background-color: #333;
+    padding: 1% 3%;
+    border-radius: 5px;
+    margin: 2% 2%;
+    width: 83%;
+    text-align: center;
+  }
+  #cards_social_midias a {
+    color: #eee;
+    font-size: 1.5rem;
+    font-family: "Baloo Da 2";
+  }
   .footer-content {
     width: 100%;
     display: block;
@@ -1085,36 +1074,6 @@ header {
   }
 }
 
-.modal-content {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2000;
-}
-.modal-about {
-  position: relative;
-  display: block;
-  justify-content: space-between;
-  background-color: #252626;
-  width: 70%;
-  height: auto;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-.aboutMe {
-  position: relative;
-  width: 100%;
-  height: 90%;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
 .header {
   width: 100%;
   text-align: center;
@@ -1127,124 +1086,122 @@ header {
   font-size: 2rem;
 }
 
-.aboutMe ul {
-  position: relative;
-  width: 70%;
-  height: 100%;
+/*
+*
+* Styler da sessão Sobre mim
+*
+*/
+
+#Section_aboutMe {
+  width: 100vw;
+  height: 90%;
+  background-color: #282828;
 }
-.aboutMe li {
-  color: #eee;
-  font-size: 1.5rem;
-  padding: 1rem;
-  line-height: 2rem;
+#Section_aboutMe .sessao-header {
+  width: 100%;
+  height: 20%;
 }
 
-#li_socialList {
-  padding-top: 5rem;
+#aboutMe_Content {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  padding: 0 3%;
 }
 
 #MySelf {
-  position: relative;
   width: 30%;
-  margin: 1rem 0.5rem;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  padding: 2%;
 }
 
 #MySelf img {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   object-fit: cover;
-  /*faz que o elemento preencher toda a div */
   border-radius: 1rem;
-  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
 }
 
-#modal-social-list {
-  justify-content: left;
+#text_aboutMe {
+  width: 60%;
+  height: 100%;
+  text-align: justify;
+  padding: 2%;
 }
 
-.closeModal {
-  position: absolute;
-  top: -0.5rem;
-  right: -0.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  border: 1px solid #eee;
-  background-color: #753a88;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  font-weight: bolder;
-  cursor: pointer;
+#text_aboutMe p {
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #eee;
 }
 
-.modal-content.mostrar {
-  display: flex;
-}
-.mostrar .modal-about {
-  animation: modal 0.5s;
-}
-@keyframes modal {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -7rem, 0);
+@media (max-width: 600px) {
+  #Section_aboutMe {
+    width: 100vw;
+    height: auto;
+    background-color: #282828;
   }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
 
-@media (max-width: 960px) {
-  .modal-about {
-    width: 80%;
-    height: 90%;
-    box-sizing: content-box;
-  }
-  .aboutMe {
-    position: relative;
+  #aboutMe_Content {
+    display: flex;
     width: 100%;
-    height: 83vh;
-    display: block;
-  }
-
-  .aboutMe ul {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  .modal-about .header {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    padding: 0.5rem;
-  }
-
-  .header h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  .aboutMe li {
-    color: #eee;
-    font-size: 1rem;
-    padding: 1rem;
-    line-height: 1.1rem;
-    text-align: justify;
+    height: 80%;
+    padding: 0 3%;
+    flex-direction: column;
   }
 
   #MySelf {
     width: 100%;
-    height: 44%;
-    margin: 0 auto;
+    height: 42vh;
+    padding: 2%;
   }
 
-  #modal-social-list li {
-    font-size: 0.6rem;
-    padding: 0;
+  #MySelf img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    opacity: 0.9;
   }
-  #li_socialList{
-    padding: 0;
+
+  #text_aboutMe {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    padding: 2%;
+  }
+
+  #text_aboutMe p {
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #eee;
   }
 }
+@media (min-width: 600px) and  (max-width: 700px){
+  
+  #aboutMe_Content {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    padding: 0 3%;
+    flex-direction: column;
+  }
+
+  #MySelf {
+    width: 50%;
+    height: 62vh;
+    padding: 2%;
+    margin: 0 auto;
+  }
+    #text_aboutMe {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    padding: 2%;
+  }
+
+  
+}  

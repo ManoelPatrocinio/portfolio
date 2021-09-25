@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/Imagens/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Imagens/favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
     
     
     <title>Manoel Patrocinio</title>
@@ -34,7 +34,7 @@
             <div class="banner">
                 <h1>Web Developer & Front End Designer</h1>
                 <p>Manoel Patrocinio</p>
-                <button id="ButtonAboutMe">Saiba mais</button>
+        
             </div>
 
         </header>
@@ -45,7 +45,7 @@
                     <li class="menu-item"><a href="#" class="menu-link">Home        </a></li>
                     <li class="menu-item"><a href="#conhecimentos_progressBar" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"><a href="#projetos" class="menu-link">Projetos    </a></li>
-                    <li class="menu-item"><a href="#contato" class="menu-link">Contato     </a></li>
+                    <li class="menu-item"><a href="#lastFooter" class="menu-link">Contato     </a></li>
                 </ul>
             </nav>
 
@@ -57,9 +57,27 @@
     
             </div>  
         </aside> 
+       
+        <section  id="Section_aboutMe">
+          <div class="sessao-header">
+                 <h1>Sobre Mim</h1>
+          </div>
+          <div id="aboutMe_Content">
+              
+            <div id="MySelf"><img src="./assets/Imagens/myself.jpg" alt=""> </div>
+              
+            <div id="text_aboutMe">
+              <p>Olá, eu sou o Manoel, tenho 22 anos e moro na cidade de Barra-Ba. Atualmente estou cursando do 6º semestre do curso de Análise e Desenvolvimento de sistemas, ofertado pelo IFBA-Campus Irecê. </p>
+              <p>Estudo sobre Desenvolvimento web desde 2017, e desde então, sempre participo de  eventos, cursos online e bootcamps, pois sei que é um caminho de aprendizado contínuo, e isso sem dúvidas é algo que me motiva muito. </p>
+            
+            </div>         
+                  
+           </div>
+              
+        </section>
         <section id="conhecimentos_progressBar">
           <div class="conhecimento-header-mobile">
-            <img id="conhecimentoMobileImg" src="./Imagens/Coding_SVG.svg"></img>
+            <img id="conhecimentoMobileImg" src="./assets/Imagens/Coding_SVG.svg"></img>
             <p>Always learning</p>
           </div>
 
@@ -93,7 +111,7 @@
 
               <div id="descricaoEstudos">
 
-                <div class="conhecimento-header-mobile" > <p id="inProgress">In Progress  </p> </div>
+                <div class="conhecimento-header-mobile" > <p id="inProgress">In Progress </p> </div>
 
                 <div class="cardsContainer">
                     <div class="cardIcon">
@@ -107,11 +125,11 @@
                     </div>  
 
                     <div class="cardIcon">
-                      <img src="./Imagens/nodejsIcon.png" style="width: 78px; " alt="node js"/>
+                      <img src="./assets/Imagens/nodejsIcon.png" style="width: 78px; " alt="node js"/>
                     </div>
 
                     <div class="cardIcon">
-                      <img src="./Imagens/mongodb.svg" style="width: 70px;" alt="MongoDB">
+                      <img src="./assets/Imagens/mongodb.svg" style="width: 70px;" alt="MongoDB">
                     </div>
                 </div>    
 
@@ -130,7 +148,7 @@
                 <div class="gallery-cell">
                   <div class="card"> 
                     <div class="card-img-wrapper">
-                      <img src="Imagens/petfood.jpg" alt="petfood, pet, rações,petshop" />
+                      <img src="./assets/Imagens/petfood.jpg" alt="petfood, pet, rações,petshop" />
                     </div>
                     <div class="card-info">
                       <h2>Petfood</h2>
@@ -143,7 +161,7 @@
                 <div class="gallery-cell">
                   <div class="card">
                     <div class="card-img-wrapper">
-                      <img src="Imagens/grupoInvestiment.jpg" alt="imagem do projeto ToDo" />
+                      <img src="./assets/Imagens/grupoInvestiment.jpg" alt="imagem do projeto ToDo" />
                     </div>
                     <div class="card-info">
                       <h2>Grupo de Investimentos</h2>
@@ -172,13 +190,26 @@
                 <div class="gallery-cell">
                   <div class="card">
                     <div class="card-img-wrapper">
-                      <img src="./Imagens/cloud-icon.jpg"  alt="upload image">
+                      <img src="./assets/Imagens/cloud-icon.jpg"  alt="upload image">
                     </div>
                     <div class="card-info">
                       <h2>Image Upload</h2>
                       <h3> React,NodeJS e MongoDB</h3>
                       <p>Aplicação para upload de imagens e compartilhamento do link dessas imagens </p>
                       <a href="https://github.com/ManoelPatrocinio/ImgUpload" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-cell">
+                  <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="https://images.unsplash.com/photo-1586880244406-556ebe35f282?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"  alt="Digial pra que ?">
+                    </div>
+                    <div class="card-info">
+                      <h2>landing Page</h2>
+                      <h3> Html 5, Css 3 e Js</h3>
+                      <p>Pagina explicativa sobre transformação digital e porquê adotala</p>
+                      <a href="https://manoelpatrocinio.github.io/landing_page_Digital_pra_que/" target="_blank"><button class="btn">Saiba Mais</button></a>
                     </div>
                   </div>
                 </div>
@@ -190,79 +221,49 @@
              
         </section>
 
-        <section class="sessao-contato" id="contato">
+        <!-- <section class="sessao-contato" id="contato">
           <div class="contato-wrapper">
             <div class="contato-left"></div>
             <div class="contato-right">
               <h1>Contato</h1>
-              <form  method="POST" class="form-contato">
-                <div class="input-group">
-                  <input type="text" class="field" id="nome" name="nome" size="60" maxlength="60"  required>
-                  <label for="nome" class="field-label">Nome</label>
-                </div>
-                <div class="input-group">
-                  <input type="email" class="field" id="email" name="email" maxlength="45" size="45" required>
-                  <label for="email" class="field-label">E-mail</label>
-                </div>
-                <div class="input-group">
-                  <textarea class="field" id="mensagem" name="mensagem" required></textarea>
-                  <label for="mensagem" class="field-label">Mensagem</label>
-                </div>
-                <button type="submit" id="button" class="btn btn-submit">Enviar</button>
-              </form>
-            </div>
-          </div>
-        </section>
- 
-        <div id="modal" class="modal-content">
-
-          <div class="modal-about">
-
-            <button id="closeModal" class="closeModal">X</button>
-            <div class="header">
-              <h3>Manoel De Jesus Moura Do Patrocinio</h3>
-            </div>
-            
-            <div class="aboutMe">
-              
-              <div id="MySelf"><img src="Imagens/myself.jpg" alt=""> </div>
+              <p> Se quiser falar sobre uma ideia ou papear, não se acanhe, pode entrar em contato comigo </p>
+              <p id="card_contato_email"> <span><i class="fas fa-envelope"> </i> manoelpatrocinio99@gmail.com</span></p>
+              <div id="cards_social_midias"> 
                 <ul>
-                  <li> Olá, estou no 6º semestre do curso tecnólogo de ADS, ofertado pelo IFBA-Campus Irecê.</li>
-                  <li> Venho adquirindo interesse e conheçimento em Web Developer & Front End Designer, através tanto das disciplinas 
-                    do curso quanto por, eventos e projeto extracurriculares.</li>
-                  <li id="li_socialList">
-                    <div class="social-list" id="modal-social-list">
-                      <ul>
-                        <li><a target="_blank" href="https://www.instagram.com/patrocinioiii/"><i class="fab fa-instagram"></i></i></a></li>
-                        <li><a target="_blank" href="https://github.com/ManoelPatrocinio"><i class="fab fa-github-alt"></i></a>
-                        <li><a target="_blank" href="https://linkedin.com/in/manoel-patrocinio-1b342b203"><i class="fab fa-linkedin-in"></i></a></li>
-                      </ul>
-                    </div>
-                  </li>  
-                </ul>
-              
-
+                  
+                  <li><a target="_blank" href="https://www.instagram.com/patrocinioiii/"><i class="fab fa-instagram"></i></i> Intagram </a></li>
+                  <li><a target="_blank" href="https://github.com/ManoelPatrocinio"><i class="fab fa-github-alt"></i> Github</a>
+                  <li><a target="_blank" href="https://www.linkedin.com/in/manoel-patrocinio/"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+              </ul>
+              </div>
             </div>
-              
           </div>
-
-        </div>
+        </section> -->
+ 
+       
 
         <footer id="lastFooter">
+          
           <!-- <a href='https://br.freepik.com/vetores/logotipo'>Logotipo vetor criado por rawpixel.com - br.freepik.com</a> -->
+         
           <div class="footer-content">
-
-            <div class="social-list">
-              <ul>
-                
-                <li><a target="_blank" href="https://www.instagram.com/patrocinioiii/"><i class="fab fa-instagram"></i></i></a></li>
-                <li><a target="_blank" href="https://github.com/ManoelPatrocinio"><i class="fab fa-github-alt"></i></a>
-                <li><a target="_blank" href="https://linkedin.com/in/manoel-patrocinio-1b342b203"><i class="fab fa-linkedin-in"></i></a></li>
+            <div class="contato">
+              <br>
+              <p> Se quiser falar sobre uma ideia ou papear, não se acanhe, pode entrar em contato comigo </p>
+              <p id="card_contato_email"> <span><i class="fas fa-envelope"> </i> manoelpatrocinio99@gmail.com</span></p>
+              <div id="cards_social_midias"> 
+                <ul>
+                  
+                  <li><a target="_blank" href="https://www.instagram.com/patrocinioiii/"><i class="fab fa-instagram"></i></i> Intagram </a></li>
+                  <li><a target="_blank" href="https://www.linkedin.com/in/manoel-patrocinio/"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                  <li><a target="_blank" href="https://github.com/ManoelPatrocinio"><i class="fab fa-github-alt"></i> Github</a>
               </ul>
+              </div>
             </div>
+       
 
             <p>
-              Copyright&copy; 2021, Manoel Patrocinio - Todos os direitos reservados
+              Copyright&copy; 2021, Manoel Patrocinio
             </p>
             
           </div>
@@ -274,7 +275,6 @@
 
     </div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="js/app.js"></script>
-      <script src="js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
