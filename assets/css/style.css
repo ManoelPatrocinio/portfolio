@@ -110,14 +110,20 @@ body {
 .show-menu .hamburguer:hover span {
   opacity: 1;
 }
-
-header {
+#home {
   position: relative;
+  /* overflow: hidden; */
+  /* evita que os elementos utrapazem o div &(rolagem lateral)*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../Imagens/headerbackground.jpg");
+  background-attachment: fixed;
+  background-position: 100% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 90vh;
-  /*100% da altura exibida no dispositivo */
-  overflow: hidden;
-  /* evita que os elementos utrapazem o div &(rolagem lateral)*/
+  max-height: 90vh;
+  min-height: 90vh;
 }
 
 .img-wrapper {
@@ -374,7 +380,7 @@ header {
 
 /*
 *
-* Styler da sessão conhecimentos
+* Styler section title 
 *
 */
 
@@ -416,224 +422,209 @@ header {
 * Styler do conhecimento com progress bar
 *
 */
-#conhecimentos_progressBar {
-  /* display: none; */
+
+/* ************************************************************************* */
+#conhecimentos_section {
   width: 100vw;
   height: auto;
   background: #17181b;
   color: #fff;
   padding: 2% 0;
+  border-bottom: 1px solid rgb(46 44 44);
 }
 
-.conhecimento-header-mobile {
+.conhecimento-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.conhecimento-body {
-  display: flex;
-  width: 100vw;
-  height: 100%;
-}
+
 #conhecimentoMobileImg {
   width: 100px;
   height: auto;
   margin: 0 auto;
 }
 
-#conhecimentos_progressBar p {
-  color: #fff;
-  font-family: "Baloo Da 2", sans-serif;
-  font-size: 1.2rem;
-}
-.containerProgres {
-  width: 45%;
-  height: 100%;
-  margin: 3% 0 0 8%;
-}
-
-.containerProgres span {
-  font-family: "Baloo Da 2", sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.container_progress_bar {
-  height: 25px;
-  background-color: transparent;
-  position: relative;
-  margin-bottom: 1rem;
-  border-radius: 0 24px 24px 0;
-  display: flex;
-  /* justify-content: flex-end; */
-  align-items: center;
-}
-.container_progress_bar small {
-  color: #fff;
-  z-index: 50;
-  position: absolute;
-  right: 1%;
-  top: 12%;
-  font-weight: bolder;
-}
-.progress-bar {
-  position: absolute;
-  height: 100%;
-  border-radius: 0 24px 24px 0;
-  background-color: #a044ff;
-  animation: progress-animation 4s forwards;
-}
-
-.js .progress {
-  background-color: #80deea;
-  animation: progress-animation 4s forwards;
-}
-
-#descricaoEstudos {
-  width: 55%;
-  height: 100%;
-  margin: 3% 0 0 0;
-}
-
-.cardsContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  max-width: 55%;
-  height: 44%;
-  margin: 0 auto;
-  padding: 10px;
-  grid-gap: 34px;
-}
-
-.cardIcon:nth-child(1) {
-  animation: chatTranslate 1.3s ease-in-out infinite;
-  animation-delay: 1;
-}
-.cardIcon:nth-child(2) {
-  animation: chatTranslate 1.3s ease-in-out infinite;
-  animation-delay: 2s;
-}
-.cardIcon:nth-child(3) {
-  animation: chatTranslate 1.3s ease-in-out infinite;
-  animation-delay: 3s;
-}
-.cardIcon:nth-child(4) {
-  animation: chatTranslate 1.3s ease-in-out infinite;
-  animation-delay: 4s;
-}
-
-.cardIcon {
-  font-size: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.cardIcon small {
-  font-size: 1rem;
-  color: #80deea;
-}
-#inProgress {
+.TextinProgress {
   position: relative;
   width: 0px;
   margin: auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
+  font-size: 1.4rem;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  animation: typewriter 5s steps(30, end) infinite,
-    blinkTextCursor 1s step-start infinite;
-}
-@keyframes typewriter {
-  from {
-    width: 0px;
-  }
-  50% {
-    width: 50%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blinkTextCursor {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-right-color: transparent;
-  }
+  animation: typewriter 9s steps(30, end) infinite,
+    blinkTextCursor 5s step-start infinite;
 }
 
-@keyframes progress-animation {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
+.conhecimentos {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  /* 16 colunas e 2 frame*/
+  grid-template-rows: repeat(6, 6rem);
+  /* 6 linha e 4rem de altura*/
+  row-gap: 1.5rem;
+  object-fit: cover;
+  padding: 4% 0 0 0;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+.conhecimento-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes chatTranslate {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.conhecimento-header i {
+  font-size: 2.2rem;
+  color: #cc2b5e;
 }
 
+.conhecimento-header h3 {
+  font-family: roboto, sans-serif;
+  font-size: 2rem;
+  padding-left: 1rem;
+  font-weight: 400;
+  color: #cc2b5e;
+}
+.conhecimento-text {
+  font-family: robota, sans-serif;
+  margin-top: 1rem;
+  color: #f5f5f5;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.conhecimento:nth-child(1) {
+  grid-column: 4 / 7;
+  /*começa na coluna 4 ate 7 */
+  grid-row: 1 / 3;
+}
+
+.conhecimento:nth-child(2) {
+  grid-column: 3 / 6;
+  /*começa na coluna 4 ate 7 */
+  grid-row: 3 / 5;
+}
+
+.conhecimento:nth-child(3) {
+  grid-column: 4 / 7;
+  /*começa na coluna 4 ate 7 */
+  grid-row: 5 / -1;
+}
+
+.conhecimento:nth-child(4) {
+  grid-column: 11 / 14;
+  /*começa na coluna 4 ate 7 */
+  grid-row: 1 / 3;
+}
+
+.conhecimento:nth-child(5) {
+  grid-column: 12 / 15;
+  /*começa na coluna 4 ate 7 */
+  grid-row: 3 / 5;
+}
+
+.conhecimento:nth-child(6) {
+  grid-column: 11 / 14;
+  /*começa na coluna 4 ate 7 */
+  grid-row: 5 / -1;
+}
+
+.conhecimentos-img-wrapper {
+  grid-column: 7 / 11;
+  grid-row: 2 / 6;
+  width: 100%;
+  padding: 33% 0;
+}
 /*  layout mobile conhecimento */
 
-@media (max-width: 600px) {
-  #conhecimentos_progressBar {
-    display: block;
-    height: auto !important;
-  }
-  .containerProgres {
-    width: 90%;
-  }
-  #conhecimentos {
-    display: none;
-  }
-  .conhecimento-body {
+@media (max-width: 480px) {
+  .conhecimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    padding: 10% 0 0 0;
   }
 
-  #descricaoEstudos {
-    width: 100%;
-    height: 100%;
-    margin: 5% 0;
+  .conhecimento {
+    width: 70%;
+    margin: 0 0 2% 0;
   }
 
-  .cardsContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 30%;
-    height: 44%;
-    margin: 0;
-    padding: 10px;
-    grid-gap: 21px;
+  .conhecimento-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conhecimento-header i {
+    font-size: 2.2rem;
+    color: #cc2b5e;
+  }
+
+  .conhecimento-header h3 {
+    font-family: roboto, sans-serif;
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: 400;
+    color: #cc2b5e;
+  }
+  .conhecimento-text {
+    font-family: robota, sans-serif;
+    margin-top: 1rem;
+    color: #f5f5f5;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .conhecimentos-img-wrapper {
+    display: none !important;
+  }
+}
+
+@media (min-width: 480px) AND (max-width: 778px) {
+  .conhecimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 0 0 0;
+  }
+
+  .conhecimento {
+    width: 70%;
+    margin: 0 0 2% 0;
+  }
+
+  .conhecimento-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conhecimento-header i {
+    font-size: 2.2rem;
+    color: #cc2b5e;
+  }
+
+  .conhecimento-header h3 {
+    font-family: roboto, sans-serif;
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: 400;
+    color: #cc2b5e;
+  }
+  .conhecimento-text {
+    font-family: robota, sans-serif;
+    margin-top: 1rem;
+    color: #f5f5f5;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .conhecimentos-img-wrapper {
+    display: none !important;
   }
 }
 
@@ -646,7 +637,7 @@ header {
 .sessao-projetos {
   width: 100vw;
   height: 100vh;
-  background-color: #262728;
+  background-color: #17181b;
   /* overflow: hidden; */
 }
 .gallery {
@@ -897,10 +888,12 @@ a {
   border-radius: 5px;
   margin: 1% 2%;
 }
-#cards_social_midias ul li:hover {
+#cards_social_midias ul li:hover,
+.skillCard:hover {
   transform: translateY(-5px);
   box-shadow: 1px 1px 1px rgb(46, 44, 44);
   border-bottom: 2px solid #6a3093;
+  cursor: pointer;
 }
 #cards_social_midias i {
   color: #db14df;
@@ -1166,49 +1159,6 @@ a {
   color: #eee;
 }
 
-#cardAnimation {
-  width: 100%;
-  height: 17rem;
-  position: relative;
-}
-#background {
-  width: 100%;
-  height: 100%;
-}
-#manWalking {
-  position: absolute;
-  width: 170px;
-  height: 74%;
-  animation: position 99s linear infinite;
-}
-
-@keyframes position {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  5% {
-    top: 0;
-    left: calc(60% - 116px);
-  }
-  10% {
-    top: 0;
-    left: calc(60% - 116px);
-  }
-  15% {
-    top: 0;
-    left: calc(60% - 116px);
-  }
-  20% {
-    top: 0;
-    left: calc(60% - 116px);
-  }
-  100% {
-    top: 0;
-    left: calc(60% - 116px);
-  }
-}
-
 @media (max-width: 600px) {
   #Section_aboutMe {
     width: 100vw;
@@ -1271,5 +1221,87 @@ a {
     height: 100%;
     text-align: justify;
     padding: 2%;
+  }
+}
+/* *********************************************************** */
+
+@keyframes typewriter {
+  from {
+    width: 0px;
+  }
+  50% {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkTextCursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes chatTranslate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes position {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  5% {
+    top: 0;
+    left: calc(60% - 116px);
+  }
+  10% {
+    top: 0;
+    left: calc(60% - 116px);
+  }
+  15% {
+    top: 0;
+    left: calc(60% - 116px);
+  }
+  20% {
+    top: 0;
+    left: calc(60% - 116px);
+  }
+  100% {
+    top: 0;
+    left: calc(60% - 116px);
   }
 }

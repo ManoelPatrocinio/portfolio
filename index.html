@@ -15,9 +15,8 @@
   <meta property="og:description" content="Desenvolvedor Web,com foco em font-end " />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/Imagens/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Imagens/favicon-16x16.png" />
-    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico" />
+      <link rel="manifest" href="./site.webmanifest" />
     
 
     
@@ -37,10 +36,6 @@
         </div>
 
         <header id="home">
-            <div class="img-wrapper">
-                <img src="./assets/Imagens/headerbackground.jpg" alt="Developer">
-            </div>
-
             <div class="banner">
                 <h1>Web Developer & Front End Designer</h1>
                 <p>Manoel Patrocinio</p>
@@ -70,85 +65,94 @@
        
         <section  id="Section_aboutMe">
 
-          <header class="sessao-header">
-                 <h1>Sobre Mim</h1>
-          </header>
           <main id="aboutMe_Content">
+            <header class="sessao-header">
+                   <h1>Sobre Mim</h1>
+            </header>
               
             <div id="MySelf"><img src="./assets/Imagens/mySelf.jpg" alt=""> </div>
               
             <div id="text_aboutMe">
               <p>Olá, eu sou o Manoel, tenho 22 anos e moro na cidade de Barra-Ba. Atualmente estou cursando do 6º semestre do curso de Análise e Desenvolvimento de sistemas, ofertado pelo IFBA-Campus Irecê. </p>
               <p>Estudo sobre Desenvolvimento web desde 2017, e desde então, sempre participo de  eventos, cursos online e bootcamps, pois sei que é um caminho de aprendizado contínuo, e isso sem dúvidas é algo que me motiva muito. </p>
-              <!-- <div id="cardAnimation">
-                <img id="background"src="./assets/Imagens/streetbackground.png" alt="">
-                <img id="manWalking" src="./assets/Imagens/manWalking.gif" alt="">
-              </div> -->
+             
             </div>         
           </main>
             
           
               
         </section>
-        <section id="conhecimentos_progressBar">
-          <div class="conhecimento-header-mobile">
+        <section id="conhecimentos_section">
+          <div class="conhecimento-header">
             <img id="conhecimentoMobileImg" src="./assets/Imagens/Coding_SVG.svg"></img>
-            <p>Always learning</p>
+            <p class="TextinProgress">Always learning</p>
           </div>
+       
+          <div class="conhecimentos">
+        
 
-          <div class="conhecimento-body">
-
-              <div class="containerProgres">
-                
-                <span>Html 5</span>
-                <div class="container_progress_bar" style="width: 90%;" id="html">
-                  <div class="progress-bar"><small>90%</small></div>
-                  
+            <div class="conhecimento">
+                <div class="conhecimento-header">
+                    </i><i class="fab fa-react"></i>
+                    <h3>React JS</h3>
                 </div>
-                
-                <span>Css 3</span>
-                <div class="container_progress_bar" style="width: 80%;" id="css">
-                  <div class="progress-bar" ><small>80%</small></div>
-                  
+                <div class="conhecimento-text">
+                    <p> React é uma biblioteca JavaScript de código aberto, com foco na criação de interfaces de usuário em páginas web. </p>
+
                 </div>
-                
-                <span>Bootstrap</span>
-                <div class="container_progress_bar" style="width: 80%;" id="bootstrap">
-                  <div class="progress-bar"><small>80%</small></div>
+
+            </div>
+            <div class="conhecimento">
+                <div class="conhecimento-header">
+                    <i class="fab fa-react"></i>
+                    <h3>Rect Native</h3>
                 </div>
-                
-                <span>Javascript</span>
-                <div class="container_progress_bar" style="width: 70%;" id="bootstrap">
-                  <div class="progress-bar"><small>70%</small></div>
+                <div class="conhecimento-text">
+                    <p>React Native é uma biblioteca Javascript, usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa. </p>
                 </div>
-                
-              </div>
+            </div>
+              <div class="conhecimento">
 
-              <div id="descricaoEstudos">
+                <div class="conhecimento-header">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5 CSS3</h3>
+                </div>
+                <div class="conhecimento-text">
+                    <p>Dos conceito básicos até estratégia de SEO e  UX e UI desing. </p>
+                </div>
 
-                <div class="conhecimento-header-mobile" > <p id="inProgress">In Progress </p> </div>
-
-                <div class="cardsContainer">
-                    <div class="cardIcon">
-                      <img src="https://img.icons8.com/color/60/000000/react-native.png" alt="react"/>
-                      <small>React</small>
-                    </div>
-
-                    <div class="cardIcon">
-                      <img src="https://img.icons8.com/color/60/000000/react-native.png" alt="react native"/>
-                      <small>Native</small>
-                    </div>  
-
-                    <div class="cardIcon">
-                      <img src="./assets/Imagens/nodejsIcon.png" style="width: 78px; " alt="node js"/>
-                    </div>
-
-                    <div class="cardIcon">
-                      <img src="./assets/Imagens/mongodb.svg" style="width: 70px;" alt="MongoDB">
-                    </div>
-                </div>    
-
-              </div>
+            </div>
+            <div class="conhecimento">
+                <div class="conhecimento-header">
+                    <i class="fab fa-bootstrap"></i>
+                    <h3>BootStrap</h3>
+                </div>
+                <div class="conhecimento-text">
+                    <p>Para a otimização e padronização na construção do projeto, customizando os melhores
+                        componentes. </p>
+                </div>
+            </div>
+            <div class="conhecimento">
+                <div class="conhecimento-header">
+                    <i class="fab fa-js"></i>
+                    <h3>Javascript</h3>
+                </div>
+                <div class="conhecimento-text">
+                    <p>Criação de páginas dinâmicas com animações atraentes para uma melhor experiência do usuário</p>
+                </div>
+            </div>
+            <div class="conhecimento">
+                <div class="conhecimento-header">
+                    <i class="fab fa-github"></i>
+                    <h3>Git e GitHub</h3>
+                </div>
+                <div class="conhecimento-text">
+                    <p>Para o controle de versão e facilitação do trabalho em equipe.</p>
+                </div>
+            </div>
+            <div class="conhecimentos-img-wrapper">
+                <img src="./assets/Imagens/fox.png" alt="imagem conhecimento">
+            </div>
           </div>
         </section>
 
