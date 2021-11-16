@@ -115,11 +115,13 @@ body {
   /* overflow: hidden; */
   /* evita que os elementos utrapazem o div &(rolagem lateral)*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../Imagens/headerbackground.jpg");
+    url("../Imagens/headerbackground2.jpg");
   background-attachment: fixed;
   background-position: 100% 0%;
   background-size: cover;
   background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
   width: 100vw;
   height: 90vh;
   max-height: 90vh;
