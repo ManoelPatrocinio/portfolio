@@ -1,7 +1,7 @@
 document
   .querySelector(".hamburguer")
   .addEventListener("click", () =>
-    document.querySelector(".containerP").classList.toggle("show-menu")
+    document.querySelector(".Main-container").classList.toggle("show-menu")
   );
 
 // // Adiciona a classe .js ao elemento HTML. Assim eu garanto que os elementos só serão escondidos caso o JavaScript esteja habilitado
