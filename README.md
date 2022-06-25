@@ -5,7 +5,7 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/ManoelPatrocinio/portifolio/blob/main/LICENSE) 
 
 # Portfólio
-  Portfólio para desenvolvedor,construido aplimorar os conhecimentos em HTML5, CSS3 e Js.
+  Portfólio para desenvolvedor,construido teste e aplimorar meus conhecimentos em HTML5, CSS3 e Js.
 
 [Confira meu Portfólio](https://manoelpatrocinio.github.io/portifolio/)
 
