@@ -41,6 +41,24 @@ body {
   width: 100vw;
 }
 
+
+*::-webkit-scrollbar {
+  width: .2rem;
+  height: .5rem;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3) ;
+  border-radius: 1rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px var(--Color-purple); 
+  box-shadow:inset 0 0 6px var(--Color-purple) ;
+}
+
 button {
   cursor: pointer;
 }
@@ -129,9 +147,35 @@ button {
   height: 38.375rem;
   max-height: 38.375rem;
   min-height: 38.375rem;
+
+  /* background-image: linear-gradient(
+    to bottom  ,
+    #1d2671 0%,
+    #450585 40%,
+    #42166e 60%,
+    #17181b 100%
+  ); */
+  /* background: linear-gradient(to bottom, #1d2671, #000000); */
+
+ background-image: linear-gradient(
+    to bottom right ,
+    #17181b 0%, 
+    #17181b 40%,
+    #48007f 60%,
+    #bf33c7 100%
+  );
+  background-size: 200% 200%;
+  animation: movingGradient 7s linear infinite alternate;
 }
+@keyframes movingGradient{
+  from {background-position:  0 0;}
+
+  20% {background-position:  20% 20%;}
+  50% {background-position:  50% 50%;}
+  70% {background-position:  70% 70%;}
+  100% {background-position:  100% 100%;}}
 .header-nav-menu {
-  position: absolute;
+  position: fixed;
   top:0;
   left: 0;
   width: 100%;
@@ -140,13 +184,21 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6rem;
+  padding: 0 3rem;
   z-index: 50;
+
+  /* position:fixed;
+  background-color: #efe6e612; */
 }
 
 #logo_img {
-  width: 8.813rem;
+  width: 4.813rem;
   height: 4.625rem;
+}
+#logo_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #nav-menu {
@@ -1062,16 +1114,16 @@ a {
 
 .link-top {
   position: fixed;
+  font-size: 2rem;
   right: 3rem;
   bottom: 3rem;
   width: 3rem;
   height: 3rem;
-  background: var(--Color-light-pink);
+  /* background: var(--Color-light-pink); */
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #753a88, var(--Color-light-pink));
+  /* background: -webkit-linear-gradient(to right, #753a88, var(--Color-light-pink)); */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #753a88, var(--Color-light-pink));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(to right, #753a88, var(--Color-light-pink)); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1149,6 +1201,7 @@ a {
 * Styler da sessão Sobre mim
 *
 */
+
 
 #Section_aboutMe {
   width: 100vw;
