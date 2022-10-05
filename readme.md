@@ -12,6 +12,7 @@
 
 
 ## Tecnologias usadas
+  * React js
   * HTML5 
   * CSS3
   * JS

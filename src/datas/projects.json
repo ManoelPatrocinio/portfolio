@@ -1,0 +1,74 @@
+[
+  {
+    "type": "site",
+    "name": "Petfood",
+    "skills": "React | NodeJS | MongoDB",
+    "description": "Marketplace para petshops com integração a API do Pagar.me para efetivação da compra.",
+    "link": "https://petshop-fontend.herokuapp.com/",
+    "image": "./src/assets/images/petfood.jpg"
+  },
+  {
+    "type": "site",
+    "name": "vent Platform",
+    "skills": "React | Typescript | GraphQL",
+    "description": "Plataforma do evento da rocketseat, desenvolvido durante o Ignite lab.",
+    "link": "https://event-platform-five-sooty.vercel.app",
+    "image": "./src/assets/images/igniteLab.png"
+  },
+  {
+    "type": "site",
+    "name": "Image Upload",
+    "skills": "React| NodeJS | MongoDB | AWS",
+    "description": "Aplicação para upload de imagens e compartilhamento do link dessas imagens. ",
+    "link": "https://github.com/ManoelPatrocinio/ImgUpload",
+    "image":  "./src/assets/images/photoShare.jpg"
+  },
+  {
+    "type": "site",
+    "name": "Expense Tracker",
+    "skills": "ReactJs | Styled Components | Typescript",
+    "description": "Gerenciador de despesas e receitas mensais.",
+    "link": "https://github.com/ManoelPatrocinio/expense_tracker",
+    "image": "./src/assets/images/sistema_financeiro.png"
+  },
+  {
+    "type": "API",
+    "name": "Chat Suport",
+    "skills": "NodeJs | Typescript | WebSocket",
+    "description": "Chat de suporte para atendimento ao cliente,com troca de mensagens em tempo real. ",
+    "link": "https://github.com/ManoelPatrocinio/NLW-5-ChatAPI",
+    "image": "https://c.pxhere.com/images/70/2f/7c674877048fcd4dff1aee4860fd-1584463.jpg!d"
+  },
+  {
+    "type": "site",
+    "name": "Ecatalogo",
+    "skills": "ReactJs | Styled Components | MongoDB",
+    "description": "Catálogo digital, com integração ao link do whatsapp, para venderodes/revendedores.",
+    "link": "https://ecatalogo.vercel.app/",
+    "image": "./src/assets/images/ecatalog.jpg"
+  },
+  {
+    "type": "site",
+    "name": "Photo Album",
+    "skills": "React | Typescript | Firebase",
+    "description": "Galeria de fotos online, com upload de imagens do firebase ",
+    "link": "https://github.com/ManoelPatrocinio/Photo_Album",
+    "image": "./src/assets/images/photoAlbum.png"
+  },
+  {
+    "type": "API",
+    "name": "User Authentication",
+    "skills": "Typescript | JWT | REST | PostgreSQL",
+    "description": "Microsserviço de autenticação de usuário.",
+    "link": "https://github.com/ManoelPatrocinio/ms-user-authentication",
+    "image": "./src/assets/images/userAuthentication.jpg"
+  },
+  {
+    "type": "API",
+    "name": " Pesquisa NPS",
+    "skills": "TypeScript | Express | Sqlite",
+    "description": "API para envio de e-mails de pesquisa de satisfação, com cálculo do NPS. ",
+    "link": "https://github.com/ManoelPatrocinio/NLW-4--API",
+    "image": "./src/assets/images/customerNPS.jpg"
+  }
+]
