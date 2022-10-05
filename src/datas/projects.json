@@ -5,7 +5,7 @@
     "skills": "React | NodeJS | MongoDB",
     "description": "Marketplace para petshops com integração a API do Pagar.me para efetivação da compra.",
     "link": "https://petshop-fontend.herokuapp.com/",
-    "image": "./src/assets/images/petfood.jpg"
+    "image": "https://i.ibb.co/L0DN1bT/petfood.jpg"
   },
   {
     "type": "site",
@@ -13,7 +13,7 @@
     "skills": "React | Typescript | GraphQL",
     "description": "Plataforma do evento da rocketseat, desenvolvido durante o Ignite lab.",
     "link": "https://event-platform-five-sooty.vercel.app",
-    "image": "./src/assets/images/igniteLab.png"
+    "image": "https://i.ibb.co/8s9GHkz/ignite-Lab.png"
   },
   {
     "type": "site",
@@ -21,7 +21,7 @@
     "skills": "React| NodeJS | MongoDB | AWS",
     "description": "Aplicação para upload de imagens e compartilhamento do link dessas imagens. ",
     "link": "https://github.com/ManoelPatrocinio/ImgUpload",
-    "image":  "./src/assets/images/photoShare.jpg"
+    "image":  "https://i.ibb.co/gSBVYxD/photo-Share.jpg"
   },
   {
     "type": "site",
@@ -29,7 +29,7 @@
     "skills": "ReactJs | Styled Components | Typescript",
     "description": "Gerenciador de despesas e receitas mensais.",
     "link": "https://github.com/ManoelPatrocinio/expense_tracker",
-    "image": "./src/assets/images/sistema_financeiro.png"
+    "image": "https://i.ibb.co/dLQwGDB/sistema-financeiro.jpg"
   },
   {
     "type": "API",
@@ -45,7 +45,7 @@
     "skills": "ReactJs | Styled Components | MongoDB",
     "description": "Catálogo digital, com integração ao link do whatsapp, para venderodes/revendedores.",
     "link": "https://ecatalogo.vercel.app/",
-    "image": "./src/assets/images/ecatalog.jpg"
+    "image": "https://i.ibb.co/q1zFKLr/ecatalog.jpg"
   },
   {
     "type": "site",
@@ -53,7 +53,7 @@
     "skills": "React | Typescript | Firebase",
     "description": "Galeria de fotos online, com upload de imagens do firebase ",
     "link": "https://github.com/ManoelPatrocinio/Photo_Album",
-    "image": "./src/assets/images/photoAlbum.png"
+    "image": "https://i.ibb.co/gyZBQ93/photo-Album.png"
   },
   {
     "type": "API",
@@ -61,7 +61,7 @@
     "skills": "Typescript | JWT | REST | PostgreSQL",
     "description": "Microsserviço de autenticação de usuário.",
     "link": "https://github.com/ManoelPatrocinio/ms-user-authentication",
-    "image": "./src/assets/images/userAuthentication.jpg"
+    "image": "https://i.ibb.co/pdcdP04/user-Authentication.jpg"
   },
   {
     "type": "API",
@@ -69,6 +69,6 @@
     "skills": "TypeScript | Express | Sqlite",
     "description": "API para envio de e-mails de pesquisa de satisfação, com cálculo do NPS. ",
     "link": "https://github.com/ManoelPatrocinio/NLW-4--API",
-    "image": "./src/assets/images/customerNPS.jpg"
+    "image": "https://i.ibb.co/phjyPfW/customer-NPS.jpg"
   }
 ]
