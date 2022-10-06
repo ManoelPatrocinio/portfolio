@@ -314,7 +314,7 @@ export function Home() {
                 <input type="email" name="email" id="yourEmail" required />
               </div>
               <div className="input_group">
-                <label htmlFor="yourMessage">Seu E-mail</label>
+                <label htmlFor="yourMessage">Sua Mensagem</label>
 
                 <textarea
                   id="yourMessage"
