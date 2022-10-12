@@ -991,6 +991,7 @@
   border: none;
   color: #ffffff;
   padding: .5rem 0;
+  cursor: pointer;
 }
 
 .lastFooter{
