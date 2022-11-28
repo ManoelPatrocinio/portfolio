@@ -5,7 +5,7 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/ManoelPatrocinio/portifolio/blob/main/LICENSE) 
 
 # Portfólio
-  Portfólio para desenvolvedor,construido para testar e aplimorar meus conhecimentos em HTML5, CSS3 e Js.
+  Portfólio para desenvolvedor, construido inicialmente para testar e aplimorar meus conhecimentos em HTML5, CSS3 e Js. Agora estou usando React JS com TypeScript.
 
 [Confira meu Portfólio](https://manoel-patrocinio-portifolio.vercel.app/)
 
@@ -13,6 +13,7 @@
 
 ## Tecnologias usadas
   * React js
+  * TypeScript
   * HTML5 
   * CSS3
   * JS
