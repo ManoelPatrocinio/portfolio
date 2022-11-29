@@ -1,18 +1,18 @@
-import "./style.css";
-import Myself from "./assets/images/mySelf.jpg";
 import SkillsHeaderImg from "./assets/images/Coding_SVG.svg";
 import FoxImg from "./assets/images/fox.png";
 import IconStyledComponets from "./assets/images/icons_styledcomponents.png";
 import IconTypeScript from "./assets/images/icons_typescript.png";
+import Myself from "./assets/images/mySelf.jpg";
+import "./style.css";
 
-import { NavBar } from "./components/NavBar";
-import { Card_Project } from "./components/Card_Project";
 import { useState } from "react";
+import { Card_Project } from "./components/Card_Project";
+import { NavBar } from "./components/NavBar";
 import ProjectsListJson from "./datas/projects.json";
 
 export function Home() {
   const [projectType, setProjectType] = useState(ProjectsListJson);
-  const [showMenu, setShowMenu] = useState<boolean>(false)
+  const [showMenu, setShowMenu] = useState<boolean>(false);
 
   function filterByType(type: string) {
     if (type === "Todos") {
@@ -24,9 +24,14 @@ export function Home() {
   }
 
   return (
-    <main className={ showMenu ? "show-menu" : ""}>
+    <main className={showMenu ? "show-menu" : ""}>
       <header id="main_header">
-        <div className="hamburguer" onClick={()=>{setShowMenu(!showMenu)}}>
+        <div
+          className="hamburguer"
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+        >
           <div className="line" id="line1"></div>
           <div className="line" id="line2"></div>
           <div className="line" id="line3"></div>
@@ -245,7 +250,7 @@ export function Home() {
             </li>
             <li
               className="C_projects__header_types"
-              onClick={() => filterByType("Layouts")}
+              onClick={() => filterByType("Layout")}
             >
               Layouts
             </li>

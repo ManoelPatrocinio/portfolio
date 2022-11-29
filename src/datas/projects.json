@@ -70,5 +70,29 @@
     "description": "API para envio de e-mails de pesquisa de satisfação, com cálculo do NPS. ",
     "link": "https://github.com/ManoelPatrocinio/NLW-4--API",
     "image": "https://i.ibb.co/phjyPfW/customer-NPS.jpg"
+  },
+  {
+    "type": "Layout",
+    "name": " Ecatalogo",
+    "skills": "",
+    "description": "Catálogo digital, com integração ao link do whatsapp, para venderodes/revendedores.",
+    "link": "https://www.figma.com/file/k3a79RNr0AYBGEVI24Yn1Y/Catalogo-Digital?node-id=0%3A1&t=YwBL8qoG8sXYV8jf-1",
+    "image": "https://i.ibb.co/hRL5yxB/ecatalogo.png"
+  },
+  {
+    "type": "Layout",
+    "name": " Portfolio",
+    "skills": "",
+    "description": "Portfolio para desenvolvedor full stack.",
+    "link": "https://www.figma.com/file/sDHdHG1JN0LwM8zVwGCZ1v/Portf%C3%B3lio?t=YwBL8qoG8sXYV8jf-1",
+    "image": "https://i.ibb.co/tMtcLCy/portfolio.png"
+  },
+  {
+    "type": "Layout",
+    "name": " Design System",
+    "skills": "",
+    "description": "Design System, para componentizanção no figma.",
+    "link": "https://www.figma.com/file/786swZaqVKdHKt1iI8JBXI/Ignite-Lab--Design-System?t=YwBL8qoG8sXYV8jf-1",
+    "image": "https://i.ibb.co/YbDxnp2/Ignite-Lab-Design-System.png"
   }
 ]
