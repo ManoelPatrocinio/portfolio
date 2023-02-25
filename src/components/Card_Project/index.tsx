@@ -1,7 +1,8 @@
 import "./index.css";
 
 export function Card_Project(project: any) {
-  const { name, image, skills, description, link } = project.project;
+  const { name, image, skills, description, link, link_github } =
+    project.project;
   return (
     <div className="card">
       <div className="card-img-wrapper">
@@ -14,6 +15,11 @@ export function Card_Project(project: any) {
         <a href={link} target="_blank">
           <button className="btn">Acessar</button>
         </a>
+        {link_github && (
+          <a href={link_github} target="_blank" className="link-github">
+            Github
+          </a>
+        )}
       </div>
     </div>
   );

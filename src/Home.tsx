@@ -49,7 +49,7 @@ export function Home() {
 
           <a
             className="banner__btn_download-cv"
-            href="../../assets/docs/Curriculo_Manoel_Patrocinio.pdf"
+            href="../../assets/docs/Manoel_patrocinio_CV.pdf"
             download="ManoelPatrocinioCV"
           >
             Download CV
