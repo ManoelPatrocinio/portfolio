@@ -4,9 +4,9 @@
     "name": "Petfood",
     "skills": "React | NodeJS | MongoDB",
     "description": "Marketplace para petshops com integração a API do Pagar.me para efetivação da compra.",
-    "link": "https://petshop-fontend.herokuapp.com/",
+    "link": "https://thepetfood.vercel.app/",
     "image": "https://i.ibb.co/L0DN1bT/petfood.jpg",
-    "link_github":""
+    "link_github":"https://github.com/ManoelPatrocinio/Petfood_fontend"
   },
   {
     "type": "site",
