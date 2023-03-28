@@ -35,6 +35,15 @@
     "image": "https://i.ibb.co/dLQwGDB/sistema-financeiro.jpg",
     "link_github":"https://github.com/ManoelPatrocinio/expense_tracker"
   },
+    {
+    "type": "site",
+    "name": "Easy bank",
+    "skills": "Html 5 | Css 3 | javaScript",
+    "description": "Reponsive Landing Page from Front-end Mentor.",
+    "link": "https://manoelpatrocinio.github.io/the_easy_bank/",
+    "image": "https://i.ibb.co/JqXSFvW/Captura-de-tela-2023-03-28-164224.png",
+    "link_github":"https://github.com/ManoelPatrocinio/the_easy_bank"
+  },
   {
     "type": "API",
     "name": "Chat Suport",
