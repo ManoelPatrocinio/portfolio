@@ -7,7 +7,7 @@
 # Portfólio
   Portfólio para desenvolvedor, construido inicialmente para testar e aplimorar meus conhecimentos em HTML5, CSS3 e Js. Agora estou usando React JS com TypeScript.
 
-[Confira meu Portfólio](https://manoel-patrocinio-portifolio.vercel.app/)
+[Confira meu Portfólio](https://manoelpatrocinio.vercel.app/)
 
 
 
@@ -18,6 +18,10 @@
   * CSS3
   * JS
 
+
+## Layout Desktop
+
+## Layout Mobile
 
 
 ## Ícones

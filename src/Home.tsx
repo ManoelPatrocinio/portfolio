@@ -9,6 +9,9 @@ import { useState } from "react";
 import { Card_Project } from "./components/Card_Project";
 import { NavBar } from "./components/NavBar";
 import ProjectsListJson from "./datas/projects.json";
+import img_web_developer from "./assets/images/banner-web-developer.png"
+import img_web_design from "./assets/images/banner-web-design.png"
+import img_web_upgrade from "./assets/images/banner-dev-upgrade.jpg"
 
 export function Home() {
   const [projectType, setProjectType] = useState(ProjectsListJson);
@@ -115,14 +118,14 @@ export function Home() {
 
           <div id="text_aboutMe">
             <p>
-              Olá, eu sou o Manoel, tenho 22 anos e moro na cidade de Barra-Ba.
-              Atualmente estou cursando do 7º semestre do curso de Análise e
-              Desenvolvimento de sistemas, ofertado pelo IFBA-Campus Irecê.
+              Olá, eu sou o Manoel, tenho 23 anos e moro na cidade de Barra-Ba.
+              Estou concluindo a graduação como tecnólogo em Análise e Desenvolvimento de Sistemas, no Instituto Federal de Educação, Ciência e Tecnologia da
+               Bahia (IFBA) Campus Irecê. 
             </p>
             <p>
-              Mas, estudo sobre Desenvolvimento web desde 2017, e desde então,
-              estou em um caminho de aprendizado contínuo, rumo ao objetivo
-              profissional de ser um desenvolvedor full stack de excelência.
+              Estudo sobre Desenvolvimento web desde 2017, e hoje, já atuo principalmente como Desenvolvedor Front-End, com foco em React, Javascript/Typescript. Porém, em decorrência de projetos passados, 
+              também tenho capacidade para atuar como desenvolvedor Back-End. 
+              Tenho com ambição e meta para o futuro próximo, a excelência na carreira como desenvolvedor.
             </p>
           </div>
         </main>
@@ -272,6 +275,46 @@ export function Home() {
           </p>
         </footer>
       </section>
+
+      <section className="C_Services">
+        <header className="section-header">
+          <h1>Serviços</h1>
+          <p>Veja algumas das formas como eu posso te ajudar, ao final, se ainda não estiver convencido(a) ou se  tiver dúvidas , entre em contato e me fale do que precisa,  tenho certeza  que posso pensar em algo pra ti  😉</p>
+        </header>
+        <div className="job_content" id="dev_web">
+          <div 
+          className="job_wrapper">
+
+          <img src={img_web_developer} alt="imagens sites desenvolvidos" id="img_web_developer" />
+          </div>
+          <div 
+          className="job_wrapper">
+
+            <h3>Desenvolvimento de sites e aplicações  web</h3>
+            <p>Posso  construir aquele site que você sempre imaginou para os seus serviços ou o seu negócio, além de,  aproximar e facilitar a sua relação com os seus clientes. </p>
+            <p>Atuarei desde o planejamento até a publicação do seu site,  além de prestar todo  o suporte e manutenção se necessário.</p>
+          </div>
+        </div>
+        <div className="job_content" id="web_desiger">
+          
+          <div 
+          className="job_wrapper">
+            <h3>Definição do  Design  </h3>
+            <p>Caso você só tenha uma ideia ou rascunho,  mas ainda não tem uma visão clara do visual do seu site.  </p>
+            <p> Construirei um protótipo de alta fidelidade e navegável, sempre  pensando na experiência e mensagem que você deseja passar para o usuário do seu site.</p>
+          </div>
+          <div 
+          className="job_wrapper">
+           <img src={img_web_design} alt="imagens Design e template sites " id="img_web_desiger" />
+          </div>
+        </div>
+        <div className="job_content" id="web_upgrade">
+
+        <img src={img_web_upgrade} alt="imagens manutenção atualização de sites " id="img_web_upgrade" />
+        <h3>Manutenção e atualização </h3>
+        <p>Também posso atuar realizando correções de funcionalidade ou  layout  de sites e aplicações já existentes, desde que,  tenha sido construído usando as tecnologias mostradas acima, caso tenha urgência na entrega. </p>
+        </div>
+      </section>s
 
       <section className="C_contact" id="contact">
         <header className="section-header">
