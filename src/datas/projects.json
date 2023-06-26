@@ -1,12 +1,39 @@
 [
   {
     "type": "site",
+    "name": "Agro Familiar",
+    "skills": "React JS/TS | Nodejs | PostegreSql",
+    "description": "Portal de divulgação p/ produtos da agriucultura familiar",
+    "link": "https://agrofamiliar.vercel.app/",
+    "image": "https://i.ibb.co/wgpBc4r/Home-mobile.jpg",
+    "link_github":""
+  },
+  {
+    "type": "site",
+    "name": "Proeja Vivo",
+    "skills": "React | Typescript | Nodejs",
+    "description": "Portal de divulgação p/ o conhecimento produzido sobre o PROEJA no IFBA-Irecê. ",
+    "link": "https://proejavivo.com.br/",
+    "image": "https://i.ibb.co/S6D7g8H/image-7.jpg",
+    "link_github":""
+  },
+  {
+    "type": "site",
     "name": "Petfood",
     "skills": "React | NodeJS | MongoDB",
     "description": "Marketplace para petshops com integração a API do Pagar.me para efetivação da compra.",
     "link": "https://thepetfood.vercel.app/",
-    "image": "https://i.ibb.co/L0DN1bT/petfood.jpg",
+    "image": "https://i.ibb.co/18kJTkD/petfood.jpg",
     "link_github":"https://github.com/ManoelPatrocinio/Petfood_fontend"
+  },
+  {
+    "type": "site",
+    "name": "Easy bank",
+    "skills": "Html 5 | Css 3 | javaScript",
+    "description": "Reponsive Landing Page from Front-end Mentor.",
+    "link": "https://manoelpatrocinio.github.io/the_easy_bank/",
+    "image": "https://i.ibb.co/prc2HBD/Captura-de-tela-2023-03-28-164224.png",
+    "link_github":"https://github.com/ManoelPatrocinio/the_easy_bank"
   },
   {
     "type": "site",
@@ -14,17 +41,8 @@
     "skills": "React | Typescript | GraphQL",
     "description": "Plataforma do evento da rocketseat, desenvolvido durante o Ignite lab.",
     "link": "https://event-platform-five-sooty.vercel.app",
-    "image": "https://i.ibb.co/8s9GHkz/ignite-Lab.png",
+    "image": "https://i.ibb.co/F7bRz7j/ignite-Lab.png",
     "link_github":"https://github.com/ManoelPatrocinio/event_Platform"
-  },
-  {
-    "type": "site",
-    "name": "Image Upload",
-    "skills": "React| NodeJS | MongoDB | AWS",
-    "description": "Aplicação para upload de imagens e compartilhamento do link dessas imagens. ",
-    "link": "https://github.com/ManoelPatrocinio/ImgUpload",
-    "image":  "https://i.ibb.co/gSBVYxD/photo-Share.jpg",
-    "link_github":""
   },
   {
     "type": "site",
@@ -32,26 +50,28 @@
     "skills": "ReactJs | Styled Components | Typescript",
     "description": "Gerenciador de despesas e receitas mensais.",
     "link": "https://expense-tracker-manoelpatrocinio.vercel.app/",
-    "image": "https://i.ibb.co/dLQwGDB/sistema-financeiro.jpg",
+    "image": "https://i.ibb.co/kch7WKJ/sistema-financeiro.jpg",
     "link_github":"https://github.com/ManoelPatrocinio/expense_tracker"
   },
-    {
+  {
     "type": "site",
-    "name": "Easy bank",
-    "skills": "Html 5 | Css 3 | javaScript",
-    "description": "Reponsive Landing Page from Front-end Mentor.",
-    "link": "https://manoelpatrocinio.github.io/the_easy_bank/",
-    "image": "https://i.ibb.co/JqXSFvW/Captura-de-tela-2023-03-28-164224.png",
-    "link_github":"https://github.com/ManoelPatrocinio/the_easy_bank"
+    "name": "Image Upload",
+    "skills": "React| NodeJS | MongoDB | AWS",
+    "description": "Aplicação para upload de imagens e compartilhamento do link dessas imagens. ",
+    "link": "https://github.com/ManoelPatrocinio/ImgUpload",
+    "image":  "https://i.ibb.co/Pxsxnd2/photo-Share.jpg",
+    "link_github":""
   },
+
+   
   {
     "type": "API",
     "name": "Chat Suport",
     "skills": "NodeJs | Typescript | WebSocket",
     "description": "Chat de suporte para atendimento ao cliente,com troca de mensagens em tempo real. ",
     "link": "https://github.com/ManoelPatrocinio/NLW-5-ChatAPI",
-    "image": "https://c.pxhere.com/images/70/2f/7c674877048fcd4dff1aee4860fd-1584463.jpg!d",
-    "link_github":""
+    "image": "https://i.ibb.co/9WKgh3X/vsdfk158.jpg",
+    "link_github":"https://github.com/ManoelPatrocinio/NLW-5-ChatAPI"
   },
   {
     "type": "site",
@@ -59,26 +79,18 @@
     "skills": "ReactJs | Styled Components | MongoDB",
     "description": "Catálogo digital, com integração ao link do whatsapp, para venderodes/revendedores.",
     "link": "https://ecatalogo.vercel.app/",
-    "image": "https://i.ibb.co/q1zFKLr/ecatalog.jpg",
+    "image": "https://i.ibb.co/fqJ5YPM/ecatalog.jpg",
     "link_github":"https://github.com/ManoelPatrocinio/ecatalogo"
   },
-  {
-    "type": "site",
-    "name": "Photo Album",
-    "skills": "React | Typescript | Firebase",
-    "description": "Galeria de fotos online, com upload de imagens do firebase ",
-    "link": "https://github.com/ManoelPatrocinio/Photo_Album",
-    "image": "https://i.ibb.co/gyZBQ93/photo-Album.png",
-    "link_github":""
-  },
+
   {
     "type": "API",
     "name": "User Authentication",
     "skills": "Typescript | JWT | REST | PostgreSQL",
     "description": "Microsserviço de autenticação de usuário.",
     "link": "https://github.com/ManoelPatrocinio/ms-user-authentication",
-    "image": "https://i.ibb.co/pdcdP04/user-Authentication.jpg",
-    "link_github":""
+    "image": "https://i.ibb.co/ZS8MfL8/user-Authentication.jpg",
+    "link_github":"https://github.com/ManoelPatrocinio/ms-user-authentication"
   },
   {
     "type": "API",
@@ -86,8 +98,8 @@
     "skills": "TypeScript | Express | Sqlite",
     "description": "API para envio de e-mails de pesquisa de satisfação, com cálculo do NPS. ",
     "link": "https://github.com/ManoelPatrocinio/NLW-4--API",
-    "image": "https://i.ibb.co/phjyPfW/customer-NPS.jpg",
-    "link_github":""
+    "image": "https://i.ibb.co/VmtscWp/customer-NPS.jpg",
+    "link_github":"https://github.com/ManoelPatrocinio/NLW-4--API"
   },
   {
     "type": "Layout",
@@ -95,7 +107,7 @@
     "skills": "",
     "description": "Catálogo digital, com integração ao link do whatsapp, para venderodes/revendedores.",
     "link": "https://www.figma.com/file/k3a79RNr0AYBGEVI24Yn1Y/Catalogo-Digital?node-id=0%3A1&t=YwBL8qoG8sXYV8jf-1",
-    "image": "https://i.ibb.co/hRL5yxB/ecatalogo.png",
+    "image": "https://i.ibb.co/cQjV9Vf/ecatalogo.png",
     "link_github":""
   },
   {
@@ -104,16 +116,8 @@
     "skills": "",
     "description": "Portfolio para desenvolvedor full stack.",
     "link": "https://www.figma.com/file/sDHdHG1JN0LwM8zVwGCZ1v/Portf%C3%B3lio?t=YwBL8qoG8sXYV8jf-1",
-    "image": "https://i.ibb.co/tMtcLCy/portfolio.png",
-    "link_github":""
-  },
-  {
-    "type": "Layout",
-    "name": " Design System",
-    "skills": "",
-    "description": "Design System, para componentizanção no figma.",
-    "link": "https://www.figma.com/file/786swZaqVKdHKt1iI8JBXI/Ignite-Lab--Design-System?t=YwBL8qoG8sXYV8jf-1",
-    "image": "https://i.ibb.co/YbDxnp2/Ignite-Lab-Design-System.png",
+    "image": "https://i.ibb.co/4F6wScv/portfolio.png",
     "link_github":""
   }
+ 
 ]
