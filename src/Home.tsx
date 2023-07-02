@@ -5,13 +5,14 @@ import IconTypeScript from "./assets/images/icons_typescript.png";
 import Myself from "./assets/images/mySelf.jpg";
 import "./style.css";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Card_Project } from "./components/Card_Project";
 import { NavBar } from "./components/NavBar";
 import ProjectsListJson from "./datas/projects.json";
 import img_web_developer from "./assets/images/banner-web-developer.png"
 import img_web_design from "./assets/images/banner-web-design.png"
 import img_web_upgrade from "./assets/images/banner-dev-upgrade.jpg"
+import { startAnimateOnScroll } from "./global/animate";
 
 export function Home() {
   const [projectType, setProjectType] = useState(ProjectsListJson);
@@ -25,6 +26,9 @@ export function Home() {
       filtedList && setProjectType(filtedList);
     }
   }
+  useEffect(() => {
+    startAnimateOnScroll();
+  }, []);
 
   return (
     <main className={showMenu ? "show-menu" : ""}>
@@ -138,7 +142,7 @@ export function Home() {
         </div>
 
         <div className="skills">
-          <div className="skill">
+          <div className="skill" data-animate="up">
             <div className="skill-header">
               <i className="fab fa-react"></i>
               <h3>React JS</h3>
@@ -151,7 +155,7 @@ export function Home() {
               </p>
             </div>
           </div>
-          <div className="skill">
+          <div className="skill" data-animate="up">
             <div className="skill-header">
               <i className="fab fa-bootstrap"></i>
               <h3>BootStrap</h3>
@@ -164,7 +168,7 @@ export function Home() {
             </div>
           </div>
 
-          <div className="skill">
+          <div className="skill" data-animate="up">
             <div className="skill-header">
               <img
                 src={IconStyledComponets}
@@ -180,7 +184,7 @@ export function Home() {
               </p>
             </div>
           </div>
-          <div className="skill">
+          <div className="skill" data-animate="up">
             <div className="skill-header">
               <img
                 src={IconTypeScript}
@@ -197,7 +201,7 @@ export function Home() {
             </div>
           </div>
 
-          <div className="skill">
+          <div className="skill" data-animate="up">
             <div className="skill-header">
               <i className="fab fa-node-js"></i>
               <h3>Node JS</h3>
@@ -210,7 +214,7 @@ export function Home() {
               </p>
             </div>
           </div>
-          <div className="skill">
+          <div className="skill" data-animate="up">
             <div className="skill-header">
               <i className="fas fa-database"></i>
               <h3>MongoDB e Postgre</h3>
@@ -282,13 +286,11 @@ export function Home() {
           <p>Veja algumas das formas como eu posso te ajudar, ao final, se ainda não estiver convencido(a) ou se  tiver dúvidas , entre em contato e me fale do que precisa,  tenho certeza  que posso pensar em algo pra ti  😉</p>
         </header>
         <div className="job_content" id="dev_web">
-          <div 
-          className="job_wrapper">
-
-          <img src={img_web_developer} alt="imagens sites desenvolvidos" id="img_web_developer" />
+          <div className="job_wrapper" data-animate="left">
+            <img src={img_web_developer} alt="imagens sites desenvolvidos" id="img_web_developer" />
           </div>
           <div 
-          className="job_wrapper">
+          className="job_wrapper" data-animate="right">
 
             <h3>Desenvolvimento de sites e aplicações  web</h3>
             <p>Posso  construir aquele site que você sempre imaginou para os seus serviços ou o seu negócio, além de,  aproximar e facilitar a sua relação com os seus clientes. </p>
@@ -298,23 +300,25 @@ export function Home() {
         <div className="job_content" id="web_desiger">
           
           <div 
-          className="job_wrapper">
+          className="job_wrapper" data-animate="left">
             <h3>Definição do  Design  </h3>
             <p>Caso você só tenha uma ideia ou rascunho,  mas ainda não tem uma visão clara do visual do seu site.  </p>
             <p> Construirei um protótipo de alta fidelidade e navegável, sempre  pensando na experiência e mensagem que você deseja passar para o usuário do seu site.</p>
           </div>
           <div 
-          className="job_wrapper">
+          className="job_wrapper" data-animate="right">
            <img src={img_web_design} alt="imagens Design e template sites " id="img_web_desiger" />
           </div>
         </div>
         <div className="job_content" id="web_upgrade">
 
-        <img src={img_web_upgrade} alt="imagens manutenção atualização de sites " id="img_web_upgrade" />
-        <h3>Manutenção e atualização </h3>
-        <p>Também posso atuar realizando correções de funcionalidade ou  layout  de sites e aplicações já existentes, desde que,  tenha sido construído usando as tecnologias mostradas acima, caso tenha urgência na entrega. </p>
+          <img src={img_web_upgrade} alt="imagens manutenção atualização de sites " id="img_web_upgrade" data-animate="up" />
+          <div data-animate="up">
+          <h3>Manutenção e atualização </h3>
+          <p>Também posso atuar realizando correções de funcionalidade ou  layout  de sites e aplicações já existentes, desde que,  tenha sido construído usando as tecnologias mostradas acima, caso tenha urgência na entrega. </p>
+          </div>
         </div>
-      </section>s
+      </section>
 
       <section className="C_contact" id="contact">
         <header className="section-header">

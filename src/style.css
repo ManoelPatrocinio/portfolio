@@ -974,7 +974,7 @@
   text-align: center;
 }
 
-@media (max-width: 558px){
+@media (max-width: 768px){
   .job_content h3{
     font-size: 1.5rem;
     text-align: center !important;
@@ -1064,10 +1064,14 @@
   margin: 8rem 0 0 0;
 }
 .C_menu_social_links li,.C_menu_social_links a{
- font-size: 2rem;
+  font-size: 2rem;
   color: var(--Color-light-pink);
+  transition: all 0.3s ease-in-out;
 }
+.C_menu_social_links a:hover{
+  color: var(--Color-violet);
 
+}
 .C_contact_right__form{
   width: 100%;
   height: 100%;
@@ -1102,8 +1106,14 @@
   border-radius: 5px;
   border: none;
   color: #ffffff;
-  padding: .5rem 0;
+  padding: .7rem 0;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+.C_contact_right__form button:hover{
+  background-color: var(--Color-violet);
+
 }
 
 .lastFooter{
