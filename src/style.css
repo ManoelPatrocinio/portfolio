@@ -916,7 +916,8 @@
 *
 */
 .C_Services{
-  padding: 0 5%;
+  padding-right:  5%;
+  padding-left:  5%;
 }
 
 .job_content{
@@ -1143,6 +1144,14 @@
 }
 /* *********************************************************** */
 
+.C_aboutMe,
+.C_skills,
+.C_projects,
+.C_Services,
+.C_contact{
+  padding-top: 3% !important;
+  padding-bottom: 5% !important;
+}
 @keyframes typewriter {
   from {
     width: 0px;

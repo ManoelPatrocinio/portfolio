@@ -105,3 +105,13 @@ body {
   opacity: 1 !important;
   transform: translate3d(0, 0, 0) !important;
 }
+
+
+/* header effect on scroll page #48007f96 */
+.onSroll{
+  height: 4.5rem;
+  background: rgb(23 24 27 / 85%);
+  /* box-shadow: 0 2px 12px 0 #42166e; */
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+}

@@ -30,6 +30,8 @@ export function Home() {
     startAnimateOnScroll();
   }, []);
 
+
+
   return (
     <main className={showMenu ? "show-menu" : ""}>
       <header id="main_header">
@@ -280,10 +282,10 @@ export function Home() {
         </footer>
       </section>
 
-      <section className="C_Services">
+      <section className="C_Services" id="services">
         <header className="section-header">
           <h1>Serviços</h1>
-          <p>Veja algumas das formas como eu posso te ajudar, ao final, se ainda não estiver convencido(a) ou se  tiver dúvidas , entre em contato e me fale do que precisa,  tenho certeza  que posso pensar em algo pra ti  😉</p>
+          <p>Veja algumas maneiras de como eu posso te ajudar, ao final, se ainda não estiver convencido(a) ou se  tiver dúvidas, entre em contato e me fale do que precisa,  tenho certeza  que posso pensar em algo pra ti  😉</p>
         </header>
         <div className="job_content" id="dev_web">
           <div className="job_wrapper" data-animate="left">
@@ -293,7 +295,7 @@ export function Home() {
           className="job_wrapper" data-animate="right">
 
             <h3>Desenvolvimento de sites e aplicações  web</h3>
-            <p>Posso  construir aquele site que você sempre imaginou para os seus serviços ou o seu negócio, além de,  aproximar e facilitar a sua relação com os seus clientes. </p>
+            <p>Posso  construir aquele site que você sempre imaginou para seu o negócio ou seus serviços, sendo possível aproximar e facilitar ainda mais a sua relação com seus clientes. </p>
             <p>Atuarei desde o planejamento até a publicação do seu site,  além de prestar todo  o suporte e manutenção se necessário.</p>
           </div>
         </div>
@@ -329,7 +331,7 @@ export function Home() {
             <h2>Entre em contato</h2>
             <p>
               Se quiser falar sobre uma ideia ou papear, não se acanhe, pode me
-              mandar mensagem pelo meio disponiveis.
+              mandar mensagem pelos meios disponíveis.
             </p>
             <ul className="C_menu_social_links">
               <li>
