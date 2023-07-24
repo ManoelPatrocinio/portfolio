@@ -14,6 +14,7 @@ import img_web_design from "./assets/images/banner-web-design.png"
 import img_web_upgrade from "./assets/images/banner-dev-upgrade.jpg"
 import { startAnimateOnScroll } from "./global/animate";
 
+
 export function Home() {
   const [projectType, setProjectType] = useState(ProjectsListJson);
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -58,7 +59,7 @@ export function Home() {
 
           <a
             className="banner__btn_download-cv"
-            href="../../assets/docs/Manoel_patrocinio_CV.pdf"
+            href="../src/assets/docs/Manoel_patrocinio_CV.pdf"
             download="ManoelPatrocinioCV"
           >
             Download CV
