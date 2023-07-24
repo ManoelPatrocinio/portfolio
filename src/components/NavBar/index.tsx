@@ -1,5 +1,6 @@
 import "./style.css"
 import Logo from "../../assets/images/logo.png" 
+
 export function NavBar() {
   return (
     <nav className="nav_menu" id="menu-desktop">
