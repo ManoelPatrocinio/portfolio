@@ -1,27 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="author" content="Manoel Patrocinio" />
+  <meta name="description" content="Desenvolvedor Front-End e web designer." />
+  <meta name="keywords"
+    content="sites, web, desenvolvimento, programador, manoel patrocinio, front-end, designer, ui, freelancer, freela, website" />
+  <meta name="copyright" content="Manoel Patrocinio" />
+  <meta http-equiv="content-language" content="pt-br" />
+
+  <meta property="og:title" content="Portfolio | Manoel Patrocinio - Desenvolvedor Web" />
+  <meta property="og:description"
+    content="Desenvolvedor web de excelência, com foco construir aplicação que gerem resultado, soluções e inspiração." />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="manifest" href="./site.webmanifest" />
+
+  <title>Manoel Patrocinio - Portfolio</title>
+</head>
+
+<body>
+  <header id="main_header">
     
-    <meta name="author" content="Manoel Patrocinio" />
-    <meta name="description" content="Desenvolvedor Front-End e web designer." />
-    <meta name="keywords"
-      content="sites, web, desenvolvimento, programador, manoel patrocinio, front-end, designer, ui, freelancer, freela, website" />
-    <meta name="copyright" content="Manoel Patrocinio" />
-    <meta http-equiv="content-language" content="pt-br" />
+    <div class="banner">
+      <h1 id="banner__apresentation-text">
+        Olá, <br />
+        Eu sou o <span id="myName">Manoel</span>
+        <br />
+        <span id="banner__text-occupation"> Desenvolvedor Web</span>
+      </h1>
+      <p id="banner__skill-text">Front End | Back End | UI/UX Designer</p>
+
+      <a class="banner__btn_download-cv" href="./public/docs/Manoel_patrocinio_CV.pdf" download="ManoelPatrocinioCV">
+        Download CV
+      </a>
+    </div>
+    <aside class="menu_sidebar">
+      <div class="hamburguer">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+        <span>fechar</span>
+      </div>
+    
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              Home
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#about_Me" class="menu-link">
+              Sobre Mim
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#skills" class="menu-link">
+              Skills
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#portfolio" class="menu-link">
+              Projetos
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#services" class="menu-link">
+              Serviços
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#contact" class="menu-link">
+              Contato
+            </a>
+          </li>
+        </ul>
+
   
-    <meta property="og:title" content="Portfólio | Manoel Patrocinio - Desenvolvedor Web" />
-    <meta property="og:description" content="Desenvolvedor web e mobile, com foco em font-end " />
+      <div class="social-media_content">
+        <a target="_blank" href="https://www.instagram.com/patrocinioiii/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://github.com/ManoelPatrocinio">
+          <i class="fab fa-github-alt"></i>
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/manoel-patrocinio-1b342b203">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </aside>
+  </header>
+  <nav class="nav_menu" id="menu-desktop">
+    <a id="nav_menu__logo" href="#main_header">
+      <img src="public/images/logo.png" alt="Logo" />
+    </a>
+    <ul id="nav_menu__menu">
+      <li>
+        <a class="menu__item" href="#about_Me">
+          Sobre Mim
+        </a>
+      </li>
+      <li>
+        <a class="menu__item" href="#skills">
+          Skills
+        </a>
+      </li>
+      <li>
+        <a class="menu__item" href="#portfolio">
+          Projetos
+        </a>
+      </li>
+      <li>
+        <a class="menu__item" href="#services">
+          Serviços
+        </a>
+      </li>
+      <li>
+        <a class="menu__item" href="#contact">
+          Contato
+        </a>
+      </li>
+    </ul>
+  </nav>
+ 
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico" />
-    <link rel="manifest" href="./site.webmanifest" />
 
-    <title>Manoel Patrocinio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+  <section class="C_aboutMe" id="about_Me">
+    <header class="section-header">
+      <h1>Sobre Mim</h1>
+    </header>
+    <main id="aboutMe_Content">
+      <div id="MySelf">
+        <img src="./public/images/mySelf.jpg" alt="Manoel Patrocinio" />
+      </div>
+
+      <div id="text_aboutMe">
+        <p>
+          Olá, eu sou o Manoel Patrocínio, tenho 24 anos e moro atualmente em Ilhéus-Ba. </br>
+
+          Construir esse portfolio para que possam conhecer um pouco da minha experiência e trajetória. Hoje, eu atuo
+          principalmente como Desenvolvedor Front-End, no entanto, em decorrência de projetos passados, também
+          tenho capacidade para atuar no desenvolvimento de funcionalidades ligadas ao Back-End.
+
+        </p>
+        <p>
+          Tenho com ambição e meta para o futuro
+          próximo, a excelência na carreira como projetos que gerem transformação e inspiração.
+        </p>
+
+      </div>
+    </main>
+  </section>
+  <section class="C_skills" id="skills">
+
+    <div class="C_skills_header">
+      <img id="skill_Header_Img" src="./public/images/Coding_SVG.svg"></img>
+      <p class="TextinProgress">Always learning</p>
+    </div>
+
+    <div class="skills">
+
+      <div class="skill" data-animate="up">
+        <div class="skill-header">
+          <div class="dooble_icon_content">
+            <img src="./public/images/icon_next.svg" alt="Styled Components" class="skills_icon" style="width: 3rem;" />
+            <img src="./public/images/icon_react.svg" alt="Styled Components" class="skills_icon"
+              style="width: 3.5rem;" />
+
+          </div>
+          <h3>Next / React</h3>
+        </div>
+        <div class="skill-text left">
+          <p>
+            Para criação de interfaces de usuário e aplicações web componentizadas e escaláveis com otimizações
+            adicionais usando o Next.js.
+          </p>
+        </div>
+      </div>
+      <div class="skill" data-animate="up">
+        <div class="skill-header">
+          <img src="./public/images/icon_js_ts.svg" alt="Styled Components" class="skills_icon" />
+          <h3>JavaScript / TypeScript</h3>
+        </div>
+        <div class="skill-text left">
+          <p>
+            Linguagem e superset que nos permite adicionar tipagens no código JS, Possibilitando maior padronização e
+            controle de
+            erros.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill" data-animate="up">
+        <div class="skill-header">
+          <img src="./public/images/icon_tailwind.svg" alt="Styled Components" class="skills_icon" />
+          <h3>Tailwind</h3>
+        </div>
+        <div class="skill-text left">
+          <p>
+            Para agilidade no desenvolvimento do projetos com classes e elementos predefinidas e customizavéis.
+          </p>
+        </div>
+      </div>
+      <div class="skill" data-animate="up">
+        <div class="skill-header">
+          <img src="./public/images/icon_node.svg" alt="type script" class="skills_icon" />
+          <h3>Node Js</h3>
+        </div>
+        <div class="skill-text right">
+          <p>
+            Permite a execução de códigos JavaScript do lado do servidor para criação de sistemas, APIs e Microsserviços
+            .
+          </p>
+        </div>
+      </div>
+
+      <div class="skill" data-animate="up">
+        <div class="skill-header">
+          <img src="./public/images/icon_db.svg" alt="type script" class="skills_icon" />
+          <h3>MongoDB e Postgre</h3>
+        </div>
+        <div class="skill-text right">
+          <p>
+            Banco de dados NoSQL e relacional, para protrotipação e construção de toda a base de dados da aplicação.
+          </p>
+        </div>
+      </div>
+      <div class="skill" data-animate="up">
+        <div class="skill-header">
+          <img src="./public/images/icon_bootstrap.svg" alt="type script" class="skills_icon" style="height: 2.5rem;" />
+          <h3>Boostrap</h3>
+        </div>
+        <div class="skill-text right">
+          <p>
+            Para agilidade no desenvolvimento e padronização na construção de projetos.
+          </p>
+        </div>
+      </div>
+      <div class="skills-img-wrapper">
+        <img src="public/images/fox.png" alt="Fox Image" />
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <header class="section-header">
+      <h1>Portfolio</h1>
+    </header>
+    <swiper-container style="--swiper-navigation-color: #cc2b5e; --swiper-navigation-size: 2rem; --swiper-pagination-color: #cc2b5e; --swiper-pagination-size:1rem; " class="mySwiper"
+      speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true">
+
+
+      <swiper-slide style="background-image: url(./public/images/agrofamiliar.png);">
+        <div class="swiper_text_detail_content">
+          <h4 class="title">Agro Familiar</h4>
+          <p>
+            Plataforma para aproximar o consumidor ao que de melhor é produzido pelas Associações, Cooperativas e
+            Produtores
+            Individuais da sua região.
+          </p>
+          <p>Possibilitamos que os produtores se cadastrem na plataforma e montem o seu próprio catálogo digital
+            , para que possam estar mais visíveis e acessíveis aos clientes.
+          </p>
+          <p><span>Tecnologias: </span>React Js/Ts, Tailwind Css, Node.js, Express, MongoDB e JWT.</p>
+
+          <a href="https://agrofamiliar.vercel.app/" target="_blank">
+            <button class="link_project_access">Acessar</button>
+          </a>
+
+        </div>
+      </swiper-slide>
+      <swiper-slide style="background-image: url(./public/images/proejavivo.jpg);">
+        <div class="swiper_text_detail_content">
+          <div class="title">Portal Proeja Vivo</div>
+          <p>
+            O portal é um Produto Educacional fruto de uma pesquisa de mestrado realizada em 2022 Programa de
+            Pós-Graduação em Educação Profissional e Tecnológica.
+
+          </p>
+          <p> Tem como objetivo dar ampla visibilidade ao curso Técnico em Administração da Modalidade de Educação de
+            Jovens
+            e Adultos do IFBA Campus Irecê.</p>
+          <p><span>Tecnologias: </span>React Js/Ts, Bootstrap, Node.js, Express, PostgreSQL e JWT.</p>
+
+
+          <a href="https://proejavivo.com.br/" target="_blank">
+            <button class="link_project_access">Acessar</button>
+          </a>
+
+        </div>
+      </swiper-slide>
+      <swiper-slide style="background-image: url(./public/images/easybank.png);">
+        <div class="swiper_text_detail_content">
+          <div class="title">Easy Bank</div>
+          <p>
+            Esta é uma solução para o desafio da landing page do Frontend Mentor. Os desafios do Frontend
+            Mentor ajudam a melhoraras habilidades de codificação através da construção de projetos realistas.
+
+          </p>
+
+          <p><span>Tecnologias: </span>HTML Semântico, Css, Flexbox,JavaScript.</p>
+          <a href="https://manoelpatrocinio.github.io/the_easy_bank/" target="_blank">
+            <button class="link_project_access">Acessar</button>
+          </a>
+          <a href="https://github.com/ManoelPatrocinio/the_easy_bank" target="_blank"
+            class="link_project_access_github">
+            Github
+          </a>
+        </div>
+      </swiper-slide>
+
+    </swiper-container>
+    <footer class="C_projects__footer">
+      <p>
+        <a href="https://github.com/ManoelPatrocinio" target="_blank">
+          Clique Aqui
+        </a>
+        <br />
+        para conferir todos os meus projetos no Github
+      </p>
+    </footer>
+  </section>
+  <section class="C_Services" id="services">
+    <header class="section-header">
+      <h1>Serviços</h1>
+      <p>Veja algumas maneiras de como eu posso te ajudar, ao final, se ainda não estiver convencido(a) ou se tiver
+        dúvidas, entre em contato e me fale do que precisa, tenho certeza que posso pensar em algo pra ti 😉</p>
+    </header>
+    <div class="job_content" id="dev_web">
+      <div class="job_wrapper" data-animate="left">
+        <img src="public/images/banner-web-developer.png" alt="imagens sites desenvolvidos" id="img_web_developer" />
+      </div>
+      <div class="job_wrapper" data-animate="right">
+
+        <h3>Desenvolvimento de sites e aplicações web</h3>
+        <p>Posso construir aquele site que você sempre imaginou para seu o negócio ou seus serviços, sendo possível
+          aproximar e facilitar ainda mais a sua relação com seus clientes. </p>
+        <p>Atuarei desde o planejamento até a publicação do seu site, além de prestar todo o suporte e manutenção se
+          necessário.</p>
+      </div>
+    </div>
+    <div class="job_content" id="web_desiger">
+
+      <div class="job_wrapper" data-animate="left">
+        <h3>Definição do Design </h3>
+        <p>Caso você só tenha uma ideia ou rascunho, mas ainda não tem uma visão clara do visual do seu site. </p>
+        <p> Construirei um protótipo de alta fidelidade e navegável, sempre pensando na experiência e mensagem que você
+          deseja passar para o usuário do seu site.</p>
+      </div>
+      <div class="job_wrapper" data-animate="right">
+        <img src="public/images/banner_web_designer.png" alt="imagens Design e template sites " id="img_web_desiger" />
+      </div>
+    </div>
+    <div class="job_content" id="web_upgrade">
+
+      <img src="public/images/gestor_tarefas.png" alt="imagens manutenção atualização de sites " id="img_web_upgrade"
+        data-animate="up" />
+      <div data-animate="up">
+        <h3>Manutenção e atualização </h3>
+        <p>Também posso atuar realizando correções de funcionalidade ou layout de sites e aplicações já existentes,
+          desde que, tenha sido construído usando as tecnologias mostradas acima, caso tenha urgência na entrega. </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="C_contact" id="contact">
+    <header class="section-header">
+      <h1>Contato</h1>
+    </header>
+    <article class="C_contact__container">
+      <div class="C_contact__content C_contact_left">
+        <h2>Entre em contato</h2>
+        <p>
+          Se quiser falar sobre uma ideia ou papear, não se acanhe, pode me
+          mandar mensagem pelos meios disponíveis.
+        </p>
+        <ul class="C_menu_social_links">
+          <li>
+            <a target="_blank" href="https://www.instagram.com/patrocinioiii/">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/manoel-patrocinio/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/ManoelPatrocinio">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="C_contact__content C_contact_right">
+        <form action="https://formsubmit.co/manoelpatrocinio99@gmail.com" method="POST"
+          class="C_contact_right__form">
+          <div class="input_group">
+            <label htmlFor="yourEmail">Seu E-mail</label>
+            <input type="email" name="email" id="yourEmail" required />
+          </div>
+          <div class="input_group">
+            <label htmlFor="yourMessage">Sua Mensagem</label>
+
+            <textarea id="yourMessage" placeholder="Your Message" class="form-control" name="message" rows={3}
+              required></textarea>
+          </div>
+          <input type="hidden" name="_next" value="https://manoel-patrocinio-portifolio.vercel.app/"></input>
+          <input type="hidden" name="_subject" value="Portfolio"></input>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </article>
+  </section>
+
+  <footer class="lastFooter"> Copyright&copy; Manoel Patrocinio</footer>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script type="text/javascript" src="./public/scripts/animate.js"></script>
+
+</body>
+
 </html>
