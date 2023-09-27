@@ -125,8 +125,8 @@ export function Home() {
 
           <div id="text_aboutMe">
             <p>
-            Olá, eu sou o Manoel Patrocínio, tenho 24 anos e moro atualmente em Ilhéus-Ba.</br>
-Construir esse portfolio para que possam conhecer um pouco da minha experiência e trajetória. Hoje, eu atuo principalmente como Desenvolvedor Front-End, no entanto, em decorrência de projetos passados, também tenho capacidade para atuar no desenvolvimento de funcionalidades ligadas ao Back-End.
+            Olá, eu sou o Manoel Patrocínio, tenho 24 anos e moro atualmente em Ilhéus-Ba.</p>
+            <p>  Construir esse portfolio para que possam conhecer um pouco da minha experiência e trajetória. Hoje, eu atuo principalmente como Desenvolvedor Front-End, no entanto, em decorrência de projetos passados, também tenho capacidade para atuar no desenvolvimento de funcionalidades ligadas ao Back-End.
             </p>
             <p>
             Tenho com ambição e meta para o futuro próximo, a excelência na carreira como projetos que gerem transformação e inspiração.
