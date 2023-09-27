@@ -129,7 +129,7 @@ export function Home() {
               também tenho capacidade para atuar no desenvolvimento de funcionalidades ligadas ao Back-End.
             </p>
             <p>
-              Tenho com ambição e meta para o futuro próximo, a excelência na carreira como projetos que gerem transformação e inspiração.
+              Tenho com ambição e meta para o futuro próximo, a excelência na carreira como desenvolvedor, com projetos que gerem transformação e inspiração.
             </p>
           </div>
         </main>
