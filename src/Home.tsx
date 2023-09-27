@@ -125,14 +125,11 @@ export function Home() {
 
           <div id="text_aboutMe">
             <p>
-              Olá, eu sou o Manoel, tenho 23 anos e moro na cidade de Barra-Ba.
-              Estou concluindo a graduação como tecnólogo em Análise e Desenvolvimento de Sistemas, no Instituto Federal de Educação, Ciência e Tecnologia da
-               Bahia (IFBA) Campus Irecê. 
+            Olá, eu sou o Manoel Patrocínio, tenho 24 anos e moro atualmente em Ilhéus-Ba.</br>
+Construir esse portfolio para que possam conhecer um pouco da minha experiência e trajetória. Hoje, eu atuo principalmente como Desenvolvedor Front-End, no entanto, em decorrência de projetos passados, também tenho capacidade para atuar no desenvolvimento de funcionalidades ligadas ao Back-End.
             </p>
             <p>
-              Estudo sobre Desenvolvimento web desde 2017, e hoje, atuo principalmente como Desenvolvedor Front-End, com foco em React, Javascript/Typescript. Porém, em decorrência de projetos passados, 
-              também tenho capacidade para atuar como desenvolvedor Back-End. 
-              Tenho com ambição e meta para o futuro próximo, a excelência na carreira como desenvolvedor.
+            Tenho com ambição e meta para o futuro próximo, a excelência na carreira como projetos que gerem transformação e inspiração.
             </p>
           </div>
         </main>
