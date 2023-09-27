@@ -124,12 +124,12 @@ export function Home() {
           </div>
 
           <div id="text_aboutMe">
-            <p>
-            Olá, eu sou o Manoel Patrocínio, tenho 24 anos e moro atualmente em Ilhéus-Ba.</p>
-            <p>  Construir esse portfolio para que possam conhecer um pouco da minha experiência e trajetória. Hoje, eu atuo principalmente como Desenvolvedor Front-End, no entanto, em decorrência de projetos passados, também tenho capacidade para atuar no desenvolvimento de funcionalidades ligadas ao Back-End.
+            <p>Olá, eu sou o Manoel Patrocínio, tenho 24 anos e moro atualmente em Ilhéus-Ba.</p>
+            <p>Construir esse portfolio para que possam conhecer um pouco da minha experiência e trajetória. Hoje, eu atuo principalmente como Desenvolvedor Front-End, no entanto, em decorrência de projetos passados,
+              também tenho capacidade para atuar no desenvolvimento de funcionalidades ligadas ao Back-End.
             </p>
             <p>
-            Tenho com ambição e meta para o futuro próximo, a excelência na carreira como projetos que gerem transformação e inspiração.
+              Tenho com ambição e meta para o futuro próximo, a excelência na carreira como projetos que gerem transformação e inspiração.
             </p>
           </div>
         </main>
@@ -289,8 +289,8 @@ export function Home() {
           <div className="job_wrapper" data-animate="left">
             <img src={img_web_developer} alt="imagens sites desenvolvidos" id="img_web_developer" />
           </div>
-          <div 
-          className="job_wrapper" data-animate="right">
+          <div
+            className="job_wrapper" data-animate="right">
 
             <h3>Desenvolvimento de sites e aplicações  web</h3>
             <p>Posso  construir aquele site que você sempre imaginou para seu o negócio ou seus serviços, sendo possível aproximar e facilitar ainda mais a sua relação com seus clientes. </p>
@@ -298,24 +298,24 @@ export function Home() {
           </div>
         </div>
         <div className="job_content" id="web_desiger">
-          
-          <div 
-          className="job_wrapper" data-animate="left">
+
+          <div
+            className="job_wrapper" data-animate="left">
             <h3>Definição do  Design  </h3>
             <p>Caso você só tenha uma ideia ou rascunho,  mas ainda não tem uma visão clara do visual do seu site.  </p>
             <p> Construirei um protótipo de alta fidelidade e navegável, sempre  pensando na experiência e mensagem que você deseja passar para o usuário do seu site.</p>
           </div>
-          <div 
-          className="job_wrapper" data-animate="right">
-           <img src={img_web_design} alt="imagens Design e template sites " id="img_web_desiger" />
+          <div
+            className="job_wrapper" data-animate="right">
+            <img src={img_web_design} alt="imagens Design e template sites " id="img_web_desiger" />
           </div>
         </div>
         <div className="job_content" id="web_upgrade">
 
           <img src={img_web_upgrade} alt="imagens manutenção atualização de sites " id="img_web_upgrade" data-animate="up" />
           <div data-animate="up">
-          <h3>Manutenção e atualização </h3>
-          <p>Também posso atuar realizando correções de funcionalidade ou  layout  de sites e aplicações já existentes, desde que,  tenha sido construído usando as tecnologias mostradas acima, caso tenha urgência na entrega. </p>
+            <h3>Manutenção e atualização </h3>
+            <p>Também posso atuar realizando correções de funcionalidade ou  layout  de sites e aplicações já existentes, desde que,  tenha sido construído usando as tecnologias mostradas acima, caso tenha urgência na entrega. </p>
           </div>
         </div>
       </section>
