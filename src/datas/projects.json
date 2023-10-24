@@ -44,15 +44,7 @@
     "image": "https://i.ibb.co/F7bRz7j/ignite-Lab.png",
     "link_github":"https://github.com/ManoelPatrocinio/event_Platform"
   },
-  {
-    "type": "site",
-    "name": "Expense Tracker",
-    "skills": "ReactJs | Styled Components | Typescript",
-    "description": "Gerenciador de despesas e receitas mensais.",
-    "link": "https://expense-tracker-manoelpatrocinio.vercel.app/",
-    "image": "https://i.ibb.co/kch7WKJ/sistema-financeiro.jpg",
-    "link_github":"https://github.com/ManoelPatrocinio/expense_tracker"
-  },
+
   {
     "type": "site",
     "name": "Image Upload",
