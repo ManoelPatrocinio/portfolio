@@ -418,7 +418,7 @@
 #text_aboutMe p {
   font-family: var(--font-primary);
   font-size: 1.4rem;
-  margin-bottom: 4rem;
+  margin-bottom: .5rem;
   color: #eee;
 }
 
