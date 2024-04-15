@@ -19,15 +19,6 @@
   },
   {
     "type": "site",
-    "name": "Petfood",
-    "skills": "React | NodeJS | MongoDB",
-    "description": "Marketplace para petshops com integração a API do Pagar.me para efetivação da compra.",
-    "link": "https://thepetfood.vercel.app/",
-    "image": "https://i.ibb.co/18kJTkD/petfood.jpg",
-    "link_github":"https://github.com/ManoelPatrocinio/Petfood_fontend"
-  },
-  {
-    "type": "site",
     "name": "Easy bank",
     "skills": "Html 5 | Css 3 | javaScript",
     "description": "Reponsive Landing Page from Front-end Mentor.",
@@ -66,16 +57,6 @@
     "link_github":"https://github.com/ManoelPatrocinio/NLW-5-ChatAPI"
   },
   {
-    "type": "site",
-    "name": "Ecatalogo",
-    "skills": "ReactJs | Styled Components | MongoDB",
-    "description": "Catálogo digital, com integração ao link do whatsapp, para venderodes/revendedores.",
-    "link": "https://ecatalogo.vercel.app/",
-    "image": "https://i.ibb.co/fqJ5YPM/ecatalog.jpg",
-    "link_github":"https://github.com/ManoelPatrocinio/ecatalogo"
-  },
-
-  {
     "type": "API",
     "name": "User Authentication",
     "skills": "Typescript | JWT | REST | PostgreSQL",
@@ -99,7 +80,7 @@
     "skills": "",
     "description": "Catálogo digital, com integração ao link do whatsapp, para venderodes/revendedores.",
     "link": "https://www.figma.com/file/k3a79RNr0AYBGEVI24Yn1Y/Catalogo-Digital?node-id=0%3A1&t=YwBL8qoG8sXYV8jf-1",
-    "image": "https://i.ibb.co/cQjV9Vf/ecatalogo.png",
+    "image": "https://i.ibb.co/5BNd2HF/Ecatalogo-Home.jpg",
     "link_github":""
   },
   {
