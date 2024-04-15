@@ -28,10 +28,10 @@
   },
   {
     "type": "site",
-    "name": "vent Platform",
+    "name": "Event Platform",
     "skills": "React | Typescript | GraphQL",
     "description": "Plataforma do evento da rocketseat, desenvolvido durante o Ignite lab.",
-    "link": "https://event-platform-five-sooty.vercel.app",
+    "link": "https://github.com/ManoelPatrocinio/event_Platform",
     "image": "https://i.ibb.co/F7bRz7j/ignite-Lab.png",
     "link_github":"https://github.com/ManoelPatrocinio/event_Platform"
   },
