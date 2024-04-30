@@ -1,30 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <link rel="manifest" href="./manifest.json" />
-    <meta name="google-site-verification" content="gJTjMQ7AxikGX89hF2yPQyvWRY1D3tT4LAbwt7yoPJA" />
+<html lang="en">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <meta name="author" content="Manoel Patrocinio" />
-    <meta name="description" content="Desenvolvedor web e web designer. Codificando e  transformando em realidade a sua ideia, solução ou negocio. " />
-    <meta name="keywords"
-      content="sites, web, desenvolvimento, programador, manoel patrocinio, Manoel, Patrocinio, front-end, designer, ui, freelancer, freela, website" />
-    <meta name="copyright" content="Manoel Patrocinio" />
-    <meta http-equiv="content-language" content="pt-br" />
-  
-    <meta property="og:title" content="Portfólio | Manoel Patrocinio - Desenvolvedor Web" />
-    <meta property="og:description" content="Desenvolvedor web e mobile, com foco em font-end " />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico" />
-    <link rel="manifest" href="./site.webmanifest" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "black-900": '#17181b',
+            "white-900": '#f9f9f9',
 
-    <title>Manoel Patrocínio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+            "violet-700": '#DB14DF',
+            "green-700": '#16C031'
+          },
+          fontFamily: {
+            sans: "Inter, sans-serif",
+            display: "Nunito Sans, sans-serif",
+          },
+        }
+      }
+    }
+  </script>
+  <title>Manoel Patrocínio</title>
+
+</head>
+
+<body class="bg-black-900 ">
+  <!-- Main navigation container -->
+  <nav
+    class="w-full sticky top-0 left-0 z-50 flex-no-wrap  flex w-full items-center justify-between bg-transparent py-2  lg:flex-wrap lg:justify-start lg:py-4 lg:px-16">
+    <div class="flex w-full flex-wrap items-center justify-between px-3">
+      <!-- Hamburger button for mobile view -->
+      <button
+        class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+        type="button" data-twe-collapse-init data-twe-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Hamburger icon -->
+        <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </button>
+
+      <!-- Collapsible navigation container -->
+      <div class="w-full !visible hidden  items-center lg:!flex lg:justify-between "
+        id="navbarSupportedContent1" data-twe-collapse-item>
+        <!-- Logo -->
+        <a class="mb-4 me-5 ms-2 mt-3 flex items-center text-white hover:text-violet-700 focus:text-violet-700 lg:mb-0 lg:mt-0 transition duration-300 ease-out"
+          href="#">
+          Manoel P.
+        </a>
+        <!-- Left navigation links -->
+        <ul class="list-style-none  flex flex-col ps-0 lg:flex-row w-fit" data-twe-navbar-nav-ref>
+          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+            <!-- Dashboard link -->
+            <a class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+              href="#home" data-twe-nav-link-ref>Início</a>
+          </li>
+          <!-- Team link -->
+          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+            <a class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+              href="#section_services" data-twe-nav-link-ref>Serviços</a>
+          </li>
+          <!-- Projects link -->
+          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+            <a class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+              href="#section_portfolio" data-twe-nav-link-ref>Portfolio</a>
+          </li>
+          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+            <a class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+              href="#section_contact_me" data-twe-nav-link-ref>Contato</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+        <!-- Right elements -->
+        <div class="relative flex items-center">
+          <a class="me-4 text-white border border-white rounded-full px-4 py-2" href="#section_contact_me">
+            Fale comigo
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </nav>
+  <header class="flex justify-start items-center px-16" id="home">
+    <div class="w-1/2">
+      <h1 id="header__presentation_text " class="font-display font-medium text-white text-5xl mb-6 drop-shadow-md">A
+        excelência do seu
+        negócio no digital</h1>
+      <p id="header__resume_text " class="font-sans text-white mb-8 drop-shadow-md">Garanta o sucesso do seu negócio ou
+        ideia, através de
+        sites que entregam exatamente o
+        que você precisa.</p>
+      <button type="button"
+        class="text-white font-medium px-4 py-3 backdrop-blur-sm bg-white/30 drop-shadow-md border border-[#A044FF] rounded-full">Dê
+        o primeiro passo</button>
+    </div>
+  </header>
+  <main id="section_services"> </main>
+  <section id="section_portfolio"></section>
+  <section id="section_steps"></section>
+  <section id="section_contact_me"></section>
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+</body>
+
 </html>
