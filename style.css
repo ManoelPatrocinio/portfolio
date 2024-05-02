@@ -100,7 +100,7 @@ header {
       #bf33c7 100%
     );
     background-size: 200% 200%;
-    animation: movingGradient 7s linear infinite alternate;
+    animation: movingGradient 9s linear infinite alternate;
   }
 
   @keyframes movingGradient {

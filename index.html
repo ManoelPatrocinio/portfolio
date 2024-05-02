@@ -33,72 +33,74 @@
 
 <body class="bg-black-900 ">
   <!-- Main navigation container -->
-  <nav
-    class="w-full sticky top-0 left-0 z-50 flex-no-wrap  flex w-full items-center justify-between bg-transparent py-2  lg:flex-wrap lg:justify-start lg:py-4 lg:px-16">
-    <div class="flex w-full flex-wrap items-center justify-between px-3">
-      <!-- Hamburger button for mobile view -->
-      <button
-        class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-        type="button" data-twe-collapse-init data-twe-target="#navbarSupportedContent1"
-        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- Hamburger icon -->
-        <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-              clip-rule="evenodd" />
-          </svg>
-        </span>
-      </button>
 
-      <!-- Collapsible navigation container -->
-      <div class="w-full !visible hidden  items-center lg:!flex lg:justify-between "
-        id="navbarSupportedContent1" data-twe-collapse-item>
-        <!-- Logo -->
-        <a class="mb-4 me-5 ms-2 mt-3 flex items-center text-white hover:text-violet-700 focus:text-violet-700 lg:mb-0 lg:mt-0 transition duration-300 ease-out"
+  <header class="relative w-full flex justify-start items-center px-4 md:px-16" id="home">
+    <nav
+      class="absolute top-0 left-0 z-50 flex w-full flex-nowrap items-center justify-between bg-transparent py-2 text-neutral-500  hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4 px-4 md:px-16"
+      data-twe-navbar-ref>
+      <div class="flex w-full flex-wrap items-center justify-between ">
+        <a class=" mb-4 me-5 mt-3 flex flex-col md:flex-row  items-center font-semibold text-sm md:text-base text-white hover:text-[#A817E1] focus:text-[#A817E1] gap-2 lg:mb-0 lg:mt-0 transition duration-300 ease-out"
           href="#">
+          <img src="./assets/images/Logo.png" alt="logo" class="w-[3rem] h-[1.25rem] md:w-[3.5rem] md:h-[1.4rem]" />
           Manoel P.
         </a>
-        <!-- Left navigation links -->
-        <ul class="list-style-none  flex flex-col ps-0 lg:flex-row w-fit" data-twe-navbar-nav-ref>
-          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-            <!-- Dashboard link -->
-            <a class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-              href="#home" data-twe-nav-link-ref>Início</a>
-          </li>
-          <!-- Team link -->
-          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-            <a class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-              href="#section_services" data-twe-nav-link-ref>Serviços</a>
-          </li>
-          <!-- Projects link -->
-          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-            <a class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-              href="#section_portfolio" data-twe-nav-link-ref>Portfolio</a>
-          </li>
-          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-            <a class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-              href="#section_contact_me" data-twe-nav-link-ref>Contato</a>
-          </li>
-        </ul>
-        <!-- Left links -->
-        <!-- Right elements -->
-        <div class="relative flex items-center">
-          <a class="me-4 text-white border border-white rounded-full px-4 py-2" href="#section_contact_me">
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+          type="button" data-twe-collapse-init data-twe-target="#navbarSupportedContent2"
+          aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- Hamburger icon -->
+          <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </button>
+
+        <!-- Collapsible navbar container -->
+        <div
+          class="bg-black-900 py-6 rounded-lg !visible mt-2 hidden flex justify-center basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto lg:bg-transparent"
+          id="navbarSupportedContent2" data-twe-collapse-item>
+          <!-- Left links -->
+          <ul class="list-style-none flex flex-col ps-0 lg:mt-1 lg:flex-row" data-twe-navbar-nav-ref>
+            <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+              <!-- Dashboard link -->
+              <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                href="#home" data-twe-nav-link-ref>Início</a>
+            </li>
+            <!-- Team link -->
+            <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+              <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                href="#services" data-twe-nav-link-ref>Serviços</a>
+            </li>
+            <!-- Projects link -->
+            <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+              <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                href="#portfolio" data-twe-nav-link-ref>Portfolio</a>
+            </li>
+            <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+              <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                href="#contact_me" data-twe-nav-link-ref>Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden relative lg:flex items-center drop-shadow-md">
+          <a class=" text-white border border-white rounded-full drop-shadow-md hover:border-[#A044FF] px-4 py-2 transition duration-300 ease-out"
+            href="#contact_me">
             Fale comigo
           </a>
         </div>
       </div>
-
-
-    </div>
-  </nav>
-  <header class="flex justify-start items-center px-16" id="home">
-    <div class="w-1/2">
-      <h1 id="header__presentation_text " class="font-display font-medium text-white text-5xl mb-6 drop-shadow-md">A
+    </nav>
+    <div class="w-full md:2/3 lg:w-1/2">
+      <h1 id="header__presentation_text "
+        class="font-display font-medium text-white text-4xl md:text-5xl mb-6 drop-shadow-md">A
         excelência do seu
         negócio no digital</h1>
-      <p id="header__resume_text " class="font-sans text-white mb-8 drop-shadow-md">Garanta o sucesso do seu negócio ou
+      <p id="header__resume_text " class="font-sans text-white text-xl md:text-lg mb-8 drop-shadow-md">Garanta o sucesso
+        do seu negócio ou
         ideia, através de
         sites que entregam exatamente o
         que você precisa.</p>
@@ -107,13 +109,56 @@
         o primeiro passo</button>
     </div>
   </header>
-  <main id="section_services"> </main>
-  <section id="section_portfolio"></section>
-  <section id="section_steps"></section>
-  <section id="section_contact_me"></section>
+  <main id="services" class="flex flex-col  w-full text-center px-4 md:px-16 py-9">
+    <h2 class="text-2xl md:text-3xl text-violet-700 font-display font-medium mb-4">Quais serviços eu ofereço ?</h2>
+    <p class="text-lg md:text-xl text-white-900">E como eles podem impulsionar o seu negócio ou sua ideia</p>
+    <div class="flex flex-col lg:flex-row justify-center items-center w-full mt-16">
+      <div class="w-full lg:w-1/3 flex justify-center mb-12 lg:mb-0">
+        <img src="./assets/images/services_image.png" class="w-full w-full hidden lg:block" alt="serviços" loading="lazy">
+        <img src="./assets/images/services_image_mobile.png" class=" lg:hidden" alt="serviços" loading="lazy">
+      </div>
+      <div class="w-full lg:w-2/3 flex flex-wrap gap-y-5 md:gap-y-0  md:gap-5 lg:gap-10 md:ps-5">
+        <div
+          class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
+          <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Design de sites</h3>
+          <p class="text-white-900 leading-8">Transformo sua ideia ou serviços e necessidades do seu negocio, em um
+            design de site profissional e
+            atraente, para destacar e cativar seu público-alvo instantaneamente. </p>
+        </div>
+        <div
+          class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
+          <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Criação de sites performáticos</h3>
+          <p class="text-white-900 leading-8">Tenha um site que conte sua história de forma envolvente e que converta
+            visitantes em clientes. <br>
+
+            Além de aproximar e facilitar ainda mais a sua relação com seus clientes.</p>
+        </div>
+        <div
+          class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
+          <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Lojas virtuais</h3>
+          <p class="text-white-900 leading-8"> Aproveite a oportunidade de expandir seus horizontes de vendas além das
+            fronteiras físicas e ofereça uma experiência de compra online que mantenha os clientes voltando para mais.
+          </p>
+        </div>
+        <div
+          class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
+          <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Suporte e Manutenção</h3>
+          <p class="text-white-900 leading-8"> Deixe-me cuidar dos bastidores para que você possa se concentrar no que
+            realmente importa: o crescimento do seu negócio.
+            Mantendo seu site seguro, rápido e atualizado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section id="portfolio"></section>
+  <section id="steps"></section>
+  <section id="contact_me"></section>
   <footer></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
 </body>
 
 </html>
+
+<!-- Main navigation container -->
