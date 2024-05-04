@@ -82,7 +82,7 @@ body {
 /* header effect on scroll page */
 .onSroll{
   height: 4.5rem;
-  background: rgb(23 24 27 / 85%);
+  background: rgb(23 24 27 / 85%) !important;
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );
 }

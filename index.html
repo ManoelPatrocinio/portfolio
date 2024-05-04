@@ -31,70 +31,70 @@
 
 </head>
 
-<body class="bg-black-900 ">
+<body class="bg-black-900 relative">
   <!-- Main navigation container -->
+  <nav id="navBar"
+    class="fixed z-50 top-0 left-0 z-50 flex w-full flex-nowrap items-center justify-between bg-transparent py-2 text-neutral-500  hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4 px-4 md:px-16"
+    data-twe-navbar-ref>
+    <div class="flex w-full flex-wrap items-center justify-between ">
+      <a class=" mb-4 me-5 mt-3 flex flex-col md:flex-row  items-center font-semibold text-sm md:text-base text-white hover:text-[#A817E1] focus:text-[#A817E1] gap-2 lg:mb-0 lg:mt-0 transition duration-300 ease-out"
+        href="#home">
+        <img src="./assets/images/Logo.png" alt="logo" class="w-[4rem] h-[1.5rem] md:w-[3.5rem] md:h-[1.4rem]" />
+        Manoel P.
+      </a>
+      <!-- Hamburger button for mobile view -->
+      <button
+        class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+        type="button" data-twe-collapse-init data-twe-target="#navbarSupportedContent2"
+        aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Hamburger icon -->
+        <span class="[&>svg]:w-10 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </button>
 
-  <header class="relative w-full flex justify-start items-center px-4 md:px-16" id="home">
-    <nav
-      class="absolute top-0 left-0 z-50 flex w-full flex-nowrap items-center justify-between bg-transparent py-2 text-neutral-500  hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4 px-4 md:px-16"
-      data-twe-navbar-ref>
-      <div class="flex w-full flex-wrap items-center justify-between ">
-        <a class=" mb-4 me-5 mt-3 flex flex-col md:flex-row  items-center font-semibold text-sm md:text-base text-white hover:text-[#A817E1] focus:text-[#A817E1] gap-2 lg:mb-0 lg:mt-0 transition duration-300 ease-out"
-          href="#">
-          <img src="./assets/images/Logo.png" alt="logo" class="w-[3rem] h-[1.25rem] md:w-[3.5rem] md:h-[1.4rem]" />
-          Manoel P.
-        </a>
-        <!-- Hamburger button for mobile view -->
-        <button
-          class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-          type="button" data-twe-collapse-init data-twe-target="#navbarSupportedContent2"
-          aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-          <!-- Hamburger icon -->
-          <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                clip-rule="evenodd" />
-            </svg>
-          </span>
-        </button>
-
-        <!-- Collapsible navbar container -->
-        <div
-          class="bg-black-900 py-6 rounded-lg !visible mt-2 hidden flex justify-center basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto lg:bg-transparent"
-          id="navbarSupportedContent2" data-twe-collapse-item>
-          <!-- Left links -->
-          <ul class="list-style-none flex flex-col ps-0 lg:mt-1 lg:flex-row" data-twe-navbar-nav-ref>
-            <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-              <!-- Dashboard link -->
-              <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                href="#home" data-twe-nav-link-ref>Início</a>
-            </li>
-            <!-- Team link -->
-            <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-              <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                href="#services" data-twe-nav-link-ref>Serviços</a>
-            </li>
-            <!-- Projects link -->
-            <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-              <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                href="#portfolio" data-twe-nav-link-ref>Portfolio</a>
-            </li>
-            <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-              <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                href="#contact_me" data-twe-nav-link-ref>Contato</a>
-            </li>
-          </ul>
-        </div>
-        <div class="hidden relative lg:flex items-center drop-shadow-md">
-          <a class=" text-white border border-white rounded-full drop-shadow-md hover:border-[#A044FF] px-4 py-2 transition duration-300 ease-out"
-            href="#contact_me">
-            Fale comigo
-          </a>
-        </div>
+      <!-- Collapsible navbar container -->
+      <div
+        class="bg-slate-900  rounded-lg !visible mt-2 hidden flex justify-center basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto lg:bg-transparent"
+        id="navbarSupportedContent2" data-twe-collapse-item>
+        <!-- Left links -->
+        <ul class="list-style-none flex flex-col ps-0 py-6 lg:mt-1 lg:flex-row lg:py-0" data-twe-navbar-nav-ref>
+          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+            <!-- Dashboard link -->
+            <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+              href="#home" data-twe-nav-link-ref>Início</a>
+          </li>
+          <!-- Team link -->
+          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+            <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+              href="#services" data-twe-nav-link-ref>Serviços</a>
+          </li>
+          <!-- Projects link -->
+          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+            <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+              href="#portfolio" data-twe-nav-link-ref>Portfolio</a>
+          </li>
+          <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+            <a class="font-semibold text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+              href="#contact_me" data-twe-nav-link-ref>Contato</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <div class="w-full md:2/3 lg:w-1/2">
+      <div class="hidden relative lg:flex items-center drop-shadow-md">
+        <a class=" text-white border border-white rounded-full drop-shadow-md hover:border-[#A044FF] px-4 py-2 transition duration-300 ease-out"
+          href="#contact_me">
+          Fale comigo
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header class="relative w-full flex justify-start items-center px-4 md:px-16" id="home">
+
+    <div class="w-full md:2/3 lg:w-1/2 mb-[15%] lg:mb-0">
       <h1 id="header__presentation_text "
         class="font-display font-medium text-white text-4xl md:text-5xl mb-6 drop-shadow-md">A
         excelência do seu
@@ -109,25 +109,27 @@
         o primeiro passo</button>
     </div>
   </header>
-  <main id="services" class="flex flex-col  w-full text-center px-4 md:px-16 py-9">
+  <main id="services" class="flex flex-col items-center w-full text-center px-4 md:px-16 py-9">
     <h2 class="text-2xl md:text-3xl text-violet-700 font-display font-medium mb-4">Quais serviços eu ofereço ?</h2>
     <p class="text-lg md:text-xl text-white-900">E como eles podem impulsionar o seu negócio ou sua ideia</p>
-    <div class="flex flex-col lg:flex-row justify-center items-center w-full mt-16">
+    <div class="flex flex-col lg:flex-row justify-center items-center w-full mt-16 mb-10">
       <div class="w-full lg:w-1/3 flex justify-center mb-12 lg:mb-0">
-        <img src="./assets/images/services_image.png" class="w-full w-full hidden lg:block" alt="serviços" loading="lazy">
+        <img src="./assets/images/services_image.png" class="w-full w-full hidden lg:block" alt="serviços"
+          loading="lazy">
         <img src="./assets/images/services_image_mobile.png" class=" lg:hidden" alt="serviços" loading="lazy">
       </div>
-      <div class="w-full lg:w-2/3 flex flex-wrap gap-y-5 md:gap-y-0  md:gap-5 lg:gap-10 md:ps-5">
+      <div class="w-full lg:w-2/3 flex flex-wrap gap-y-5 md:gap-5 lg:gap-10 md:ps-5">
         <div
           class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
           <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Design de sites</h3>
-          <p class="text-white-900 leading-8">Transformo sua ideia ou serviços e necessidades do seu negocio, em um
+          <p class="text-white-900 leading-8">Transformo sua ideia, serviços ou necessidades do seu negocio, em um
             design de site profissional e
             atraente, para destacar e cativar seu público-alvo instantaneamente. </p>
         </div>
         <div
           class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
-          <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Criação de sites performáticos</h3>
+          <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Criação de sites performáticos
+          </h3>
           <p class="text-white-900 leading-8">Tenha um site que conte sua história de forma envolvente e que converta
             visitantes em clientes. <br>
 
@@ -150,13 +152,221 @@
         </div>
       </div>
     </div>
+    <a href="#contact_me"
+      class="w-fit px-4 py-2 bg-green-700  rounded-full text-white drop-shadow-md pointer hover:bg-green-600 transition duration-300 ease-out">Dê
+      o primeiro passo</a>
+
   </main>
-  <section id="portfolio"></section>
-  <section id="steps"></section>
-  <section id="contact_me"></section>
-  <footer></footer>
+  <section id="portfolio" class="flex flex-col items-center w-full text-center px-4 md:px-16 py-9">
+    <h2 class="text-2xl md:text-3xl text-violet-700 font-display font-medium ">Meu Portfólio</h2>
+    <!-- <p class="text-lg md:text-xl text-white-900">E como eles podem impulsionar o seu negócio ou sua ideia</p> -->
+    <div class="flex flex-col gap-10 mt-10 mb-0 md:flex-row md:mt-16 lg:mb-8 ">
+
+      <a href="https://proejavivo.com.br/" class="w-full md:w-[48%] rounded-md"><img
+          src="./assets/images/img-proeja-vivo.png" alt="proeja vivo"
+          class="rounded-md w-full h-full hover:scale-105 hover:transform-gpu transition duration-300 ease-out"></a>
+      <div class="w-full md:w-[48%] text-left">
+        <h3 class="font-display text-violet-700 text-2xl text-center lg:text-left">Proeja Vivo</h3>
+        <p class="w-full text-white my-6  ">Página institucional desenvolvida com o objetivo de levar ampla visibilidade
+          ao curso Técnico em Administração da Modalidade de Educação de Jovens e Adultos do IFBA Campus Irecê. </p>
+        <a href="https://proejavivo.com.br/"
+          class="text-violet-700 text-md flex gap-2 items-center hover:font-medium transition duration-300 ease-out">Acesse
+          o site <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.81152 7.99965C1.81152 7.86705 1.8642 7.73987 1.95797 7.6461C2.05174 7.55233 2.17892 7.49965 2.31152 7.49965H14.1045L10.9575 4.35366C10.8636 4.25977 10.8109 4.13243 10.8109 3.99966C10.8109 3.86688 10.8636 3.73954 10.9575 3.64565C11.0514 3.55177 11.1787 3.49902 11.3115 3.49902C11.4443 3.49902 11.5716 3.55177 11.6655 3.64565L15.6655 7.64565C15.7121 7.6921 15.749 7.74728 15.7742 7.80802C15.7994 7.86877 15.8124 7.93389 15.8124 7.99965C15.8124 8.06542 15.7994 8.13054 15.7742 8.19129C15.749 8.25203 15.7121 8.30721 15.6655 8.35365L11.6655 12.3537C11.5716 12.4475 11.4443 12.5003 11.3115 12.5003C11.1787 12.5003 11.0514 12.4475 10.9575 12.3537C10.8636 12.2598 10.8109 12.1324 10.8109 11.9997C10.8109 11.8669 10.8636 11.7395 10.9575 11.6457L14.1045 8.49965H2.31152C2.17892 8.49965 2.05174 8.44698 1.95797 8.35321C1.8642 8.25944 1.81152 8.13226 1.81152 7.99965Z"
+              fill="#DB14DF" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+    <div class="flex flex-col-reverse gap-10 mt-10 mb-0 md:flex-row md:mt-16 lg:mb-8 ">
+      <div class="w-full md:w-[48%] text-left">
+        <h3 class="font-display text-violet-700 text-2xl text-center lg:text-left">Portal Agro Familiar</h3>
+        <p class="w-full text-white my-6  ">O Portal Agro Familiar é uma plataforma destinada à divulgação e aproximação
+          entre o consumidor final e os produtores, associações e cooperativas familiares da sua região. </p>
+        <a href="https://agrofamiliar.vercel.app/"
+          class="text-violet-700 text-md flex gap-2 items-center hover:font-medium transition duration-300 ease-out">Acesse
+          o site <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.81152 7.99965C1.81152 7.86705 1.8642 7.73987 1.95797 7.6461C2.05174 7.55233 2.17892 7.49965 2.31152 7.49965H14.1045L10.9575 4.35366C10.8636 4.25977 10.8109 4.13243 10.8109 3.99966C10.8109 3.86688 10.8636 3.73954 10.9575 3.64565C11.0514 3.55177 11.1787 3.49902 11.3115 3.49902C11.4443 3.49902 11.5716 3.55177 11.6655 3.64565L15.6655 7.64565C15.7121 7.6921 15.749 7.74728 15.7742 7.80802C15.7994 7.86877 15.8124 7.93389 15.8124 7.99965C15.8124 8.06542 15.7994 8.13054 15.7742 8.19129C15.749 8.25203 15.7121 8.30721 15.6655 8.35365L11.6655 12.3537C11.5716 12.4475 11.4443 12.5003 11.3115 12.5003C11.1787 12.5003 11.0514 12.4475 10.9575 12.3537C10.8636 12.2598 10.8109 12.1324 10.8109 11.9997C10.8109 11.8669 10.8636 11.7395 10.9575 11.6457L14.1045 8.49965H2.31152C2.17892 8.49965 2.05174 8.44698 1.95797 8.35321C1.8642 8.25944 1.81152 8.13226 1.81152 7.99965Z"
+              fill="#DB14DF" />
+          </svg>
+        </a>
+      </div>
+      <a href="https://agrofamiliar.vercel.app/" class="w-full md:w-[48%]  rounded-md"><img
+          src="./assets/images/img-agro-familiar.png" alt="proeja vivo"
+          class="rounded-md w-full h-full hover:scale-105 hover:transform-gpu transition duration-300 ease-out"></a>
+
+    </div>
+  </section>
+  <section id="steps" class="flex flex-col items-center w-full text-center px-4 md:px-16 py-9">
+    <h2 class="text-2xl md:text-3xl text-violet-700 font-display font-medium ">Entenda o processo que iremos seguir</h2>
+    <p class="text-lg md:text-xl text-white-900">participe e contribua ativamente de cada etapa da criação do seu site
+    </p>
+
+    <div class="w-full flex flex-col items-center justify-center mt-10 mb-0 gap-12 md:flex-row md:mt-16 lg:mb-8">
+
+      <div class="flex flex-col items-center gap-5 w-full md:w-1/4">
+        <img src="./assets/images/icon-idealizacao.svg" class="w-36 h-36" alt="icon idealização">
+        <h3 class="font-bold text-white">Idealização / Definição</h3>
+        <p class="text-white">Etapa onde iremos conversar e definir tudo o que será feito e entregue do início ao fim
+          do projeto. </p>
+      </div>
+
+      <div class="flex flex-col items-center gap-5 w-full md:w-1/4">
+        <img src="./assets/images/icon-design.svg" class="w-36 h-36" alt="icon design">
+        <h3 class="font-bold text-white">Design</h3>
+        <p class="text-white">Onde a partir do que definimos, irei criar um protótipo visual do site, com elementos,
+          textos e cores. </p>
+      </div>
+
+      <div class="flex flex-col items-center gap-5 w-full md:w-1/4">
+        <img src="./assets/images/icon-desenvolvimento.svg" class="w-36 h-36" alt="icon design">
+        <h3 class="font-bold text-white">Desenvolvimento</h3>
+        <p class="text-white">Terminada e aprovada a etapa anterior, será dado inicio a criação do site que irá ser
+          publicado.</p>
+      </div>
+
+    </div>
+  </section>
+  <section id="contact_me" class="flex flex-col items-center w-full text-center px-4 md:px-16 py-9">
+    <h2 class="text-2xl md:text-3xl text-violet-700 font-display font-medium ">Entre em contato</h2>
+    <p class="text-lg md:text-xl text-white-900">dê o primeiro passo para a transformação digital </p>
+    <div class="flex flex-col md:flex-row mt-16 gap-10 justify-center">
+      <div class="w-full flex flex-col items-center md:items-start  md:w-2/5 mb-4 md:mb-0">
+        <div class="flex w-full justify-center md:justify-start gap-3 ">
+          <div class="w-16 h-16 rounded-full ">
+            <img src="./assets/images/mySelf.jpg" alt="Manoel Patrocinio"
+              class="w-full h-full object-cover rounded-full ">
+          </div>
+          <div class="text-left mt-2">
+            <p class="text-white-900 text-md font-medium mb-2">Manoel Patrocínio</p>
+            <div class="flex justify-start items-center gap-3">
+              <div class="bg-green-700 rounded full w-2 h-2"></div>
+              <span class="text-white-900 text-sm">Online agora</span>
+            </div>
+          </div>
+        </div>
+        <p class="w-full text-white-900 text-justify md:text-left my-6 ">Entre em contato para falar sobre sua ideia ou como podemos
+          alavancar
+          o seu
+          negócio com soluções digitais.
+          <br> Vamos lá, não se acanhe !
+        </p>
+        <div class="text-left">
+          <p class="w-full text-white-900 font-medium mb-3">Nossas redes sociais :</p>
+          <div class="flex justify-center md:justify-start items-center gap-5">
+            <a href="https://www.instagram.com/manoelpatrocinio3/" class="w-7 h-7" target="_blank">
+              <svg class="w-full h-full" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.33125 1.24399C10.7975 1.18099 11.265 1.16699 15 1.16699C18.735 1.16699 19.2025 1.18216 20.6675 1.24399C22.1325 1.30583 23.1325 1.52399 24.0075 1.84016C24.9237 2.16333 25.755 2.66849 26.4425 3.32183C27.1425 3.96233 27.6825 4.73699 28.0275 5.59333C28.3675 6.40999 28.6 7.34333 28.6675 8.70833C28.735 10.0792 28.75 10.5155 28.75 14.0003C28.75 17.4863 28.7337 17.9227 28.6675 19.2912C28.6012 20.6562 28.3675 21.5895 28.0275 22.4062C27.6825 23.2626 27.1416 24.0386 26.4425 24.68C25.755 25.3333 24.9237 25.8373 24.0075 26.1593C23.1325 26.4767 22.1325 26.6937 20.67 26.7567C19.2025 26.8197 18.735 26.8337 15 26.8337C11.265 26.8337 10.7975 26.8185 9.33125 26.7567C7.86875 26.6948 6.86875 26.4767 5.99375 26.1593C5.07615 25.8373 4.24478 25.3325 3.5575 24.68C2.85797 24.0391 2.31664 23.2635 1.97125 22.4073C1.6325 21.5907 1.4 20.6573 1.3325 19.2923C1.265 17.9215 1.25 17.4852 1.25 14.0003C1.25 10.5143 1.26625 10.078 1.3325 8.71066C1.39875 7.34333 1.6325 6.40999 1.97125 5.59333C2.31715 4.73709 2.8589 3.96152 3.55875 3.32066C4.24505 2.66791 5.07559 2.16268 5.9925 1.84016C6.8675 1.52399 7.8675 1.30699 9.33 1.24399H9.33125ZM20.5562 3.55399C19.1062 3.49216 18.6712 3.47933 15 3.47933C11.3287 3.47933 10.8938 3.49216 9.44375 3.55399C8.1025 3.61116 7.375 3.81999 6.89 3.99616C6.24875 4.22949 5.79 4.50599 5.30875 4.95516C4.85256 5.36939 4.50148 5.87365 4.28125 6.43099C4.0925 6.88366 3.86875 7.56266 3.8075 8.81449C3.74125 10.1678 3.7275 10.5738 3.7275 14.0003C3.7275 17.4268 3.74125 17.8328 3.8075 19.1862C3.86875 20.438 4.0925 21.117 4.28125 21.5697C4.50125 22.1262 4.8525 22.6313 5.30875 23.0455C5.7525 23.4713 6.29375 23.7992 6.89 24.0045C7.375 24.1807 8.1025 24.3895 9.44375 24.4467C10.8938 24.5085 11.3275 24.5213 15 24.5213C18.6725 24.5213 19.1062 24.5085 20.5562 24.4467C21.8975 24.3895 22.625 24.1807 23.11 24.0045C23.7513 23.7712 24.21 23.4947 24.6912 23.0455C25.1475 22.6313 25.4988 22.1262 25.7188 21.5697C25.9075 21.117 26.1313 20.438 26.1925 19.1862C26.2588 17.8328 26.2725 17.4268 26.2725 14.0003C26.2725 10.5738 26.2588 10.1678 26.1925 8.81449C26.1313 7.56266 25.9075 6.88366 25.7188 6.43099C25.4688 5.83249 25.1725 5.40433 24.6912 4.95516C24.2474 4.52941 23.7071 4.20174 23.11 3.99616C22.625 3.81999 21.8975 3.61116 20.5562 3.55399ZM13.2438 17.9565C14.2246 18.3376 15.3167 18.389 16.3337 18.102C17.3506 17.815 18.2292 17.2074 18.8195 16.3829C19.4098 15.5585 19.6751 14.5683 19.5701 13.5816C19.465 12.5949 18.9963 11.6728 18.2437 10.9728C17.764 10.5254 17.184 10.1828 16.5454 9.96966C15.9068 9.75655 15.2255 9.67825 14.5506 9.74038C13.8757 9.80251 13.2239 10.0035 12.6423 10.329C12.0606 10.6544 11.5634 11.0962 11.1866 11.6225C10.8098 12.1488 10.5627 12.7465 10.4631 13.3726C10.3636 13.9987 10.4139 14.6377 10.6107 15.2434C10.8074 15.8492 11.1456 16.4067 11.6009 16.8758C12.0562 17.345 12.6173 17.714 13.2438 17.9565ZM10.0025 9.33599C10.6588 8.72346 11.4379 8.23758 12.2954 7.90608C13.1528 7.57458 14.0719 7.40396 15 7.40396C15.9281 7.40396 16.8472 7.57458 17.7046 7.90608C18.5621 8.23758 19.3412 8.72346 19.9975 9.33599C20.6538 9.94852 21.1744 10.6757 21.5295 11.476C21.8847 12.2763 22.0675 13.1341 22.0675 14.0003C22.0675 14.8666 21.8847 15.7243 21.5295 16.5246C21.1744 17.325 20.6538 18.0521 19.9975 18.6647C18.6721 19.9017 16.8744 20.5967 15 20.5967C13.1256 20.5967 11.3279 19.9017 10.0025 18.6647C8.67708 17.4276 7.93247 15.7498 7.93247 14.0003C7.93247 12.2509 8.67708 10.573 10.0025 9.33599ZM23.635 8.38633C23.7976 8.24314 23.9278 8.07095 24.0179 7.87996C24.1079 7.68897 24.156 7.48306 24.1593 7.27441C24.1625 7.06577 24.1209 6.85863 24.0369 6.66527C23.9528 6.47191 23.828 6.29625 23.67 6.1487C23.5119 6.00115 23.3237 5.88471 23.1165 5.80626C22.9093 5.72782 22.6874 5.68896 22.4638 5.69201C22.2403 5.69505 22.0197 5.73992 21.815 5.82397C21.6104 5.90802 21.4259 6.02954 21.2725 6.18132C20.9741 6.47653 20.8108 6.86863 20.8171 7.27441C20.8235 7.68019 20.999 8.06768 21.3064 8.35464C21.6139 8.6416 22.0291 8.80543 22.4638 8.81134C22.8986 8.81726 23.3187 8.6648 23.635 8.38633Z"
+                  fill="#DB14DF" />
+              </svg>
+
+            </a>
+            <a href="https://www.linkedin.com/in/manoel-patrocinio" class="w-6 h-6" target="_blank">
+              <svg class="w-full h-full" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.268 28H0.463V9.306H6.268V28ZM3.362 6.756C1.506 6.756 0 5.218 0 3.362C0 2.47034 0.35421 1.6152 0.984707 0.984707C1.6152 0.35421 2.47034 0 3.362 0C4.25366 0 5.1088 0.35421 5.73929 0.984707C6.36979 1.6152 6.724 2.47034 6.724 3.362C6.724 5.218 5.218 6.756 3.362 6.756ZM27.994 28H22.202V18.9C22.202 16.731 22.158 13.95 19.184 13.95C16.166 13.95 15.703 16.306 15.703 18.744V28H9.904V9.306H15.471V11.856H15.552C16.327 10.387 18.22 8.837 21.044 8.837C26.919 8.837 27.999 12.706 27.999 17.731V28H27.994Z"
+                  fill="#DB14DF" />
+              </svg>
+
+            </a>
+            <a href="https://github.com/ManoelPatrocinio/" class="w-7 h-7" target="_blank">
+              <svg class="w-full h-full" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_196_73)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.5 0C6.93625 0 0 6.93625 0 15.5C0 22.3587 4.43687 28.1519 10.5981 30.2056C11.3731 30.3412 11.6637 29.8762 11.6637 29.4694C11.6637 29.1012 11.6444 27.8806 11.6444 26.5825C7.75 27.2994 6.7425 25.6331 6.4325 24.7612C6.25812 24.3156 5.5025 22.94 4.84375 22.5719C4.30125 22.2812 3.52625 21.5644 4.82437 21.545C6.045 21.5256 6.91687 22.6687 7.2075 23.1337C8.6025 25.4781 10.8306 24.8194 11.7219 24.4125C11.8575 23.405 12.2644 22.7269 12.71 22.3394C9.26125 21.9519 5.6575 20.615 5.6575 14.6862C5.6575 13.0006 6.25812 11.6056 7.24625 10.5206C7.09125 10.1331 6.54875 8.54437 7.40125 6.41313C7.40125 6.41313 8.69937 6.00625 11.6637 8.00187C12.9037 7.65312 14.2212 7.47875 15.5387 7.47875C16.8562 7.47875 18.1737 7.65312 19.4137 8.00187C22.3781 5.98688 23.6762 6.41313 23.6762 6.41313C24.5287 8.54437 23.9862 10.1331 23.8313 10.5206C24.8194 11.6056 25.42 12.9812 25.42 14.6862C25.42 20.6344 21.7969 21.9519 18.3481 22.3394C18.91 22.8237 19.3944 23.7537 19.3944 25.2069C19.3944 27.28 19.375 28.9462 19.375 29.4694C19.375 29.8762 19.6656 30.3606 20.4406 30.2056C23.5176 29.1668 26.1914 27.1892 28.0856 24.5512C29.9798 21.9132 30.9991 18.7476 31 15.5C31 6.93625 24.0637 0 15.5 0Z"
+                    fill="#DB14DF" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_196_73">
+                    <rect width="31" height="31" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <form action="https://formsubmit.co/manoelpatrocinio99@gmail.com" method="POST" class="w-full md:w-2/5">
+        <h4 class="md:hidden font-medium text-xl text-violet-700 mb-8">Envie uma mensagem</h4>
+        <div class="w-full flex flex-col  items-start mb-6">
+          <label htmlFor="yourName" class="text-white-900 font-medium mb-2">Seu Nome</label>
+          <input type="text" name="fullName" id="yourName"
+            class="w-full bg-transparent border border-violet-700 p-2  text-white-900 rounded-md" required
+            placeholder="Como eu devo chamá-lo(a)" />
+        </div>
+        <div class="w-full flex flex-col  items-start mb-6">
+          <label htmlFor="yourEmail" class="text-white-900 font-medium mb-2">Seu E-mail</label>
+          <input type="email" name="email" id="yourEmail"
+            class="w-full bg-transparent border border-violet-700 p-2  text-white-900 rounded-md" required
+            placeholder="Seu melhor email para contato" />
+        </div>
+        <div class="w-full flex flex-col  items-start mb-6">
+          <label htmlFor="yourPhone" class="text-white-900 font-medium mb-2">Seu WhatsApp <span class="!text-base">(Opcional)</span></label>
+          <input type="text" name="phone" id="yourPhone"
+            class="w-full bg-transparent border border-violet-700 p-2  text-white-900 rounded-md" required
+            placeholder="DDD 9XXXX-XXXX" />
+        </div>
+        <div class="w-full flex flex-col  items-start mb-6">
+          <label htmlFor="yourMessage" class="text-white-900 font-medium mb-2">Sua mensagem</label>
+          <textarea  name="yourMessage" id="yourMessage"
+            class="w-full bg-transparent border border-violet-700 p-2  text-white-900 rounded-md" required
+            placeholder="Como posso ajuda-lo(a)"
+            rows="2"
+          >
+          </textarea>
+        </div>
+
+        <input type="hidden" name="_next" value="https://manoel-patrocinio-portifolio.vercel.app/"></input>
+        <input type="hidden" name="_subject" value="Portfolio"></input>
+        <button type="submit" class="w-full bg-violet-700 rounded-md text-white font-medium py-3">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+  <footer class="w-full flex flex-col md:flex-row justify-between items-center  py-4 md:px-16 mt-10">
+    <div class="flex justify-center md:justify-start items-center gap-5 mb-3 md:mb-0">
+      <p class="text-white-900">Siga-me </p>
+      <a href="https://www.instagram.com/manoelpatrocinio3/" class="w-5 h-5" target="_blank">
+        <svg class="w-full h-full" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M9.33125 1.24399C10.7975 1.18099 11.265 1.16699 15 1.16699C18.735 1.16699 19.2025 1.18216 20.6675 1.24399C22.1325 1.30583 23.1325 1.52399 24.0075 1.84016C24.9237 2.16333 25.755 2.66849 26.4425 3.32183C27.1425 3.96233 27.6825 4.73699 28.0275 5.59333C28.3675 6.40999 28.6 7.34333 28.6675 8.70833C28.735 10.0792 28.75 10.5155 28.75 14.0003C28.75 17.4863 28.7337 17.9227 28.6675 19.2912C28.6012 20.6562 28.3675 21.5895 28.0275 22.4062C27.6825 23.2626 27.1416 24.0386 26.4425 24.68C25.755 25.3333 24.9237 25.8373 24.0075 26.1593C23.1325 26.4767 22.1325 26.6937 20.67 26.7567C19.2025 26.8197 18.735 26.8337 15 26.8337C11.265 26.8337 10.7975 26.8185 9.33125 26.7567C7.86875 26.6948 6.86875 26.4767 5.99375 26.1593C5.07615 25.8373 4.24478 25.3325 3.5575 24.68C2.85797 24.0391 2.31664 23.2635 1.97125 22.4073C1.6325 21.5907 1.4 20.6573 1.3325 19.2923C1.265 17.9215 1.25 17.4852 1.25 14.0003C1.25 10.5143 1.26625 10.078 1.3325 8.71066C1.39875 7.34333 1.6325 6.40999 1.97125 5.59333C2.31715 4.73709 2.8589 3.96152 3.55875 3.32066C4.24505 2.66791 5.07559 2.16268 5.9925 1.84016C6.8675 1.52399 7.8675 1.30699 9.33 1.24399H9.33125ZM20.5562 3.55399C19.1062 3.49216 18.6712 3.47933 15 3.47933C11.3287 3.47933 10.8938 3.49216 9.44375 3.55399C8.1025 3.61116 7.375 3.81999 6.89 3.99616C6.24875 4.22949 5.79 4.50599 5.30875 4.95516C4.85256 5.36939 4.50148 5.87365 4.28125 6.43099C4.0925 6.88366 3.86875 7.56266 3.8075 8.81449C3.74125 10.1678 3.7275 10.5738 3.7275 14.0003C3.7275 17.4268 3.74125 17.8328 3.8075 19.1862C3.86875 20.438 4.0925 21.117 4.28125 21.5697C4.50125 22.1262 4.8525 22.6313 5.30875 23.0455C5.7525 23.4713 6.29375 23.7992 6.89 24.0045C7.375 24.1807 8.1025 24.3895 9.44375 24.4467C10.8938 24.5085 11.3275 24.5213 15 24.5213C18.6725 24.5213 19.1062 24.5085 20.5562 24.4467C21.8975 24.3895 22.625 24.1807 23.11 24.0045C23.7513 23.7712 24.21 23.4947 24.6912 23.0455C25.1475 22.6313 25.4988 22.1262 25.7188 21.5697C25.9075 21.117 26.1313 20.438 26.1925 19.1862C26.2588 17.8328 26.2725 17.4268 26.2725 14.0003C26.2725 10.5738 26.2588 10.1678 26.1925 8.81449C26.1313 7.56266 25.9075 6.88366 25.7188 6.43099C25.4688 5.83249 25.1725 5.40433 24.6912 4.95516C24.2474 4.52941 23.7071 4.20174 23.11 3.99616C22.625 3.81999 21.8975 3.61116 20.5562 3.55399ZM13.2438 17.9565C14.2246 18.3376 15.3167 18.389 16.3337 18.102C17.3506 17.815 18.2292 17.2074 18.8195 16.3829C19.4098 15.5585 19.6751 14.5683 19.5701 13.5816C19.465 12.5949 18.9963 11.6728 18.2437 10.9728C17.764 10.5254 17.184 10.1828 16.5454 9.96966C15.9068 9.75655 15.2255 9.67825 14.5506 9.74038C13.8757 9.80251 13.2239 10.0035 12.6423 10.329C12.0606 10.6544 11.5634 11.0962 11.1866 11.6225C10.8098 12.1488 10.5627 12.7465 10.4631 13.3726C10.3636 13.9987 10.4139 14.6377 10.6107 15.2434C10.8074 15.8492 11.1456 16.4067 11.6009 16.8758C12.0562 17.345 12.6173 17.714 13.2438 17.9565ZM10.0025 9.33599C10.6588 8.72346 11.4379 8.23758 12.2954 7.90608C13.1528 7.57458 14.0719 7.40396 15 7.40396C15.9281 7.40396 16.8472 7.57458 17.7046 7.90608C18.5621 8.23758 19.3412 8.72346 19.9975 9.33599C20.6538 9.94852 21.1744 10.6757 21.5295 11.476C21.8847 12.2763 22.0675 13.1341 22.0675 14.0003C22.0675 14.8666 21.8847 15.7243 21.5295 16.5246C21.1744 17.325 20.6538 18.0521 19.9975 18.6647C18.6721 19.9017 16.8744 20.5967 15 20.5967C13.1256 20.5967 11.3279 19.9017 10.0025 18.6647C8.67708 17.4276 7.93247 15.7498 7.93247 14.0003C7.93247 12.2509 8.67708 10.573 10.0025 9.33599ZM23.635 8.38633C23.7976 8.24314 23.9278 8.07095 24.0179 7.87996C24.1079 7.68897 24.156 7.48306 24.1593 7.27441C24.1625 7.06577 24.1209 6.85863 24.0369 6.66527C23.9528 6.47191 23.828 6.29625 23.67 6.1487C23.5119 6.00115 23.3237 5.88471 23.1165 5.80626C22.9093 5.72782 22.6874 5.68896 22.4638 5.69201C22.2403 5.69505 22.0197 5.73992 21.815 5.82397C21.6104 5.90802 21.4259 6.02954 21.2725 6.18132C20.9741 6.47653 20.8108 6.86863 20.8171 7.27441C20.8235 7.68019 20.999 8.06768 21.3064 8.35464C21.6139 8.6416 22.0291 8.80543 22.4638 8.81134C22.8986 8.81726 23.3187 8.6648 23.635 8.38633Z"
+            fill="#f9f9f9" />
+        </svg>
+
+      </a>
+      <a href="https://www.linkedin.com/in/manoel-patrocinio" class="w-5 h-5" target="_blank">
+        <svg class="w-full h-full" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.268 28H0.463V9.306H6.268V28ZM3.362 6.756C1.506 6.756 0 5.218 0 3.362C0 2.47034 0.35421 1.6152 0.984707 0.984707C1.6152 0.35421 2.47034 0 3.362 0C4.25366 0 5.1088 0.35421 5.73929 0.984707C6.36979 1.6152 6.724 2.47034 6.724 3.362C6.724 5.218 5.218 6.756 3.362 6.756ZM27.994 28H22.202V18.9C22.202 16.731 22.158 13.95 19.184 13.95C16.166 13.95 15.703 16.306 15.703 18.744V28H9.904V9.306H15.471V11.856H15.552C16.327 10.387 18.22 8.837 21.044 8.837C26.919 8.837 27.999 12.706 27.999 17.731V28H27.994Z"
+            fill="#f9f9f9" />
+        </svg>
+
+      </a>
+      <a href="https://github.com/ManoelPatrocinio/" class="w-5 h-5" target="_blank">
+        <svg class="w-full h-full" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_196_73)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.5 0C6.93625 0 0 6.93625 0 15.5C0 22.3587 4.43687 28.1519 10.5981 30.2056C11.3731 30.3412 11.6637 29.8762 11.6637 29.4694C11.6637 29.1012 11.6444 27.8806 11.6444 26.5825C7.75 27.2994 6.7425 25.6331 6.4325 24.7612C6.25812 24.3156 5.5025 22.94 4.84375 22.5719C4.30125 22.2812 3.52625 21.5644 4.82437 21.545C6.045 21.5256 6.91687 22.6687 7.2075 23.1337C8.6025 25.4781 10.8306 24.8194 11.7219 24.4125C11.8575 23.405 12.2644 22.7269 12.71 22.3394C9.26125 21.9519 5.6575 20.615 5.6575 14.6862C5.6575 13.0006 6.25812 11.6056 7.24625 10.5206C7.09125 10.1331 6.54875 8.54437 7.40125 6.41313C7.40125 6.41313 8.69937 6.00625 11.6637 8.00187C12.9037 7.65312 14.2212 7.47875 15.5387 7.47875C16.8562 7.47875 18.1737 7.65312 19.4137 8.00187C22.3781 5.98688 23.6762 6.41313 23.6762 6.41313C24.5287 8.54437 23.9862 10.1331 23.8313 10.5206C24.8194 11.6056 25.42 12.9812 25.42 14.6862C25.42 20.6344 21.7969 21.9519 18.3481 22.3394C18.91 22.8237 19.3944 23.7537 19.3944 25.2069C19.3944 27.28 19.375 28.9462 19.375 29.4694C19.375 29.8762 19.6656 30.3606 20.4406 30.2056C23.5176 29.1668 26.1914 27.1892 28.0856 24.5512C29.9798 21.9132 30.9991 18.7476 31 15.5C31 6.93625 24.0637 0 15.5 0Z"
+              fill="#f9f9f9" />
+          </g>
+          <defs>
+            <clipPath id="clip0_196_73">
+              <rect width="31" height="31" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+
+    </div>
+    <p class="w-full text-white-900 text-center md:text-start text-sm">© 2024 Manoel Patrocinio | Desenvolvedor Web. Todos os direitos reservados.</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+  <script src="./animate.js"></script>
 </body>
 
 </html>
