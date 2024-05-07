@@ -5,3 +5,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://devmanoelpatrocinio.netlify.app/sitemap.xml
+
