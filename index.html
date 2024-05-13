@@ -38,6 +38,15 @@
             sans: "Inter, sans-serif",
             display: "Nunito Sans, sans-serif",
           },
+          animation: {
+            wiggle: 'moveBanner 1.3s 0.7 forwards',
+          },
+          keyframes: {
+            moveBanner: {
+              '0%': { transform: 'translateY(10rem) rotateY(-30deg)' },
+              '100%': { transform: 'translateY(0) rotateY(0)', opacity: 1 },
+            }
+          }
         }
       }
     }
@@ -49,9 +58,9 @@
 <body class="bg-black-900 relative">
   <!-- Main navigation container -->
   <nav id="navBar"
-    class="fixed z-50 top-0 left-0 z-50 flex w-full flex-nowrap items-center justify-between bg-transparent py-2 text-neutral-500  hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4 px-4 md:px-16"
+    class="fixed z-50 top-0 left-0 z-50 flex w-screen flex-nowrap items-center justify-between bg-transparent py-2 text-neutral-500  hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4 px-4 md:px-16"
     data-twe-navbar-ref>
-    <div class="flex w-full flex-wrap items-center justify-between ">
+    <div class="flex w-full h-full flex-wrap items-center justify-between ">
       <a class=" mb-4 me-5 mt-3 flex flex-col md:flex-row  items-center font-semibold text-sm md:text-base text-white hover:text-[#A817E1] focus:text-[#A817E1] gap-2 lg:mb-0 lg:mt-0 transition duration-300 ease-out"
         href="#home">
         <img src="./assets/images/Logo.png" alt="logo" class="w-[4rem] h-[1.5rem] md:w-[3.5rem] md:h-[1.4rem]" />
@@ -74,7 +83,7 @@
 
       <!-- Collapsible navbar container -->
       <div
-        class="bg-slate-900  rounded-lg !visible mt-2 hidden flex justify-center basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto lg:bg-transparent"
+        class="bg-slate-900  rounded-lg !visible  hidden flex justify-center basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto lg:bg-transparent"
         id="navbarSupportedContent2" data-twe-collapse-item>
         <!-- Left links -->
         <ul class="list-style-none flex flex-col ps-0 py-6 lg:mt-1 lg:flex-row lg:py-0" data-twe-navbar-nav-ref>
@@ -100,7 +109,7 @@
         </ul>
       </div>
       <div class="hidden relative lg:flex items-center drop-shadow-md">
-        <a class=" text-white border border-white rounded-full drop-shadow-md hover:border-[#A044FF] px-4 py-2 transition duration-300 ease-out"
+        <a class=" text-white border border-white rounded-full drop-shadow-md hover:border-[#A044FF] px-4 py-2 animate-pulse transition duration-300 ease-out"
           href="#contact_me">
           Fale comigo
         </a>
@@ -110,39 +119,40 @@
   <header class="relative w-full flex justify-start items-center px-4 md:px-16" id="home">
 
     <div class="w-full md:2/3 lg:w-1/2 mb-[15%] lg:mb-0">
-      <h1 id="header__presentation_text "
+      <h1 id="header__presentation_text"
         class="font-display font-medium text-white text-4xl md:text-5xl mb-6 drop-shadow-md">A
         excelência do seu
         negócio no digital</h1>
-      <p id="header__resume_text " class="font-sans text-white text-xl md:text-lg mb-8 drop-shadow-md">Garanta o sucesso
+      <p id="header__resume_text" class="font-sans text-white text-xl md:text-lg mb-8 drop-shadow-md">Garanta o sucesso
         do seu negócio ou
         ideia, através de
         sites que entregam exatamente o
         que você precisa.</p>
-      <button type="button"
-        class="text-white font-medium px-4 py-3 backdrop-blur-sm bg-white/30 drop-shadow-md border border-[#A044FF] rounded-full">Dê
-        o primeiro passo</button>
+      <a href="#contact_me"
+        class="text-white font-medium px-4 py-3 backdrop-blur-sm bg-white/30 drop-shadow-md border border-[#A044FF] rounded-full hover:scale-105 animate-pulse transition  duration-300 ease-out ">Dê
+        o primeiro passo</a>
     </div>
+
   </header>
   <main id="services" class="flex flex-col items-center w-full text-center px-4 md:px-16 py-9">
     <h2 class="text-2xl md:text-3xl text-violet-700 font-display font-medium mb-4">Quais serviços eu ofereço ?</h2>
     <p class="text-lg md:text-xl text-white-900">E como eles podem impulsionar o seu negócio ou sua ideia</p>
     <div class="flex flex-col lg:flex-row justify-center items-center w-full mt-16 mb-10">
-      <div class="w-full lg:w-1/3 flex justify-center mb-12 lg:mb-0">
-        <img src="./assets/images/services_image.png" class="w-full w-full hidden lg:block" alt="serviços"
+      <div class="w-full lg:w-1/3 flex justify-center mb-12 lg:mb-0" data-animate="left">
+        <img src="./assets/images/services_image.svg" class="w-full w-full hidden lg:block" alt="serviços"
           loading="lazy">
-        <img src="./assets/images/services_image_mobile.png" class=" lg:hidden" alt="serviços" loading="lazy">
+        <img src="./assets/images/services_image_mobile.svg" class=" lg:hidden" alt="serviços" loading="lazy">
       </div>
       <div class="w-full lg:w-2/3 flex flex-wrap gap-y-5 md:gap-5 lg:gap-10 md:ps-5">
-        <div
-          class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
+        <div data-animate="right"
+          class="delay-500 md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
           <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Design de sites</h3>
           <p class="text-white-900 leading-8">Transformo sua ideia, serviços ou necessidades do seu negocio, em um
             design de site profissional e
             atraente, para destacar e cativar seu público-alvo instantaneamente. </p>
         </div>
-        <div
-          class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
+        <div data-animate="right"
+          class="delay-100 md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
           <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Criação de sites performáticos
           </h3>
           <p class="text-white-900 leading-8">Tenha um site que conte sua história de forma envolvente e que converta
@@ -150,14 +160,14 @@
 
             Além de aproximar e facilitar ainda mais a sua relação com seus clientes.</p>
         </div>
-        <div
+        <div data-animate="right"
           class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
           <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Lojas virtuais</h3>
           <p class="text-white-900 leading-8"> Aproveite a oportunidade de expandir seus horizontes de vendas além das
             fronteiras físicas e ofereça uma experiência de compra online que mantenha os clientes voltando para mais.
           </p>
         </div>
-        <div
+        <div data-animate="right"
           class=" md:w-[46%] lg:w-[45%] min-h-[15rem] h-auto border border-[#48007F] rounded-[20px]  drop-shadow-[0_35px_35px_rgba(64,64,64,0.67)]-lg p-3">
           <h3 class="text-violet-700 text-xl md:text-2xl font-display font-medium mb-4">Suporte e Manutenção</h3>
           <p class="text-white-900 leading-8"> Deixe-me cuidar dos bastidores para que você possa se concentrar no que
@@ -168,7 +178,7 @@
       </div>
     </div>
     <a href="#contact_me"
-      class="w-fit px-4 py-2 bg-green-700  rounded-full text-white drop-shadow-md pointer hover:bg-green-600 transition duration-300 ease-out">Dê
+      class="w-fit px-4 py-2 bg-green-700  rounded-full text-white drop-shadow-md pointer hover:bg-green-600 animate-pulse transition duration-300 ease-out">Dê
       o primeiro passo</a>
 
   </main>
@@ -177,14 +187,12 @@
     <!-- <p class="text-lg md:text-xl text-white-900">E como eles podem impulsionar o seu negócio ou sua ideia</p> -->
     <div class="flex flex-col gap-10 mt-10 mb-0 md:flex-row md:mt-16 lg:mb-8 ">
 
-      <a href="https://proejavivo.com.br/" class="w-full md:w-[48%] rounded-md" target="_blank">
-        <img
-          src="./assets/images/img-proeja-vivo.jpg" alt="proeja vivo"
+      <a href="https://proejavivo.com.br/" class="w-full md:w-[48%] rounded-md" target="_blank" data-animate="left">
+        <img src="./assets/images/img-proeja-vivo.jpg" alt="proeja vivo"
           class="rounded-md w-full h-full hover:scale-105 hover:transform-gpu transition duration-300 ease-out"
-          loading="lazy"
-        >
+          loading="lazy">
       </a>
-      <div class="w-full md:w-[48%] text-left">
+      <div class="w-full md:w-[48%] text-left" data-animate="right">
         <h3 class="font-display text-violet-700 text-2xl text-center lg:text-left">Proeja Vivo</h3>
         <p class="w-full text-white my-6">Página institucional desenvolvida com o objetivo de levar ampla visibilidade
           ao curso Técnico em Administração da Modalidade de Educação de Jovens e Adultos do IFBA Campus Irecê. </p>
@@ -201,7 +209,7 @@
 
     </div>
     <div class="flex flex-col-reverse gap-10 mt-10 mb-0 md:flex-row md:mt-16 lg:mb-8 ">
-      <div class="w-full md:w-[48%] text-left">
+      <div class="w-full md:w-[48%] text-left" data-animate="left">
         <h3 class="font-display text-violet-700 text-2xl text-center lg:text-left">Portal Agro Familiar</h3>
         <p class="w-full text-white my-6  ">O Portal Agro Familiar é uma plataforma destinada à divulgação e aproximação
           entre o consumidor final e os produtores, associações e cooperativas familiares da sua região. </p>
@@ -215,17 +223,16 @@
           </svg>
         </a>
       </div>
-      <a href="https://agrofamiliar.vercel.app/" class="w-full md:w-[48%]  rounded-md" target="_blank">
-        <img
-          src="./assets/images/img-agro-familiar.jpg" alt="proeja vivo"
+      <a href="https://agrofamiliar.vercel.app/" class="w-full md:w-[48%]  rounded-md" target="_blank"
+        data-animate="right">
+        <img src="./assets/images/img-agro-familiar.jpg" alt="proeja vivo"
           class="rounded-md w-full h-full hover:scale-105 hover:transform-gpu transition duration-300 ease-out"
-          loading="lazy"
-        >
+          loading="lazy">
       </a>
 
     </div>
   </section>
-  <section id="steps" class="flex flex-col items-center w-full text-center px-4 md:px-16 py-9">
+  <section id="steps" class="flex flex-col items-center w-full text-center px-4 md:px-16 py-9" data-animate="up">
     <h2 class="text-2xl md:text-3xl text-violet-700 font-display font-medium ">Entenda o processo que iremos seguir</h2>
     <p class="text-lg md:text-xl text-white-900">participe e contribua ativamente de cada etapa da criação do seu site
     </p>

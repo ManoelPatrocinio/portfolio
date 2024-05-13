@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
@@ -13,19 +12,21 @@
 
 :root {
 
-  --Color-purple: #a044ff; 
+  --Color-purple: #a044ff;
   --Color-violet: #cb3bce;
   --Color-dark: #17181b;
   --Color-light-pink: #cc2b5e;
-  --Color-light-red:#f80759;
+  --Color-light-red: #f80759;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 body {
-  
+
   overflow-x: hidden;
   width: 100vw;
 }
@@ -37,15 +38,15 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.3) ;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  -webkit-box-shadow: inset 0 0 6px var(--Color-purple); 
-  box-shadow:inset 0 0 6px var(--Color-purple) ;
+  -webkit-box-shadow: inset 0 0 6px var(--Color-purple);
+  box-shadow: inset 0 0 6px var(--Color-purple);
 }
 
 
@@ -80,133 +81,115 @@ body {
 
 
 /* header effect on scroll page */
-.onSroll{
+.onSroll {
   height: 4.5rem;
   background: rgb(23 24 27 / 85%) !important;
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
 }
 
 header {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 
-    background-image: linear-gradient(
-      to bottom right,
+  background-image: linear-gradient(to bottom right,
       #17181b 0%,
       #17181b 40%,
       #48007f 60%,
-      #bf33c7 100%
-    );
-    background-size: 200% 200%;
-    animation: movingGradient 9s linear infinite alternate;
+      #bf33c7 100%);
+  background-size: 200% 200%;
+  animation: movingGradient 9s linear infinite alternate;
+}
+
+@keyframes movingGradient {
+  from {
+    background-position: 0 0;
   }
 
-  @keyframes movingGradient {
-    from {
-      background-position: 0 0;
-    }
-
-    20% {
-      background-position: 20% 20%;
-    }
-    50% {
-      background-position: 50% 50%;
-    }
-    70% {
-      background-position: 70% 70%;
-    }
-    100% {
-      background-position: 100% 100%;
-    }
+  20% {
+    background-position: 20% 20%;
   }
 
-  #header__presentation_text,
-  #header__resume_text {
-    animation: moveBanner 1.3s 0.7 forwards;
-  }
-  
-  #header__presentation_text {
-    text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
+  50% {
+    background-position: 50% 50%;
   }
 
-  #header__resume_text {
-    font-weight: 600;
+  70% {
+    background-position: 70% 70%;
   }
- 
-  .header__btn_contact_me {
-   
-    
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid var(--Color-purple);
-    border-radius: 5px;
-  
-    font-size: 1.125rem;
-    color: #ffffff;
-    font-weight: 500;
-    animation: moveBanner 1.3s 0.7 forwards;
-    padding: 0.8rem 0.9rem;
+
+  100% {
+    background-position: 100% 100%;
   }
-  .header__btn_contact_me:hover {
-    box-shadow: 1px 1px 1px rgb(46, 44, 44);
-    border-bottom: 2px solid var(--Color-violet);
+}
+
+#header__presentation_text,
+#header__resume_text {
+  animation: moveBanner 1.3s 0.7 forwards !important;
+}
+
+#header__presentation_text {
+  text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
+}
+
+
+.header__btn_contact_me {
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--Color-purple);
+  border-radius: 5px;
+
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-weight: 500;
+  animation: moveBanner 1.3s 0.7 forwards;
+  padding: 0.8rem 0.9rem;
+}
+
+.header__btn_contact_me:hover {
+  box-shadow: 1px 1px 1px rgb(46, 44, 44);
+  border-bottom: 2px solid var(--Color-violet);
+}
+
+/* animação dos texto no header */
+@keyframes moveBanner {
+  0% {
+    /*desce o elemento verticalmente, e rotaciona a -30 graus*/
+    transform: translateY(10rem) rotateY(-30deg) !important;
+    opacity: 0;
   }
-  
-  /* animação dos texto no header */
-  @keyframes moveBanner {
-    0% {
-      transform: translateY(10rem) rotateY(-30deg);
-      /*desce o elemento verticalmente, e rotaçiona a -30 graus*/
-    }
-  
-    100% {
-      transform: translateY(0) rotateY(0);
-      /*retorna a posição original*/
-      opacity: 1;
-    }
+  100% {
+    /*retorna a posição original*/
+    transform: translateY(0) rotateY(0) !important;
+    opacity: 1;
   }
+}
 
 
 @keyframes typewriter {
   from {
     width: 0px;
   }
+
   50% {
     width: 50%;
   }
+
   to {
     width: 100%;
   }
 }
+
 @keyframes blinkTextCursor {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-right-color: transparent;
-  }
-}
-
-@keyframes progress-animation {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 
@@ -214,9 +197,11 @@ header {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(5px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -227,22 +212,27 @@ header {
     top: 0;
     left: 0;
   }
+
   5% {
     top: 0;
     left: calc(60% - 116px);
   }
+
   10% {
     top: 0;
     left: calc(60% - 116px);
   }
+
   15% {
     top: 0;
     left: calc(60% - 116px);
   }
+
   20% {
     top: 0;
     left: calc(60% - 116px);
   }
+
   100% {
     top: 0;
     left: calc(60% - 116px);
