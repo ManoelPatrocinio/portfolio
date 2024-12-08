@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build --force or --legacy-peer-deps",
+    "start": "next start --force or --legacy-peer-deps",
     "lint": "next lint"
   },
   "dependencies": {
