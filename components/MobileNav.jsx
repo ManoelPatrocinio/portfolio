@@ -1,27 +1,28 @@
 "use client";
+
 import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import Link from "next/link";
 const links = [
   {
-    name: "home",
+    name: "início",
     path: "/",
   },
   {
-    name: "services",
-    path: "/services",
+    name: "serviços",
+    path: "/servicos",
   },
   {
-    name: "resume",
-    path: "/resume",
+    name: "resumo",
+    path: "/resumo",
   },
   {
-    name: "work",
+    name: "portfolio",
     path: "/work",
   },
   {
-    name: "contact",
+    name: "contato",
     path: "/contact",
   },
 ];

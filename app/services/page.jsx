@@ -7,36 +7,36 @@ import Link from "next/link";
 const services = [
   {
     num: 1,
-    title: "Web Development",
+    title: "Criação de sites",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, justo eget dictum consectetur.",
+      "Tenha um site eficiente, famoso no Google e que conte sua história de forma envolvente e converta visitantes em clientes.",
     href: "",
   },
   {
     num: 2,
-    title: "UX/UI Design",
+    title: "Design de sites",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, justo eget dictum consectetur.",
+      "Transformo ideias, serviços ou necessidades do seu negocio, em um site de visual profissional e atraente, que destaca e cativa seu público-alvo instantaneamente.",
     href: "",
   },
   {
     num: 3,
-    title: "Maintenance and Update",
+    title: "Suporte e Manutenção",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, justo eget dictum consectetur.",
+      "Cuido dos bastidores para que você possa se concentrar no que realmente importa: o crescimento do seu negócio.",
     href: "",
   },
   {
     num: 4,
     title: "SEO",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, justo eget dictum consectetur.",
+      "Deixo seu site eficiente, famoso no Google e fácil de ser achado.",
     href: "",
   },
 ];
 const Services = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-8">
+    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0 }}

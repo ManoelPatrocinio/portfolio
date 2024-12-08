@@ -23,16 +23,16 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
 const about = {
-  title: "About me",
+  title: "Contato",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, justo eget dictum consectetur.",
+    "Principais formas de entrar em contato, se quiser falar sobre uma ideia ou papear",
   info: [
     {
-      fieldName: "Name",
-      fieldValue: "Manoel Patrocinio",
+      fieldName: "Nome",
+      fieldValue: "Manoel Patrocínio",
     },
     {
-      fieldName: "Phone",
+      fieldName: "Celular",
       fieldValue: "(+55) 7498819-3405",
     },
     {
@@ -52,56 +52,57 @@ const about = {
 
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My Experience",
+  title: "Experiências",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, justo eget dictum consectetur.",
+    "Algumas das minhas principais experiências profissionais",
   items: [
     {
       company: "X-Testing",
-      position: "RPA Developer Intern",
-      duration: "July 2024 - December 2024",
+      position: "Programador RPA Estagiário ",
+      duration: "Julho 2024 - Dezembro 2024",
     },
     {
-      company: "Confidential",
-      position: "Front-End Developer Freelancer",
-      duration: "June 2023 - August 2023",
+      company: "Confidencial",
+      position: "Programador Front-End Freelancer",
+      duration: "Junho 2023 - Agosto 2023",
     },
     {
       company: "IFBA - Campus Irecê",
-      position: "Full Stack Developer Intern",
-      duration: "March 2022 - July 2022",
+      position: "Programador Full Stack Estagiário",
+      duration: "Março 2022 - Julho 2022",
     },
   ],
 };
 
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
+  title: "Formação",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, justo eget dictum consectetur.",
+    "Minhas principais formações com certificado até o momento",
   items: [
     {
       institution: "CEPEDI, UESC, SOFTEX",
-      degree: "Software Residency Program - TIC 18",
-      duration: "August 2023 - December 2024",
-    },
-    {
-      institution: "IFBA - Campus Irecê",
-      degree: "Degree Systems Analysis and Development",
-      duration: "May 2018 - June 2025",
+      degree: "Programa de residência em Software - TIC 18",
+      duration: "Agosto 2023 - Dezembro 2024",
     },
     {
       institution: "Digital Innovation One",
       degree: "Bootcamp Eduzz Full Stack Developer",
-      duration: "February 2022 - April 2022",
+      duration: "Fevereiro 2022 - Abril 2022",
     },
+    {
+      institution: "IFBA - Campus Irecê",
+      degree: "Tecnólogo em Analise e Desenvolvimento de Sistemas",
+      duration: "Maio 2018 - Junho 2025",
+    },
+    
   ],
 };
 
 const skills = {
   title: "My Skills",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, justo eget dictum consectetur.",
+    "As principais tecnologias que eu uso no meu dia a dia",
   skillsList: [
     {
       icon: <FaHtml5 />,
@@ -162,10 +163,10 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="Experience">Experience</TabsTrigger>
-            <TabsTrigger value="Education">Education</TabsTrigger>
+            <TabsTrigger value="Experience">Experiência</TabsTrigger>
+            <TabsTrigger value="Education">Formação</TabsTrigger>
             <TabsTrigger value="Skills">Skills</TabsTrigger>
-            <TabsTrigger value="About">About me</TabsTrigger>
+            <TabsTrigger value="About">Contatos</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
             <TabsContent value="Experience" className="w-full">
@@ -228,7 +229,7 @@ const Resume = () => {
 
             <TabsContent value="Skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px] ">
-                <div className="flex flex-col gap-[30px] text-center xl:text-center">
+                <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {skills.description}
@@ -259,7 +260,7 @@ const Resume = () => {
 
             <TabsContent value="About" className="w-full h-full">
               <div className="flex flex-col gap-[30px] ">
-                <div className="flex flex-col gap-[30px] text-center xl:text-center">
+                <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{about.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {about.description}

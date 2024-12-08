@@ -1,7 +1,7 @@
 "use client";
 import { animate, motion } from "framer-motion";
 import Image from "next/image";
-export const Photo = () => {
+const Photo = () => {
   return (
     <div className="w-full h-full relative">
       <motion.div
@@ -58,3 +58,5 @@ export const Photo = () => {
     </div>
   );
 };
+
+export default Photo;
