@@ -78,7 +78,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "Formação",
   description:
-    "Minhas principais formações com certificado até o momento",
+    "Minhas principais formações com certificado, até o momento",
   items: [
     {
       institution: "CEPEDI, UESC, SOFTEX",
