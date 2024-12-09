@@ -20,7 +20,7 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[406px] xl:h-[406px] mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/photo.png"
+            src="/assets/photo1.png"
             priority
             quality={100}
             fill
@@ -38,7 +38,7 @@ const Photo = () => {
             cx="200"
             cy="200"
             r="200"
-            stroke="#00ff99"
+            stroke="#cb3bce"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
