@@ -33,7 +33,7 @@ const about = {
     },
     {
       fieldName: "Celular",
-      fieldValue: "(+55) 7498819-3405",
+      fieldValue: "(74) 98819-3405",
     },
     {
       fieldName: "E-mail",
@@ -82,7 +82,7 @@ const education = {
   items: [
     {
       institution: "CEPEDI, UESC, SOFTEX",
-      degree: "Programa de residência em Software - TIC 18",
+      degree: "Residência em Software - TIC 18",
       duration: "Agosto 2023 - Dezembro 2024",
     },
     {
