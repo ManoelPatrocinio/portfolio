@@ -6,16 +6,16 @@ import { CiMenuFries } from "react-icons/ci";
 import Link from "next/link";
 const links = [
   {
-    name: "início",
+    name: "Início",
     path: "/",
   },
   {
     name: "serviços",
-    path: "/servicos",
+    path: "/services",
   },
   {
     name: "resumo",
-    path: "/resumo",
+    path: "/resume",
   },
   {
     name: "portfolio",
