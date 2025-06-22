@@ -33,7 +33,7 @@ const about = {
     },
     {
       fieldName: "Celular",
-      fieldValue: "(74) 98819-3405",
+      fieldValue: "(+55) 7498819-3405",
     },
     {
       fieldName: "E-mail",
@@ -58,6 +58,10 @@ const experience = {
   items: [
     {
       company: "X-Testing",
+      position: "Programador RPA Júnior",
+      duration: "Janneiro 2025 - Atual",
+    },{
+      company: "X-Testing",
       position: "Programador RPA Estagiário ",
       duration: "Julho 2024 - Dezembro 2024",
     },
@@ -78,11 +82,11 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "Formação",
   description:
-    "Minhas principais formações com certificado, até o momento",
+    "Minhas principais formações com certificado até o momento",
   items: [
     {
       institution: "CEPEDI, UESC, SOFTEX",
-      degree: "Residência em Software - TIC 18",
+      degree: "Programa de residência em Software - TIC 18",
       duration: "Agosto 2023 - Dezembro 2024",
     },
     {
