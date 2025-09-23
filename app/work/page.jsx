@@ -62,6 +62,17 @@ const projects = [
     live: "https://github.com/ManoelPatrocinio/event_Platform",
     github: "https://github.com/ManoelPatrocinio/event_Platform",
   },
+   {
+    num: "05",
+    category: "Design",
+    title: "WS File",
+    description:
+      "SaaS (Software como Serviço) projetado para ajudar empresas a gerenciar, armazenar e compartilhar documentos de forma segura e eficiente.",
+    stack: [{ name: "Figma" }, { name: "Next.js" }, { name: "Tailwind" }],
+    image: "/assets/work/Banner5.jpg",
+    live: "https://werioliveira.site/project/e306792a-2e85-4409-8774-b2520d2e759c",
+    github: "https://github.com/ManoelPatrocinio/",
+  },
 ];
 
 const Work = () => {
